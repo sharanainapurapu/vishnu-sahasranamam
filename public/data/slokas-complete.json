@@ -1,0 +1,3060 @@
+{
+  "metadata": {
+    "title": "Vishnu Sahasranamam",
+    "totalSlokas": 152,
+    "sections": 3,
+    "source": "User provided video with accurate timestamps",
+    "languages": [
+      "sanskrit",
+      "tamil",
+      "telugu",
+      "kannada",
+      "malayalam",
+      "hindi",
+      "english"
+    ],
+    "note": "English is transliteration (pronunciation guide) for 5-year-old learning. Timestamps calibrated from user's video."
+  },
+  "slokas": [
+    {
+      "id": 0,
+      "number": "U0",
+      "section": "intro",
+      "text": {
+        "sanskrit": "[Intro/Outro - No text]",
+        "tamil": "[Intro/Outro - No text]",
+        "telugu": "[Intro/Outro - No text]",
+        "kannada": "[Intro/Outro - No text]",
+        "malayalam": "[Intro/Outro - No text]",
+        "hindi": "[Intro/Outro - No text]",
+        "english": "intro/outro 0"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 0,
+        "endTime": 8,
+        "duration": 8
+      }
+    },
+    {
+      "id": 1,
+      "number": "U1",
+      "section": "intro",
+      "text": {
+        "sanskrit": "[Intro/Outro - No text]",
+        "tamil": "[Intro/Outro - No text]",
+        "telugu": "[Intro/Outro - No text]",
+        "kannada": "[Intro/Outro - No text]",
+        "malayalam": "[Intro/Outro - No text]",
+        "hindi": "[Intro/Outro - No text]",
+        "english": "intro/outro 1"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 8,
+        "endTime": 24,
+        "duration": 16
+      }
+    },
+    {
+      "id": 2,
+      "number": 1,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 1 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 1 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 1 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 1 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 1 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 1 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 1"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 24.0,
+        "endTime": 35.0,
+        "duration": 11.0
+      }
+    },
+    {
+      "id": 3,
+      "number": 2,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 2"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 35.0,
+        "endTime": 46.0,
+        "duration": 11.0
+      }
+    },
+    {
+      "id": 4,
+      "number": 3,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 3"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 46.0,
+        "endTime": 56.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 5,
+      "number": 4,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 4 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 4 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 4 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 4 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 4 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 4 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 4"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 56.0,
+        "endTime": 74.0,
+        "duration": 18.0
+      }
+    },
+    {
+      "id": 6,
+      "number": 5,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 5 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 5 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 5 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 5 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 5 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 5 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 5"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 74.0,
+        "endTime": 90.0,
+        "duration": 16.0
+      }
+    },
+    {
+      "id": 7,
+      "number": 6,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 6 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 6 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 6 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 6 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 6 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 6 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 6"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 90.0,
+        "endTime": 105.0,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 8,
+      "number": 7,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 7 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 7 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 7 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 7 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 7 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 7 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 7"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 105.0,
+        "endTime": 120.0,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 9,
+      "number": 8,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 8 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 8 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 8 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 8 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 8 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 8 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 8"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 120.0,
+        "endTime": 135.0,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 10,
+      "number": 9,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 9 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 9 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 9 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 9 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 9 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 9 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 9"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 135.0,
+        "endTime": 150.0,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 11,
+      "number": 10,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 10 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 10 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 10 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 10 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 10 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 10 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 10"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 150.0,
+        "endTime": 162.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 12,
+      "number": 11,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 11 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 11 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 11 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 11 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 11 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 11 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 11"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 162.0,
+        "endTime": 174.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 13,
+      "number": 12,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 12 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 12 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 12 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 12 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 12 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 12 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 12"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 174.0,
+        "endTime": 186.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 14,
+      "number": 13,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 13 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 13 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 13 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 13 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 13 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 13 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 13"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 186.0,
+        "endTime": 198.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 15,
+      "number": 14,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 14 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 14 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 14 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 14 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 14 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 14 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 14"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 198.0,
+        "endTime": 210.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 16,
+      "number": 15,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 15 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 15 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 15 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 15 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 15 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 15 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 15"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 210.0,
+        "endTime": 220.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 17,
+      "number": 16,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 16 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 16 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 16 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 16 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 16 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 16 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 16"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 220.0,
+        "endTime": 230.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 18,
+      "number": 17,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 17 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 17 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 17 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 17 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 17 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 17 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 17"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 230.0,
+        "endTime": 240.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 19,
+      "number": 18,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 18 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 18 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 18 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 18 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 18 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 18 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 18"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 240.0,
+        "endTime": 250.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 20,
+      "number": 19,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 19 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 19 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 19 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 19 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 19 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 19 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 19"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 250.0,
+        "endTime": 260.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 21,
+      "number": 20,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 20 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 20 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 20 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 20 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 20 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 20 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 20"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 260.0,
+        "endTime": 270,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 22,
+      "number": 21,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 21 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 21 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 21 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 21 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 21 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 21 - text to be added from bhajanmala.com]",
+        "english": "Section 1, Sloka 21"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 270,
+        "endTime": 283.5,
+        "duration": 13.5
+      }
+    },
+    {
+      "id": 23,
+      "number": 1,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 1 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 1 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 1 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 1 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 1 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 1 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 1"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 390.0,
+        "endTime": 410.0,
+        "duration": 20.0
+      }
+    },
+    {
+      "id": 24,
+      "number": 2,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 2 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 2 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 2 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 2 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 2 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 2 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 2"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 410.0,
+        "endTime": 430.0,
+        "duration": 20.0
+      }
+    },
+    {
+      "id": 25,
+      "number": 3,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 3 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 3 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 3 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 3 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 3 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 3 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 3"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 430.0,
+        "endTime": 450.0,
+        "duration": 20.0
+      }
+    },
+    {
+      "id": 26,
+      "number": 4,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 4 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 4 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 4 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 4 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 4 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 4 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 4"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 450.0,
+        "endTime": 465.0,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 27,
+      "number": 5,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 5 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 5 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 5 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 5 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 5 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 5 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 5"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 465.0,
+        "endTime": 480.0,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 28,
+      "number": 6,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 6 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 6 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 6 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 6 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 6 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 6 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 6"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 480.0,
+        "endTime": 520.0,
+        "duration": 40.0
+      }
+    },
+    {
+      "id": 29,
+      "number": 7,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 7 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 7 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 7 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 7 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 7 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 7 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 7"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 520.0,
+        "endTime": 560.0,
+        "duration": 40.0
+      }
+    },
+    {
+      "id": 30,
+      "number": 8,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 8 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 8 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 8 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 8 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 8 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 8 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 8"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 560.0,
+        "endTime": 600.0,
+        "duration": 40.0
+      }
+    },
+    {
+      "id": 31,
+      "number": 9,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 9 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 9 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 9 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 9 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 9 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 9 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 9"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 600.0,
+        "endTime": 610.91,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 32,
+      "number": 10,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 10 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 10 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 10 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 10 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 10 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 10 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 10"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 610.91,
+        "endTime": 621.82,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 33,
+      "number": 11,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 11 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 11 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 11 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 11 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 11 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 11 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 11"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 621.82,
+        "endTime": 632.73,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 34,
+      "number": 12,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 12 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 12 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 12 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 12 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 12 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 12 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 12"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 632.73,
+        "endTime": 643.64,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 35,
+      "number": 13,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 13 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 13 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 13 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 13 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 13 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 13 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 13"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 643.64,
+        "endTime": 654.55,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 36,
+      "number": 14,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 14 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 14 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 14 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 14 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 14 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 14 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 14"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 654.55,
+        "endTime": 665.45,
+        "duration": 10.9
+      }
+    },
+    {
+      "id": 37,
+      "number": 15,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 15 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 15 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 15 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 15 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 15 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 15 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 15"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 665.45,
+        "endTime": 676.36,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 38,
+      "number": 16,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 16 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 16 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 16 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 16 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 16 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 16 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 16"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 676.36,
+        "endTime": 687.27,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 39,
+      "number": 17,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 17 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 17 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 17 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 17 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 17 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 17 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 17"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 687.27,
+        "endTime": 698.18,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 40,
+      "number": 18,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 18 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 18 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 18 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 18 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 18 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 18 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 18"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 698.18,
+        "endTime": 709.09,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 41,
+      "number": 19,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 19 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 19 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 19 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 19 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 19 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 19 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 19"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 709.09,
+        "endTime": 720.0,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 42,
+      "number": 20,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 20 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 20 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 20 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 20 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 20 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 20 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 20"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 720.0,
+        "endTime": 730.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 43,
+      "number": 21,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 21 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 21 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 21 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 21 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 21 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 21 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 21"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 730.0,
+        "endTime": 740.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 44,
+      "number": 22,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 22 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 22 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 22 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 22 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 22 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 22 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 22"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 740.0,
+        "endTime": 750.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 45,
+      "number": 23,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 23 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 23 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 23 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 23 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 23 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 23 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 23"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 750.0,
+        "endTime": 760.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 46,
+      "number": 24,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 24 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 24 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 24 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 24 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 24 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 24 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 24"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 760.0,
+        "endTime": 770.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 47,
+      "number": 25,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 25 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 25 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 25 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 25 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 25 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 25 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 25"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 770.0,
+        "endTime": 780.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 48,
+      "number": 26,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 26 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 26 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 26 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 26 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 26 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 26 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 26"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 780.0,
+        "endTime": 790.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 49,
+      "number": 27,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 27 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 27 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 27 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 27 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 27 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 27 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 27"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 790.0,
+        "endTime": 800.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 50,
+      "number": 28,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 28 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 28 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 28 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 28 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 28 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 28 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 28"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 800.0,
+        "endTime": 810.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 51,
+      "number": 29,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 29 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 29 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 29 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 29 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 29 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 29 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 29"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 810.0,
+        "endTime": 820.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 52,
+      "number": 30,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 30 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 30 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 30 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 30 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 30 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 30 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 30"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 820.0,
+        "endTime": 830.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 53,
+      "number": 31,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 31 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 31 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 31 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 31 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 31 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 31 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 31"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 830.0,
+        "endTime": 840.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 54,
+      "number": 32,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 32 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 32 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 32 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 32 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 32 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 32 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 32"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 840.0,
+        "endTime": 850.91,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 55,
+      "number": 33,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 33 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 33 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 33 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 33 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 33 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 33 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 33"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 850.91,
+        "endTime": 861.82,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 56,
+      "number": 34,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 34 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 34 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 34 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 34 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 34 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 34 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 34"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 861.82,
+        "endTime": 872.73,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 57,
+      "number": 35,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 35 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 35 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 35 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 35 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 35 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 35 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 35"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 872.73,
+        "endTime": 883.64,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 58,
+      "number": 36,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 36 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 36 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 36 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 36 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 36 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 36 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 36"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 883.64,
+        "endTime": 894.55,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 59,
+      "number": 37,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 37 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 37 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 37 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 37 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 37 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 37 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 37"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 894.55,
+        "endTime": 905.45,
+        "duration": 10.9
+      }
+    },
+    {
+      "id": 60,
+      "number": 38,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 38 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 38 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 38 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 38 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 38 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 38 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 38"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 905.45,
+        "endTime": 916.36,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 61,
+      "number": 39,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 39 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 39 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 39 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 39 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 39 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 39 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 39"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 916.36,
+        "endTime": 927.27,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 62,
+      "number": 40,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 40 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 40 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 40 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 40 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 40 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 40 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 40"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 927.27,
+        "endTime": 938.18,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 63,
+      "number": 41,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 41 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 41 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 41 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 41 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 41 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 41 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 41"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 938.18,
+        "endTime": 949.09,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 64,
+      "number": 42,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 42 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 42 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 42 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 42 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 42 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 42 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 42"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 949.09,
+        "endTime": 960.0,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 65,
+      "number": 43,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 43 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 43 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 43 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 43 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 43 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 43 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 43"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 960.0,
+        "endTime": 970.91,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 66,
+      "number": 44,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 44 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 44 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 44 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 44 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 44 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 44 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 44"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 970.91,
+        "endTime": 981.82,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 67,
+      "number": 45,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 45 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 45 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 45 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 45 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 45 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 45 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 45"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 981.82,
+        "endTime": 992.73,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 68,
+      "number": 46,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 46 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 46 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 46 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 46 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 46 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 46 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 46"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 992.73,
+        "endTime": 1003.64,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 69,
+      "number": 47,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 47 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 47 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 47 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 47 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 47 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 47 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 47"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1003.64,
+        "endTime": 1014.55,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 70,
+      "number": 48,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 48 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 48 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 48 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 48 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 48 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 48 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 48"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1014.55,
+        "endTime": 1025.45,
+        "duration": 10.9
+      }
+    },
+    {
+      "id": 71,
+      "number": 49,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 49 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 49 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 49 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 49 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 49 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 49 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 49"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1025.45,
+        "endTime": 1036.36,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 72,
+      "number": 50,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 50 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 50 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 50 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 50 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 50 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 50 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 50"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1036.36,
+        "endTime": 1047.27,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 73,
+      "number": 51,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 51 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 51 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 51 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 51 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 51 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 51 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 51"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1047.27,
+        "endTime": 1058.18,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 74,
+      "number": 52,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 52 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 52 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 52 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 52 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 52 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 52 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 52"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1058.18,
+        "endTime": 1069.09,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 75,
+      "number": 53,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 53 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 53 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 53 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 53 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 53 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 53 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 53"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1069.09,
+        "endTime": 1080.0,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 76,
+      "number": 54,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 54 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 54 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 54 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 54 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 54 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 54 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 54"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1080.0,
+        "endTime": 1090.91,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 77,
+      "number": 55,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 55 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 55 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 55 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 55 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 55 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 55 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 55"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1090.91,
+        "endTime": 1101.82,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 78,
+      "number": 56,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 56 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 56 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 56 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 56 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 56 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 56 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 56"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1101.82,
+        "endTime": 1112.73,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 79,
+      "number": 57,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 57 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 57 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 57 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 57 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 57 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 57 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 57"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1112.73,
+        "endTime": 1123.64,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 80,
+      "number": 58,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 58 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 58 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 58 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 58 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 58 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 58 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 58"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1123.64,
+        "endTime": 1134.55,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 81,
+      "number": 59,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 59 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 59 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 59 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 59 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 59 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 59 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 59"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1134.55,
+        "endTime": 1145.45,
+        "duration": 10.9
+      }
+    },
+    {
+      "id": 82,
+      "number": 60,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 60 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 60 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 60 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 60 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 60 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 60 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 60"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1145.45,
+        "endTime": 1156.36,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 83,
+      "number": 61,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 61 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 61 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 61 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 61 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 61 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 61 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 61"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1156.36,
+        "endTime": 1167.27,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 84,
+      "number": 62,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 62 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 62 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 62 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 62 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 62 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 62 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 62"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1167.27,
+        "endTime": 1178.18,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 85,
+      "number": 63,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 63 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 63 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 63 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 63 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 63 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 63 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 63"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1178.18,
+        "endTime": 1189.09,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 86,
+      "number": 64,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 64 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 64 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 64 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 64 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 64 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 64 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 64"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1189.09,
+        "endTime": 1200.0,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 87,
+      "number": 65,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 65 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 65 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 65 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 65 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 65 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 65 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 65"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1200.0,
+        "endTime": 1212.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 88,
+      "number": 66,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 66 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 66 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 66 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 66 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 66 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 66 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 66"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1212.0,
+        "endTime": 1224.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 89,
+      "number": 67,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 67 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 67 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 67 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 67 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 67 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 67 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 67"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1224.0,
+        "endTime": 1236.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 90,
+      "number": 68,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 68 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 68 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 68 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 68 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 68 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 68 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 68"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1236.0,
+        "endTime": 1248.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 91,
+      "number": 69,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 69 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 69 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 69 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 69 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 69 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 69 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 69"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1248.0,
+        "endTime": 1260.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 92,
+      "number": 70,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 70 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 70 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 70 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 70 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 70 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 70 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 70"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1260.0,
+        "endTime": 1272.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 93,
+      "number": 71,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 71 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 71 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 71 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 71 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 71 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 71 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 71"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1272.0,
+        "endTime": 1284.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 94,
+      "number": 72,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 72 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 72 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 72 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 72 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 72 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 72 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 72"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1284.0,
+        "endTime": 1296.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 95,
+      "number": 73,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 73 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 73 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 73 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 73 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 73 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 73 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 73"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1296.0,
+        "endTime": 1308.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 96,
+      "number": 74,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 74 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 74 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 74 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 74 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 74 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 74 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 74"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1308.0,
+        "endTime": 1320.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 97,
+      "number": 75,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 75 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 75 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 75 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 75 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 75 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 75 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 75"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1320.0,
+        "endTime": 1330.91,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 98,
+      "number": 76,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 76 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 76 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 76 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 76 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 76 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 76 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 76"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1330.91,
+        "endTime": 1341.82,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 99,
+      "number": 77,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 77 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 77 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 77 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 77 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 77 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 77 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 77"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1341.82,
+        "endTime": 1352.73,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 100,
+      "number": 78,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 78 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 78 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 78 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 78 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 78 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 78 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 78"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1352.73,
+        "endTime": 1363.64,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 101,
+      "number": 79,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 79 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 79 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 79 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 79 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 79 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 79 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 79"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1363.64,
+        "endTime": 1374.55,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 102,
+      "number": 80,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 80 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 80 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 80 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 80 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 80 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 80 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 80"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1374.55,
+        "endTime": 1385.45,
+        "duration": 10.9
+      }
+    },
+    {
+      "id": 103,
+      "number": 81,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 81 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 81 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 81 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 81 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 81 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 81 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 81"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1385.45,
+        "endTime": 1396.36,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 104,
+      "number": 82,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 82 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 82 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 82 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 82 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 82 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 82 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 82"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1396.36,
+        "endTime": 1407.27,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 105,
+      "number": 83,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 83 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 83 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 83 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 83 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 83 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 83 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 83"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1407.27,
+        "endTime": 1418.18,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 106,
+      "number": 84,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 84 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 84 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 84 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 84 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 84 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 84 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 84"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1418.18,
+        "endTime": 1429.09,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 107,
+      "number": 85,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 85 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 85 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 85 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 85 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 85 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 85 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 85"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1429.09,
+        "endTime": 1440.0,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 108,
+      "number": 86,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 86 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 86 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 86 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 86 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 86 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 86 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 86"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1440.0,
+        "endTime": 1450.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 109,
+      "number": 87,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 87 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 87 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 87 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 87 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 87 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 87 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 87"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1450.0,
+        "endTime": 1460.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 110,
+      "number": 88,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 88 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 88 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 88 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 88 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 88 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 88 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 88"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1460.0,
+        "endTime": 1470.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 111,
+      "number": 89,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 89 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 89 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 89 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 89 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 89 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 89 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 89"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1470.0,
+        "endTime": 1480.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 112,
+      "number": 90,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 90 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 90 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 90 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 90 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 90 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 90 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 90"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1480.0,
+        "endTime": 1490.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 113,
+      "number": 91,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 91 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 91 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 91 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 91 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 91 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 91 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 91"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1490.0,
+        "endTime": 1500.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 114,
+      "number": 92,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 92 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 92 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 92 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 92 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 92 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 92 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 92"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1500.0,
+        "endTime": 1510.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 115,
+      "number": 93,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 93 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 93 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 93 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 93 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 93 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 93 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 93"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1510.0,
+        "endTime": 1520.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 116,
+      "number": 94,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 94 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 94 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 94 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 94 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 94 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 94 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 94"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1520.0,
+        "endTime": 1530.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 117,
+      "number": 95,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 95 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 95 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 95 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 95 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 95 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 95 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 95"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1530.0,
+        "endTime": 1540.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 118,
+      "number": 96,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 96 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 96 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 96 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 96 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 96 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 96 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 96"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1540.0,
+        "endTime": 1550.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 119,
+      "number": 97,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 97 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 97 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 97 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 97 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 97 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 97 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 97"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1550.0,
+        "endTime": 1560.0,
+        "duration": 10.0
+      }
+    },
+    {
+      "id": 120,
+      "number": 98,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 98 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 98 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 98 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 98 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 98 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 98 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 98"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1560.0,
+        "endTime": 1572.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 121,
+      "number": 99,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 99 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 99 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 99 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 99 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 99 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 99 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 99"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1572.0,
+        "endTime": 1584.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 122,
+      "number": 100,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 100 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 100 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 100 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 100 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 100 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 100 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 100"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1584.0,
+        "endTime": 1596.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 123,
+      "number": 101,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 101 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 101 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 101 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 101 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 101 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 101 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 101"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1596.0,
+        "endTime": 1608.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 124,
+      "number": 102,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 102 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 102 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 102 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 102 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 102 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 102 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 102"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1608.0,
+        "endTime": 1620.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 125,
+      "number": 103,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 103 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 103 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 103 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 103 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 103 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 103 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 103"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1620.0,
+        "endTime": 1632.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 126,
+      "number": 104,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 104 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 104 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 104 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 104 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 104 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 104 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 104"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1632.0,
+        "endTime": 1644.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 127,
+      "number": 105,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 105 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 105 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 105 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 105 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 105 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 105 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 105"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1644.0,
+        "endTime": 1656.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 128,
+      "number": 106,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 106 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 106 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 106 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 106 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 106 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 106 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 106"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1656.0,
+        "endTime": 1668.0,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 129,
+      "number": 107,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 107 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 107 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 107 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 107 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 107 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 107 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 107"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1668.0,
+        "endTime": 1680,
+        "duration": 12.0
+      }
+    },
+    {
+      "id": 130,
+      "number": 108,
+      "section": "section_2",
+      "text": {
+        "sanskrit": "[Section 2, Sloka 108 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 2, Sloka 108 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 2, Sloka 108 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 2, Sloka 108 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 2, Sloka 108 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 2, Sloka 108 - text to be added from bhajanmala.com]",
+        "english": "Section 2, Sloka 108"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1680,
+        "endTime": 1693.5,
+        "duration": 13.5
+      }
+    },
+    {
+      "id": 131,
+      "number": 8,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 8 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 8 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 8 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 8 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 8 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 8 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 8"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1800.0,
+        "endTime": 1810.91,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 132,
+      "number": 9,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 9 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 9 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 9 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 9 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 9 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 9 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 9"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1810.91,
+        "endTime": 1821.82,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 133,
+      "number": 10,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 10 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 10 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 10 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 10 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 10 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 10 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 10"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1821.82,
+        "endTime": 1832.73,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 134,
+      "number": 11,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 11 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 11 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 11 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 11 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 11 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 11 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 11"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1832.73,
+        "endTime": 1843.64,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 135,
+      "number": 12,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 12 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 12 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 12 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 12 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 12 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 12 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 12"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1843.64,
+        "endTime": 1854.55,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 136,
+      "number": 13,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 13 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 13 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 13 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 13 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 13 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 13 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 13"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1854.55,
+        "endTime": 1865.45,
+        "duration": 10.9
+      }
+    },
+    {
+      "id": 137,
+      "number": 14,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 14 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 14 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 14 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 14 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 14 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 14 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 14"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1865.45,
+        "endTime": 1876.36,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 138,
+      "number": 15,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 15 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 15 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 15 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 15 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 15 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 15 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 15"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1876.36,
+        "endTime": 1887.27,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 139,
+      "number": 16,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 16 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 16 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 16 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 16 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 16 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 16 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 16"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1887.27,
+        "endTime": 1898.18,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 140,
+      "number": 17,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 17 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 17 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 17 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 17 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 17 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 17 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 17"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1898.18,
+        "endTime": 1909.09,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 141,
+      "number": 18,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 18 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 18 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 18 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 18 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 18 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 18 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 18"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1909.09,
+        "endTime": 1920.0,
+        "duration": 10.91
+      }
+    },
+    {
+      "id": 142,
+      "number": 19,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 19 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 19 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 19 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 19 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 19 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 19 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 19"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1920.0,
+        "endTime": 1935.0,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 143,
+      "number": 20,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 20 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 20 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 20 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 20 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 20 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 20 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 20"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1935.0,
+        "endTime": 1950.0,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 144,
+      "number": 21,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 21 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 21 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 21 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 21 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 21 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 21 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 21"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1950.0,
+        "endTime": 1965.0,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 145,
+      "number": 22,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 22 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 22 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 22 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 22 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 22 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 22 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 22"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1965.0,
+        "endTime": 1980.0,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 146,
+      "number": 23,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 23 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 23 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 23 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 23 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 23 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 23 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 23"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1980.0,
+        "endTime": 1995.0,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 147,
+      "number": 24,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 24 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 24 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 24 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 24 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 24 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 24 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 24"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 1995.0,
+        "endTime": 2010.0,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 148,
+      "number": 25,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 25 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 25 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 25 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 25 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 25 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 25 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 25"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 2010.0,
+        "endTime": 2025.0,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 149,
+      "number": 26,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 26 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 26 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 26 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 26 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 26 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 26 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 26"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 2025.0,
+        "endTime": 2040,
+        "duration": 15.0
+      }
+    },
+    {
+      "id": 150,
+      "number": 27,
+      "section": "section_3",
+      "text": {
+        "sanskrit": "[Section 3, Sloka 27 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 3, Sloka 27 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 3, Sloka 27 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 3, Sloka 27 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 3, Sloka 27 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 3, Sloka 27 - text to be added from bhajanmala.com]",
+        "english": "Section 3, Sloka 27"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 2040,
+        "endTime": 2053.5,
+        "duration": 13.5
+      }
+    },
+    {
+      "id": 151,
+      "number": "U151",
+      "section": "outro",
+      "text": {
+        "sanskrit": "[Intro/Outro - No text]",
+        "tamil": "[Intro/Outro - No text]",
+        "telugu": "[Intro/Outro - No text]",
+        "kannada": "[Intro/Outro - No text]",
+        "malayalam": "[Intro/Outro - No text]",
+        "hindi": "[Intro/Outro - No text]",
+        "english": "intro/outro 151"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 2160,
+        "endTime": 2200,
+        "duration": 40
+      }
+    }
+  ]
+}

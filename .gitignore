@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Production
+build/
+dist/
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.vscode/
+.idea/
+
+# Temporary files created during timestamp calibration
+timestamp_check_*.jpg
+corner_*.jpg
+frame_*.jpg
+frames/
+sloka_tracking/
+key_frames/
+verify_frames/
+frame_timestamps.json
+
+# Voice samples (test files)
+voice_samples/
+
+# Alternative timestamp files (keeping only the final one)
+public/audio/sloka_timestamps_detected.json
+public/audio/sloka_timestamps_accurate.json
