@@ -28,8 +28,9 @@ const Player = ({
   const [audioElement, setAudioElement] = useState(null)
 
   useEffect(() => {
-    // Create audio element for full audio file
-    const audio = new Audio('/audio/full_slokas.mp4')
+    // Create audio element for full audio file from Google Drive
+    // Using direct download URL that bypasses virus scan warning
+    const audio = new Audio('https://drive.usercontent.google.com/download?id=1eGaEoT1VxUZ7e584uHYi5zo1cxMbW9ug&export=download&confirm=t')
     setAudioElement(audio)
     
     // Cleanup
