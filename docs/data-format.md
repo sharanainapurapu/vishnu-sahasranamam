@@ -6,7 +6,7 @@ Visit [https://www.bhajanmala.com/nodes/125](https://www.bhajanmala.com/nodes/12
 
 ## JSON Template
 
-Add each sloka to `public/data/slokas-sample.json` using this template:
+Add each sloka to `scripts/data/slokas-sample.json` using this template. (The app itself loads `public/data/slokas-complete.json` at runtime.)
 
 ```json
 {
@@ -112,7 +112,7 @@ fs.createReadStream('slokas.csv')
       slokas: slokas
     };
     
-    fs.writeFileSync('public/data/slokas-sample.json', JSON.stringify(output, null, 2));
+    fs.writeFileSync('scripts/data/slokas-sample.json', JSON.stringify(output, null, 2));
     console.log(`✓ Converted ${slokas.length} slokas to JSON`);
   });
 ```

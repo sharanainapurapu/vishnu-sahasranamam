@@ -1,5 +1,7 @@
 # 🎵 Manual Audio Extraction Guide
 
+> Archived: describes an earlier workflow. For the current setup see [../audio.md](../audio.md).
+
 YouTube download failed due to bot protection. Here's how to do it manually:
 
 ## Option 1: Using Online Converter (Easiest)

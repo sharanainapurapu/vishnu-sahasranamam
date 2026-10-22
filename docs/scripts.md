@@ -407,9 +407,9 @@ npm run build
 ### 4. Update Audio
 
 ```bash
-# 1. Upload new MP4 to Google Drive
-# 2. Get sharing link
-# 3. Update src/components/Player.jsx
+# 1. Put the new MP4 at public/audio/full_slokas.mp4 (git-ignored)
+# 2. Re-extract public/audio/full_slokas.m4a (command in docs/audio.md)
+# 3. Commit public/audio/full_slokas.m4a
 # 4. Test locally
 npm run dev
 # 5. Deploy
@@ -493,9 +493,10 @@ git checkout HEAD -- filename
 ---
 
 **Quick Help:**
-- Development issues → See DEVELOPMENT.md
-- First time setup → See README.md
-- Timestamp info → See TIMESTAMP_CALIBRATION_SUMMARY.md
+- Development issues → See [development.md](development.md)
+- First time setup → See [README](../README.md)
+- Timestamp info → See [timestamp-calibration.md](timestamp-calibration.md)
+- Python helper scripts → See [../scripts/README.md](../scripts/README.md)
 
 **Repository:** https://github.com/sharanainapurapu/vsn
 **Live App:** https://sharanainapurapu.github.io/vsn/

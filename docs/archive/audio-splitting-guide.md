@@ -1,5 +1,7 @@
 # 🎵 Audio Setup Guide
 
+> Archived: describes the earlier per-sloka MP3 workflow. For the current setup see [../audio.md](../audio.md).
+
 ## Overview
 
 This guide will help you extract audio from YouTube and split it into individual sloka files.
@@ -165,7 +167,7 @@ ls -1 public/audio/ | wc -l
 
 ## Updating JSON with Audio Metadata
 
-After splitting, update `public/data/slokas-sample.json` with actual durations:
+After splitting, update `scripts/data/slokas-sample.json` with actual durations:
 
 ```javascript
 // Use this script to generate audio metadata

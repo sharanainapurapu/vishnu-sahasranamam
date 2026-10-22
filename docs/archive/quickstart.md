@@ -1,5 +1,7 @@
 # ⚡ Quick Start Guide
 
+> Archived: describes an earlier workflow. For the current setup see [../development.md](../development.md) and [../deployment.md](../deployment.md).
+
 ## What You Have Now
 
 A fully functional **Vishnu Sahasranamam Learning Web App** with:
@@ -26,21 +28,21 @@ Visit `http://localhost:5173` and explore the app!
 
 ### 2. Add Audio Files (1-2 hours)
 
-Follow **AUDIO_GUIDE.md** to:
+Follow **[audio-splitting-guide.md](audio-splitting-guide.md)** to:
 - Download YouTube audio
 - Split into 109 sloka files
 - Place in `public/audio/` folder
 
 ### 3. Add Sloka Text Data (2-3 hours)
 
-Follow **DATA_TEMPLATE.md** to:
+Follow **[data-format.md](../data-format.md)** to:
 - Copy text from Bhajan Mala website
-- Update `public/data/slokas-sample.json`
+- Update `scripts/data/slokas-sample.json`
 - Fill in all 109 slokas in all languages
 
 ### 4. Deploy to GitHub Pages (10 minutes)
 
-Follow **DEPLOYMENT.md** to:
+Follow **[deployment.md](../deployment.md)** to:
 - Create GitHub repository
 - Push code
 - Enable GitHub Pages
@@ -51,18 +53,19 @@ Follow **DEPLOYMENT.md** to:
 ```
 VSN/
 ├── public/
-│   ├── audio/              ← ADD YOUR MP3 FILES HERE
-│   └── data/
-│       └── slokas-sample.json  ← ADD SLOKA TEXT HERE
+│   └── audio/              ← ADD YOUR MP3 FILES HERE
+├── scripts/data/slokas-sample.json  ← ADD SLOKA TEXT HERE
 ├── src/
 │   ├── components/         ← React components (no changes needed)
 │   ├── App.jsx             ← Main app (no changes needed)
 │   └── index.css           ← Styles (no changes needed)
 ├── README.md               ← Full documentation
-├── AUDIO_GUIDE.md          ← Audio extraction guide
-├── DATA_TEMPLATE.md        ← Data entry guide
-├── DEPLOYMENT.md           ← GitHub Pages deployment
-└── QUICKSTART.md           ← This file!
+└── docs/
+    ├── data-format.md      ← Data entry guide
+    ├── deployment.md       ← GitHub Pages deployment
+    └── archive/
+        ├── audio-splitting-guide.md  ← Audio extraction guide
+        └── quickstart.md   ← This file!
 ```
 
 ## 🎨 Customization (Optional)
@@ -146,7 +149,7 @@ Once you're happy with testing:
 1. Add all audio files
 2. Complete all sloka text
 3. Test one final time
-4. Follow DEPLOYMENT.md
+4. Follow [deployment.md](../deployment.md)
 5. Share the link with your child!
 
 ## 💡 Tips for Kids
@@ -161,10 +164,10 @@ Recommend to your child:
 ## 🆘 Need Help?
 
 1. Check the specific guide:
-   - Audio issues → **AUDIO_GUIDE.md**
-   - Data entry → **DATA_TEMPLATE.md**
-   - Deployment → **DEPLOYMENT.md**
-   - General info → **README.md**
+   - Audio issues → **[audio-splitting-guide.md](audio-splitting-guide.md)**
+   - Data entry → **[data-format.md](../data-format.md)**
+   - Deployment → **[deployment.md](../deployment.md)**
+   - General info → **[README.md](../../README.md)**
 
 2. Common issues:
    - App won't start → Run `npm install` first

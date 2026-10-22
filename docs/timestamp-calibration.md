@@ -74,7 +74,7 @@ We used **32 manual calibration points** you provided:
 
 ## Files Generated
 
-1. **`public/audio/sloka_timestamps_final.json`**
+1. **`scripts/data/sloka_timestamps_final.json`**
    - Raw timestamp data with section info
    - 152 entries with start/end times
 

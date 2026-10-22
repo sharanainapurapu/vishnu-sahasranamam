@@ -1,5 +1,7 @@
 # ✅ App Testing Results - VERIFIED WORKING!
 
+> Archived: one-off test report from an earlier version. For the current setup see [../development.md](../development.md).
+
 ## Test Date: October 22, 2026
 
 ### ✅ All Tests Passed
@@ -27,7 +29,7 @@
   - Main App
 
 #### 4. Data Loading
-- ✅ JSON data accessible at /data/slokas-sample.json
+- ✅ JSON data accessible at /data/slokas-sample.json (since moved to `scripts/data/slokas-sample.json` and no longer served)
 - ✅ 5 sample slokas in all 7 languages
 - ✅ Proper data structure
 

@@ -1,5 +1,7 @@
 # GitHub Setup and Deployment Guide
 
+> Archived: describes an earlier workflow. For the current setup see [../deployment.md](../deployment.md).
+
 Your code is ready to push! Follow these steps:
 
 ## Step 1: Create GitHub Repository

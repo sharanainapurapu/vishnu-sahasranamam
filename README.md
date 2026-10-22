@@ -50,15 +50,26 @@ The built files will be in the `dist/` folder.
 
 ```
 vsn/
-├── public/
+├── .github/workflows/deploy.yml    # GitHub Pages deployment
+├── docs/                           # Project documentation (see docs/README.md)
+│   ├── README.md                   # Docs index
+│   ├── development.md
+│   ├── deployment.md
+│   ├── scripts.md
+│   ├── features.md
+│   ├── audio.md
+│   ├── data-format.md
+│   ├── timestamp-calibration.md
+│   └── archive/                    # Older guides and reports
+├── public/                         # Static assets (copied to dist/)
 │   ├── audio/
-│   │   ├── README.md           # Audio file notes
-│   │   ├── full_slokas.m4a     # Full audio (AAC, ~34MB)
-│   │   ├── sloka_timestamps.json
-│   │   └── sloka_timestamps_final.json
+│   │   └── full_slokas.m4a         # Full audio (AAC, ~34MB)
 │   └── data/
-│       ├── slokas-complete.json    # 152 slokas with timestamps
-│       └── slokas-sample.json      # Sample data
+│       └── slokas-complete.json    # 152 slokas with timestamps
+├── scripts/                        # Python helpers (not part of the build)
+│   ├── README.md
+│   ├── *.py
+│   └── data/                       # Templates, old timestamp outputs, v2 text
 ├── src/
 │   ├── components/
 │   │   ├── Player.jsx              # Audio player with timestamp seeking
@@ -66,15 +77,25 @@ vsn/
 │   │   ├── RangeSelector.jsx       # Range and repeat settings
 │   │   ├── SlokaGrid.jsx           # Grid view of all slokas
 │   │   └── LanguageSelector.jsx    # Language switcher
+│   ├── utils/slokaLabels.js        # Sloka label helpers
+│   ├── config.js                   # Feature flags
 │   ├── App.jsx                     # Main app component
 │   ├── main.jsx                    # Entry point
 │   └── index.css                   # Global styles with Tailwind
-├── .github/
-│   └── workflows/
-│       └── deploy.yml              # GitHub Pages deployment
-├── TIMESTAMP_CALIBRATION_SUMMARY.md # How timestamps were created
-└── package.json
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+└── postcss.config.js
 ```
+
+## 📚 Documentation
+
+- [docs/README.md](docs/README.md) - index of all docs
+- [docs/development.md](docs/development.md) - local development
+- [docs/deployment.md](docs/deployment.md) - deployment to GitHub Pages
+- [docs/audio.md](docs/audio.md) - self-hosted audio file
+- [scripts/README.md](scripts/README.md) - Python helper scripts
 
 ## 🎯 Usage Guide
 
@@ -103,7 +124,7 @@ This app uses a **single 37-minute audio file** (`public/audio/full_slokas.m4a`,
 - **Section 2**: Slokas 1-108 (~21 minutes) - Main Vishnu Sahasranamam
 - **Section 3**: Slokas 8-27+ (~4 minutes)
 
-Timestamps were manually calibrated using 32 user-provided calibration points for accuracy. See `TIMESTAMP_CALIBRATION_SUMMARY.md` for details.
+Timestamps were manually calibrated using 32 user-provided calibration points for accuracy. See [docs/timestamp-calibration.md](docs/timestamp-calibration.md) for details.
 
 ## 🚢 Deployment
 

@@ -1,5 +1,7 @@
 # 🎵 Audio Solution - Current Status
 
+> Archived: describes an earlier workflow. For the current setup see [../audio.md](../audio.md).
+
 ## Why Audio Extraction Failed
 
 YouTube has bot protection that blocks automated downloads. This is common and expected.

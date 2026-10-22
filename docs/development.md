@@ -255,42 +255,45 @@ git checkout main
 
 ```
 vsn/
-├── public/                      # Static assets
+├── .github/workflows/deploy.yml    # GitHub Pages deployment
+├── docs/                           # Project documentation (see docs/README.md)
+│   ├── README.md                   # Docs index
+│   ├── development.md
+│   ├── deployment.md
+│   ├── scripts.md
+│   ├── features.md
+│   ├── audio.md
+│   ├── data-format.md
+│   ├── timestamp-calibration.md
+│   └── archive/                    # Older guides and reports
+├── public/                         # Static assets (copied to dist/)
 │   ├── audio/
-│   │   ├── README.md           # Audio file notes
-│   │   ├── full_slokas.m4a     # Full audio (AAC, ~34MB)
-│   │   ├── sloka_timestamps.json
-│   │   └── sloka_timestamps_final.json
+│   │   └── full_slokas.m4a         # Full audio (AAC, ~34MB)
 │   └── data/
-│       ├── slokas-complete.json    # Main data (152 slokas)
-│       └── slokas-sample.json      # Sample/backup data
-│
-├── src/                         # Source code
+│       └── slokas-complete.json    # 152 slokas with timestamps
+├── scripts/                        # Python helpers (not part of the build)
+│   ├── README.md
+│   ├── *.py
+│   └── data/                       # Templates, old timestamp outputs, v2 text
+├── src/
 │   ├── components/
-│   │   ├── Player.jsx              # Audio player with seek
-│   │   ├── SlokaDisplay.jsx        # Shows sloka text
-│   │   ├── RangeSelector.jsx       # Range & repeat controls
-│   │   ├── SlokaGrid.jsx           # Grid of all slokas
+│   │   ├── Player.jsx              # Audio player with timestamp seeking
+│   │   ├── SlokaDisplay.jsx        # Displays sloka text
+│   │   ├── RangeSelector.jsx       # Range and repeat settings
+│   │   ├── SlokaGrid.jsx           # Grid view of all slokas
 │   │   └── LanguageSelector.jsx    # Language switcher
-│   ├── App.jsx                     # Main app
+│   ├── utils/slokaLabels.js        # Sloka label helpers
+│   ├── config.js                   # Feature flags
+│   ├── App.jsx                     # Main app component
 │   ├── main.jsx                    # Entry point
-│   └── index.css                   # Tailwind styles
-│
-├── dist/                        # Build output (generated)
-├── node_modules/                # Dependencies (generated)
-│
-├── .github/
-│   └── workflows/
-│       └── deploy.yml              # Auto-deploy (optional)
-│
-├── package.json                 # Dependencies & scripts
-├── vite.config.js              # Vite configuration
-├── tailwind.config.js          # Tailwind configuration
-├── postcss.config.js           # PostCSS configuration
-│
-├── README.md                    # Main documentation
-├── DEVELOPMENT.md              # This file
-└── TIMESTAMP_CALIBRATION_SUMMARY.md  # Timestamp info
+│   └── index.css                   # Global styles with Tailwind
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+├── dist/                           # Build output (generated)
+└── node_modules/                   # Dependencies (generated)
 ```
 
 ---
@@ -425,7 +428,7 @@ fetch(`${base}data/file.json`)
 3. Stale cached bundle (hard refresh)
 
 **Solutions:**
-1. Check `public/audio/full_slokas.m4a` exists (see `public/audio/README.md` to regenerate)
+1. Check `public/audio/full_slokas.m4a` exists (see [audio.md](audio.md) to regenerate)
 2. In DevTools Network tab, the audio request should return 200/206 with `audio/mp4` content-type
 3. Test with browser console open (F12)
 
