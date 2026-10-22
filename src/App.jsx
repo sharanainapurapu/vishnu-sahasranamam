@@ -119,7 +119,7 @@ function App() {
           {/* Sidebar - Range Selector */}
           <div className="lg:col-span-1">
             <RangeSelector
-              totalSlokas={slokas.length}
+              slokas={slokas}
               rangeStart={rangeStart}
               rangeEnd={rangeEnd}
               onRangeStartChange={setRangeStart}

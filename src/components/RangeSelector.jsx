@@ -1,7 +1,8 @@
 import { Target, Repeat } from 'lucide-react'
+import { getSlokaLabel, groupSlokasBySection } from '../utils/slokaLabels'
 
 const RangeSelector = ({
-  totalSlokas,
+  slokas,
   rangeStart,
   rangeEnd,
   onRangeStartChange,
@@ -11,6 +12,25 @@ const RangeSelector = ({
   onRepeatChange
 }) => {
   const repeatOptions = [1, 3, 5, 10, 20]
+  const groups = groupSlokasBySection(slokas)
+  const startLabel = getSlokaLabel(slokas[rangeStart - 1])
+  const endLabel = getSlokaLabel(slokas[rangeEnd - 1])
+
+  // Option values are 1-based array positions (same entry the grid card selects);
+  // labels come from the grid's own label. Grouped by section since numbers restart.
+  const renderOptions = (minPosition) =>
+    groups
+      .map((group) => ({ ...group, items: group.items.filter((item) => item.position >= minPosition) }))
+      .filter((group) => group.items.length > 0)
+      .map((group) => (
+        <optgroup key={group.section} label={group.title}>
+          {group.items.map((item) => (
+            <option key={item.position} value={item.position}>
+              {item.label}
+            </option>
+          ))}
+        </optgroup>
+      ))
 
   return (
     <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-6 h-full">
@@ -19,41 +39,37 @@ const RangeSelector = ({
         <h3 className="text-xl font-bold text-gray-800">Practice Range</h3>
       </div>
 
-      {/* Range Selection */}
+      {/* Range Selection: same entries, order and labels as the "All Slokas" grid */}
       <div className="space-y-4 mb-6">
         <div>
-          <label className="block text-sm font-semibold text-gray-700 mb-2">
+          <label htmlFor="range-from" className="block text-sm font-semibold text-gray-700 mb-2">
             From Sloka:
           </label>
           <select
+            id="range-from"
             value={rangeStart}
-            onChange={(e) => onRangeStartChange(Number(e.target.value))}
+            onChange={(e) => {
+              const start = Number(e.target.value)
+              onRangeStartChange(start)
+              if (start > rangeEnd) onRangeEndChange(start)
+            }}
             className="w-full p-3 border-2 border-purple-200 rounded-xl focus:border-purple-500 focus:outline-none font-semibold text-lg"
           >
-            {Array.from({ length: totalSlokas }, (_, i) => i + 1).map((num) => (
-              <option key={num} value={num}>
-                Sloka {num}
-              </option>
-            ))}
+            {renderOptions(1)}
           </select>
         </div>
 
         <div>
-          <label className="block text-sm font-semibold text-gray-700 mb-2">
+          <label htmlFor="range-to" className="block text-sm font-semibold text-gray-700 mb-2">
             To Sloka:
           </label>
           <select
+            id="range-to"
             value={rangeEnd}
             onChange={(e) => onRangeEndChange(Number(e.target.value))}
             className="w-full p-3 border-2 border-purple-200 rounded-xl focus:border-purple-500 focus:outline-none font-semibold text-lg"
           >
-            {Array.from({ length: totalSlokas }, (_, i) => i + 1)
-              .filter((num) => num >= rangeStart)
-              .map((num) => (
-                <option key={num} value={num}>
-                  Sloka {num}
-                </option>
-              ))}
+            {renderOptions(rangeStart)}
           </select>
         </div>
       </div>
@@ -63,21 +79,24 @@ const RangeSelector = ({
         <div className="flex items-center gap-2 mb-3">
           <Repeat className="w-5 h-5 text-purple-600" />
           <label className="block text-sm font-semibold text-gray-700">
-            Repeat Each Sloka:
+            Repeat Each Sloka (times):
           </label>
         </div>
         <div className="grid grid-cols-5 gap-2">
           {repeatOptions.map((count) => (
             <button
               key={count}
+              type="button"
               onClick={() => onRepeatChange(count)}
+              aria-pressed={repeatCount === count}
+              aria-label={`Repeat each sloka ${count} times`}
               className={`p-3 rounded-lg font-bold transition-all transform hover:scale-105 ${
                 repeatCount === count
                   ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-lg scale-105'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              {count}x
+              {count}
             </button>
           ))}
         </div>
@@ -88,10 +107,10 @@ const RangeSelector = ({
         <div className="text-sm text-purple-800 space-y-1">
           <div className="font-semibold">📚 You will practice:</div>
           <div className="ml-4">
-            • Slokas {rangeStart} to {rangeEnd} ({rangeEnd - rangeStart + 1} slokas)
+            • {startLabel} to {endLabel} ({rangeEnd - rangeStart + 1} slokas)
           </div>
           <div className="ml-4">
-            • Each sloka {repeatCount}x
+            • Each sloka {repeatCount} time{repeatCount > 1 ? 's' : ''}
           </div>
           <div className="ml-4 font-bold text-purple-900">
             • Total: {(rangeEnd - rangeStart + 1) * repeatCount} repetitions

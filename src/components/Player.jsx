@@ -1,8 +1,12 @@
 import { useState, useEffect, useRef } from 'react'
-import { Play, Pause, SkipBack, SkipForward, Volume2 } from 'lucide-react'
+import { Play, Pause, SkipBack, SkipForward, Gauge } from 'lucide-react'
+import { getSlokaLabel } from '../utils/slokaLabels'
 
 // Full audio track (AAC extracted from the original MP4, same timeline)
 const AUDIO_URL = `${import.meta.env.BASE_URL}audio/full_slokas.m4a`
+
+// Playback speed choices (kept small and simple for kids)
+const SPEED_OPTIONS = [0.5, 0.75, 1, 2]
 
 const Player = ({
   sloka,
@@ -22,159 +26,250 @@ const Player = ({
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
-  const [volume, setVolume] = useState(1)
   const [currentRepeat, setCurrentRepeat] = useState(1)
-
-  const audioRef = useRef(null)
-  const hasCompletedRef = useRef(false)
+  const [speed, setSpeed] = useState(1)
 
   const [audioElement, setAudioElement] = useState(null)
 
+  // Refs read by the single long-lived timeupdate listener (avoids stale closures)
+  const latestRef = useRef({})
+  const repeatRef = useRef(1)            // current repeat number of this sloka
+  const endHandledRef = useRef(false)    // end-of-segment logic already ran for this segment
+  const continueRef = useRef(false)      // next sloka change should keep playing (range mode)
+  const advanceTimerRef = useRef(null)   // pending advance timeout
+  const isPlayingRef = useRef(false)     // mirror of isPlaying (user intent)
+  const speedRef = useRef(1)
+
+  latestRef.current = {
+    sloka,
+    currentIndex,
+    rangeMode,
+    rangeEnd,
+    repeatCount,
+    slokasLength: slokas.length,
+    onNext,
+    onSlokaComplete
+  }
+  isPlayingRef.current = isPlaying
+  speedRef.current = speed
+
+  // Apply the chosen speed; browsers may reset playbackRate on load/seek
+  const applySpeed = (audio) => {
+    if (!audio) return
+    audio.defaultPlaybackRate = speedRef.current
+    audio.playbackRate = speedRef.current
+    // Keep the voice natural at slow/fast speeds (ignored where unsupported)
+    audio.preservesPitch = true
+    audio.mozPreservesPitch = true
+    audio.webkitPreservesPitch = true
+  }
+
+  const clearAdvanceTimer = () => {
+    if (advanceTimerRef.current) {
+      clearTimeout(advanceTimerRef.current)
+      advanceTimerRef.current = null
+    }
+  }
+
+  const seekToStart = (audio, s) => {
+    if (!audio || !s?.audio) return
+    audio.currentTime = s.audio.startTime
+    endHandledRef.current = false
+    setCurrentTime(0)
+    applySpeed(audio)
+  }
+
+  const startPlayback = (audio) => {
+    const s = latestRef.current.sloka
+    if (!audio || !s?.audio) return
+    const pos = audio.currentTime
+    if (pos < s.audio.startTime || pos >= s.audio.endTime) {
+      seekToStart(audio, s)
+    }
+    applySpeed(audio)
+    isPlayingRef.current = true
+    setIsPlaying(true)
+    audio.play().catch(err => {
+      console.error('Audio play failed:', err)
+      isPlayingRef.current = false
+      setIsPlaying(false)
+    })
+  }
+
+  const stopPlayback = (audio) => {
+    clearAdvanceTimer()
+    continueRef.current = false
+    if (audio) audio.pause()
+    isPlayingRef.current = false
+    setIsPlaying(false)
+  }
+
   useEffect(() => {
-    // Create audio element for the self-hosted full audio file (same origin,
-    // BASE_URL-aware so it works at '/' in dev and '/vsn/' on GitHub Pages)
+    // Create ONE audio element for the self-hosted full audio file (same origin,
+    // BASE_URL-aware so it works at '/' in dev and '/vsn/' on GitHub Pages).
+    // Reusing it across slokas keeps the user's gesture authorizing playback.
     const audio = new Audio(AUDIO_URL)
     audio.preload = 'auto'
+    applySpeed(audio)
 
     const handleError = () => {
       console.error('Audio failed to load', audio.error)
+      isPlayingRef.current = false
       setIsPlaying(false)
     }
+    const handleLoadedMetadata = () => applySpeed(audio)
     audio.addEventListener('error', handleError)
+    audio.addEventListener('loadedmetadata', handleLoadedMetadata)
     setAudioElement(audio)
-    
+
     // Cleanup
     return () => {
+      clearTimeout(advanceTimerRef.current)
       audio.removeEventListener('error', handleError)
+      audio.removeEventListener('loadedmetadata', handleLoadedMetadata)
       audio.pause()
       audio.removeAttribute('src')
       audio.load()
     }
   }, [])
 
+  // Sloka changed: reset and seek. Keep playing only if a range advance asked for it.
+  // autoPlay is intentionally NOT a dependency (handled in its own effect below).
   useEffect(() => {
-    // Reset when sloka changes
-    setCurrentTime(0)
+    if (!audioElement || !sloka?.audio) return
+    clearAdvanceTimer()
+    repeatRef.current = 1
     setCurrentRepeat(1)
-    hasCompletedRef.current = false
-    
-    if (audioElement && sloka?.audio) {
-      // Set audio to start of this sloka
-      audioElement.currentTime = sloka.audio.startTime
-      setDuration(sloka.audio.duration)
-      
-      // Auto-play if autoPlay is true (from "Start Practice" button)
-      if (autoPlay) {
-        setIsPlaying(true)
-        setAutoPlay(false)  // Reset autoPlay flag
-      } else {
-        setIsPlaying(false)
-      }
-    }
-  }, [sloka, audioElement, autoPlay, setAutoPlay])
+    seekToStart(audioElement, sloka)
+    setDuration(sloka.audio.duration)
 
+    if (continueRef.current) {
+      continueRef.current = false
+      startPlayback(audioElement)
+    } else {
+      audioElement.pause()
+      isPlayingRef.current = false
+      setIsPlaying(false)
+    }
+  }, [sloka?.id, audioElement])
+
+  // "Start Practice" request from App. Declared after the sloka-change effect so it
+  // runs after the seek to the range start and is not undone by it.
   useEffect(() => {
-    if (!audioElement || !sloka) return
+    if (!autoPlay || !audioElement) return
+    setAutoPlay(false)
+    clearAdvanceTimer()
+    continueRef.current = false
+    repeatRef.current = 1
+    setCurrentRepeat(1)
+    seekToStart(audioElement, latestRef.current.sloka)
+    startPlayback(audioElement)
+  }, [autoPlay, audioElement])
+
+  // Single timeupdate listener for the lifetime of the audio element
+  useEffect(() => {
+    if (!audioElement) return
 
     const handleTimeUpdate = () => {
-      if (!audioElement) return
-      
-      const currentPos = audioElement.currentTime
-      const slokaStart = sloka.audio.startTime
-      const slokaEnd = sloka.audio.endTime
-      
-      // Calculate time within this sloka
-      const timeInSloka = currentPos - slokaStart
-      setCurrentTime(timeInSloka)
-      
-      // Check if we've reached the end of this sloka
-      if (currentPos >= slokaEnd) {
-        // Pause the audio
-        audioElement.pause()
-        
-        // Handle repeat
-        if (currentRepeat < repeatCount) {
-          // Repeat this sloka
-          setCurrentRepeat(prev => prev + 1)
-          audioElement.currentTime = slokaStart
-          if (isPlaying) {
-            audioElement.play().catch(err => {
-              console.error('Audio play failed:', err)
-              setIsPlaying(false)
-            })
-          }
+      const {
+        sloka: s,
+        currentIndex: idx,
+        rangeMode: inRange,
+        rangeEnd: end,
+        repeatCount: repeats,
+        slokasLength,
+        onSlokaComplete: complete
+      } = latestRef.current
+      if (!s?.audio) return
+
+      const pos = audioElement.currentTime
+      setCurrentTime(pos - s.audio.startTime)
+
+      if (pos < s.audio.endTime || endHandledRef.current || !isPlayingRef.current) return
+      endHandledRef.current = true
+      audioElement.pause()
+
+      if (repeatRef.current < repeats) {
+        // Repeat this sloka
+        repeatRef.current += 1
+        setCurrentRepeat(repeatRef.current)
+        seekToStart(audioElement, s)
+        startPlayback(audioElement)
+        return
+      }
+
+      complete(s.id)
+
+      if (inRange) {
+        if (idx < end - 1) {
+          // Advance and keep playing after a short gap
+          advanceTimerRef.current = setTimeout(() => {
+            advanceTimerRef.current = null
+            continueRef.current = true
+            latestRef.current.onNext()
+          }, 500)
         } else {
-          // Mark as complete
-          if (!hasCompletedRef.current) {
-            onSlokaComplete(sloka.id)
-            hasCompletedRef.current = true
-          }
-          
-          // Auto-advance to next sloka
-          if (rangeMode) {
-            if (currentIndex < rangeEnd - 1) {
-              setTimeout(() => {
-                onNext()
-                setCurrentRepeat(1)
-                setAutoPlay(true)  // Keep playing in range mode
-              }, 500)
-            } else {
-              setIsPlaying(false)
-            }
-          } else {
-            if (currentIndex < slokas.length - 1) {
-              setTimeout(() => {
-                onNext()
-                setCurrentRepeat(1)
-              }, 500)
-            } else {
-              setIsPlaying(false)
-            }
-          }
+          // End of range: stop on the last sloka
+          seekToStart(audioElement, s)
+          isPlayingRef.current = false
+          setIsPlaying(false)
+        }
+      } else {
+        // Single sloka: stop, then show the next sloka (paused)
+        isPlayingRef.current = false
+        setIsPlaying(false)
+        if (idx < slokasLength - 1) {
+          advanceTimerRef.current = setTimeout(() => {
+            advanceTimerRef.current = null
+            latestRef.current.onNext()
+          }, 500)
         }
       }
     }
 
-    if (isPlaying) {
-      audioElement.addEventListener('timeupdate', handleTimeUpdate)
-      audioElement.play().catch(err => {
-        console.error('Audio play failed:', err)
-        setIsPlaying(false)
-      })
-    } else {
-      audioElement.pause()
-    }
-
+    audioElement.addEventListener('timeupdate', handleTimeUpdate)
     return () => {
       audioElement.removeEventListener('timeupdate', handleTimeUpdate)
     }
-  }, [isPlaying, audioElement, sloka, currentRepeat, repeatCount, currentIndex, slokas.length, rangeMode, rangeEnd, onNext, onSlokaComplete])
+  }, [audioElement])
 
   const togglePlay = () => {
     if (!audioElement) return
-    setIsPlaying(!isPlaying)
+    if (isPlaying) {
+      stopPlayback(audioElement)
+    } else {
+      startPlayback(audioElement)
+    }
   }
 
   const handlePrevious = () => {
     if (rangeMode && currentIndex <= rangeStart - 1) {
       return
     }
-    if (audioElement) {
+    clearAdvanceTimer()
+    if (rangeMode && isPlaying) {
+      continueRef.current = true
+    } else if (audioElement) {
       audioElement.pause()
+      isPlayingRef.current = false
+      setIsPlaying(false)
     }
     onPrevious()
-    setCurrentRepeat(1)
   }
 
   const handleNext = () => {
     if (rangeMode && currentIndex >= rangeEnd - 1) {
       return
     }
-    if (audioElement) {
+    clearAdvanceTimer()
+    if (rangeMode && isPlaying) {
+      continueRef.current = true
+    } else if (audioElement) {
       audioElement.pause()
+      isPlayingRef.current = false
+      setIsPlaying(false)
     }
     onNext()
-    setCurrentRepeat(1)
   }
 
   const formatTime = (time) => {
@@ -189,15 +284,15 @@ const Player = ({
     const newTimeInSloka = percentage * duration
     const absoluteTime = sloka.audio.startTime + newTimeInSloka
     audioElement.currentTime = absoluteTime
+    endHandledRef.current = false
+    applySpeed(audioElement)
     setCurrentTime(newTimeInSloka)
   }
 
-  const handleVolumeChange = (e) => {
-    const newVolume = e.target.value / 100
-    setVolume(newVolume)
-    if (audioElement) {
-      audioElement.volume = newVolume
-    }
+  const handleSpeedChange = (rate) => {
+    setSpeed(rate)
+    speedRef.current = rate
+    applySpeed(audioElement)
   }
 
   return (
@@ -209,7 +304,7 @@ const Player = ({
         </div>
         {rangeMode && (
           <div className="text-sm text-purple-600 font-semibold">
-            Range Mode: {rangeStart} - {rangeEnd}
+            Range Mode: {getSlokaLabel(slokas[rangeStart - 1])} - {getSlokaLabel(slokas[rangeEnd - 1])}
           </div>
         )}
         {repeatCount > 1 && (
@@ -241,7 +336,9 @@ const Player = ({
       {/* Playback Controls */}
       <div className="flex items-center justify-center gap-4 mb-6">
         <button
+          type="button"
           onClick={handlePrevious}
+          aria-label="Previous sloka"
           disabled={currentIndex === 0 || (rangeMode && currentIndex <= rangeStart - 1)}
           className="p-4 rounded-full bg-purple-100 hover:bg-purple-200 disabled:opacity-30 disabled:cursor-not-allowed transition-all transform hover:scale-110"
         >
@@ -249,7 +346,9 @@ const Player = ({
         </button>
 
         <button
+          type="button"
           onClick={togglePlay}
+          aria-label={isPlaying ? 'Pause' : 'Play'}
           className="p-6 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-all transform hover:scale-110 shadow-lg"
         >
           {isPlaying ? (
@@ -260,7 +359,9 @@ const Player = ({
         </button>
 
         <button
+          type="button"
           onClick={handleNext}
+          aria-label="Next sloka"
           disabled={currentIndex === slokas.length - 1 || (rangeMode && currentIndex >= rangeEnd - 1)}
           className="p-4 rounded-full bg-purple-100 hover:bg-purple-200 disabled:opacity-30 disabled:cursor-not-allowed transition-all transform hover:scale-110"
         >
@@ -268,17 +369,30 @@ const Player = ({
         </button>
       </div>
 
-      {/* Volume Control */}
-      <div className="flex items-center gap-3">
-        <Volume2 className="w-5 h-5 text-purple-600" />
-        <input
-          type="range"
-          min="0"
-          max="100"
-          value={volume * 100}
-          onChange={handleVolumeChange}
-          className="flex-1 h-2 bg-purple-200 rounded-full appearance-none cursor-pointer"
-        />
+      {/* Speed Control */}
+      <div role="group" aria-label="Playback speed">
+        <div className="flex items-center gap-2 mb-3">
+          <Gauge className="w-5 h-5 text-purple-600" aria-hidden="true" />
+          <span className="text-sm font-semibold text-gray-700">Speed</span>
+        </div>
+        <div className="grid grid-cols-4 gap-2">
+          {SPEED_OPTIONS.map((rate) => (
+            <button
+              key={rate}
+              type="button"
+              onClick={() => handleSpeedChange(rate)}
+              aria-pressed={speed === rate}
+              aria-label={`Play at ${rate} times speed`}
+              className={`py-3 min-h-[48px] text-lg font-bold rounded-xl transition-all transform focus:outline-none focus-visible:ring-4 focus-visible:ring-purple-300 ${
+                speed === rate
+                  ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg scale-105'
+                  : 'bg-purple-100 text-purple-700 hover:bg-purple-200'
+              }`}
+            >
+              {rate}x
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Note about audio */}
