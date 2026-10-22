@@ -51,3 +51,4 @@ public/audio/*.mp4
 
 # Agent workflow files
 .agents/
+.worktrees/
