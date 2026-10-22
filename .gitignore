@@ -45,3 +45,9 @@ voice_samples/
 # Alternative timestamp files (keeping only the final one)
 public/audio/sloka_timestamps_detected.json
 public/audio/sloka_timestamps_accurate.json
+
+# Source video for audio extraction (>100MB, do not commit)
+public/audio/*.mp4
+
+# Agent workflow files
+.agents/

@@ -52,7 +52,8 @@ The built files will be in the `dist/` folder.
 vsn/
 ├── public/
 │   ├── audio/
-│   │   ├── README.md           # Audio hosted on Google Drive
+│   │   ├── README.md           # Audio file notes
+│   │   ├── full_slokas.m4a     # Full audio (AAC, ~34MB)
 │   │   ├── sloka_timestamps.json
 │   │   └── sloka_timestamps_final.json
 │   └── data/
@@ -96,7 +97,7 @@ vsn/
 
 ## 🎵 Audio Setup
 
-This app uses a **single 37-minute MP4 file** hosted on Google Drive with accurate timestamp-based navigation. The audio contains 152 sloka segments across 3 sections:
+This app uses a **single 37-minute audio file** (`public/audio/full_slokas.m4a`, AAC extracted from the original MP4 with the same timeline) served alongside the app, with accurate timestamp-based navigation. The audio contains 152 sloka segments across 3 sections:
 
 - **Section 1**: Slokas 1-21 (~4 minutes)
 - **Section 2**: Slokas 1-108 (~21 minutes) - Main Vishnu Sahasranamam
@@ -110,7 +111,7 @@ This app is already deployed at: **https://sharanainapurapu.github.io/vsn/**
 
 The deployment uses:
 - **GitHub Pages** for hosting
-- **Google Drive** for audio file (bypasses 100MB GitHub limit)
+- **Self-hosted audio** in `public/audio/full_slokas.m4a` (~34MB, served from GitHub Pages)
 - **Automatic deployment** via GitHub Actions on push to `main`
 
 ### To Deploy Your Own Version
@@ -131,7 +132,6 @@ The deployment uses:
 - **Lucide React** - Beautiful icons
 - **HTML5 Audio API** - Timestamp-based seeking
 - **GitHub Pages** - Free hosting
-- **Google Drive** - Audio file hosting
 
 ## 🤝 Contributing
 

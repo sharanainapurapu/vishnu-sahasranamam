@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
 import { Play, Pause, SkipBack, SkipForward, Volume2 } from 'lucide-react'
 
+// Full audio track (AAC extracted from the original MP4, same timeline)
+const AUDIO_URL = `${import.meta.env.BASE_URL}audio/full_slokas.m4a`
+
 const Player = ({
   sloka,
   slokas,
@@ -28,15 +31,24 @@ const Player = ({
   const [audioElement, setAudioElement] = useState(null)
 
   useEffect(() => {
-    // Create audio element for full audio file from Google Drive
-    // Using direct download URL that bypasses virus scan warning
-    const audio = new Audio('https://drive.usercontent.google.com/download?id=1eGaEoT1VxUZ7e584uHYi5zo1cxMbW9ug&export=download&confirm=t')
+    // Create audio element for the self-hosted full audio file (same origin,
+    // BASE_URL-aware so it works at '/' in dev and '/vsn/' on GitHub Pages)
+    const audio = new Audio(AUDIO_URL)
+    audio.preload = 'auto'
+
+    const handleError = () => {
+      console.error('Audio failed to load', audio.error)
+      setIsPlaying(false)
+    }
+    audio.addEventListener('error', handleError)
     setAudioElement(audio)
     
     // Cleanup
     return () => {
+      audio.removeEventListener('error', handleError)
       audio.pause()
-      audio.src = ''
+      audio.removeAttribute('src')
+      audio.load()
     }
   }, [])
 
@@ -86,7 +98,10 @@ const Player = ({
           setCurrentRepeat(prev => prev + 1)
           audioElement.currentTime = slokaStart
           if (isPlaying) {
-            audioElement.play()
+            audioElement.play().catch(err => {
+              console.error('Audio play failed:', err)
+              setIsPlaying(false)
+            })
           }
         } else {
           // Mark as complete
@@ -122,7 +137,10 @@ const Player = ({
 
     if (isPlaying) {
       audioElement.addEventListener('timeupdate', handleTimeUpdate)
-      audioElement.play()
+      audioElement.play().catch(err => {
+        console.error('Audio play failed:', err)
+        setIsPlaying(false)
+      })
     } else {
       audioElement.pause()
     }

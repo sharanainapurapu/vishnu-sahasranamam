@@ -143,7 +143,7 @@ npm run test:local
 **What to test:**
 - ✅ App loads on http://localhost:5174
 - ✅ Slokas display correctly
-- ✅ Audio plays from Google Drive
+- ✅ Audio plays from `public/audio/full_slokas.m4a`
 - ✅ Range selector works
 - ✅ Auto-play functions
 - ✅ Progress saves in localStorage
@@ -257,7 +257,8 @@ git checkout main
 vsn/
 ├── public/                      # Static assets
 │   ├── audio/
-│   │   ├── README.md           # Audio hosted on Google Drive
+│   │   ├── README.md           # Audio file notes
+│   │   ├── full_slokas.m4a     # Full audio (AAC, ~34MB)
 │   │   ├── sloka_timestamps.json
 │   │   └── sloka_timestamps_final.json
 │   └── data/
@@ -419,13 +420,13 @@ fetch(`${base}data/file.json`)
 ### Issue: Audio doesn't play
 
 **Possible causes:**
-1. Google Drive link expired/changed
+1. `public/audio/full_slokas.m4a` missing or not deployed
 2. Network issue
-3. CORS issue
+3. Stale cached bundle (hard refresh)
 
 **Solutions:**
-1. Check `src/components/Player.jsx` has correct Google Drive URL
-2. Re-upload audio if needed
+1. Check `public/audio/full_slokas.m4a` exists (see `public/audio/README.md` to regenerate)
+2. In DevTools Network tab, the audio request should return 200/206 with `audio/mp4` content-type
 3. Test with browser console open (F12)
 
 ---
@@ -468,7 +469,7 @@ const Player = lazy(() => import('./components/Player'))
 
 3. **Enable service worker**: For offline capability
 
-4. **Use CDN for audio**: Already done (Google Drive)
+4. **Audio size**: Audio is a ~34MB AAC file; re-encode to mono 96 kbps (`-c:a aac -b:a 96k -ac 1`) if a smaller file is needed
 
 ---
 

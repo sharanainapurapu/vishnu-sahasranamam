@@ -1,21 +1,30 @@
-# Audio File Location
+# Audio File
 
-The audio file `full_slokas.mp4` (101MB) is hosted on Google Drive for better performance and to avoid GitHub's 100MB file size limit.
-
-**Audio URL:** https://drive.google.com/uc?export=download&id=1eGaEoT1VxUZ7e584uHYi5zo1cxMbW9ug
+The app plays `full_slokas.m4a`, served from this folder (same origin as the app).
 
 **File Details:**
-- Size: 101MB
+- Size: ~34MB
 - Duration: 36.7 minutes (2200 seconds)
-- Format: MP4 (H.264 video with AAC audio)
+- Format: M4A (AAC, 128 kbps, 44.1 kHz stereo), audio stream copied unchanged from the original MP4
 - Contains: 152 sloka segments across 3 sections
 
-The app loads this file directly from Google Drive when users play the slokas.
+The audio timeline is identical to the original MP4, so the timestamps in
+`sloka_timestamps_final.json` and `../data/slokas-complete.json` apply as-is.
+`src/components/Player.jsx` loads it via `${import.meta.env.BASE_URL}audio/full_slokas.m4a`,
+which resolves to `/audio/...` in dev and `/vsn/audio/...` on GitHub Pages.
 
-## Backup Instructions
+## Why not Google Drive?
 
-If you need to update or replace the audio file:
-1. Upload the new MP4 to Google Drive
-2. Make it publicly accessible (Anyone with the link)
-3. Get the file ID from the sharing link
-4. Update `src/components/Player.jsx` with the new file ID
+The audio was previously streamed from Google Drive. Drive returns an HTML page
+(not the media file) to browser media requests, which caused
+`NotSupportedError: The element has no supported sources`.
+
+## Regenerating
+
+If the source MP4 changes, re-extract the audio without re-encoding (keeps the timeline exact):
+
+```bash
+ffmpeg -y -i full_slokas.mp4 -vn -map 0:a:0 -c:a copy -movflags +faststart public/audio/full_slokas.m4a
+```
+
+Do not commit the MP4 (it is >100MB and git-ignored).
