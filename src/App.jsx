@@ -5,6 +5,7 @@ import RangeSelector from './components/RangeSelector'
 import SlokaGrid from './components/SlokaGrid'
 import LanguageSelector from './components/LanguageSelector'
 import { BookOpen } from 'lucide-react'
+import { SHOW_LANGUAGES } from './config'
 
 function App() {
   const [slokas, setSlokas] = useState([])
@@ -78,18 +79,20 @@ function App() {
           )}
         </div>
 
-        {/* Language Selector */}
-        <LanguageSelector
-          languages={metadata?.languages || []}
-          currentLanguage={language}
-          onLanguageChange={setLanguage}
-        />
+        {/* Language Selector (hidden until v2, see src/config.js) */}
+        {SHOW_LANGUAGES && (
+          <LanguageSelector
+            languages={metadata?.languages || []}
+            currentLanguage={language}
+            onLanguageChange={setLanguage}
+          />
+        )}
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
           {/* Main Player Area - Takes 2 columns */}
           <div className="lg:col-span-2 space-y-6">
-            {/* Sloka Display */}
-            {currentSloka && (
+            {/* Sloka Display: script text + language label (hidden until v2) */}
+            {SHOW_LANGUAGES && currentSloka && (
               <SlokaDisplay
                 sloka={currentSloka}
                 language={language}
