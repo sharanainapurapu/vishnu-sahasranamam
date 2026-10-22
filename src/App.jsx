@@ -20,8 +20,9 @@ function App() {
 
   // Load slokas from JSON
   useEffect(() => {
-    // Use relative path to work with GitHub Pages base path
-    fetch('./data/slokas-complete.json')
+    // Use import.meta.env.BASE_URL to work in both dev and production
+    const basePath = import.meta.env.BASE_URL || '/'
+    fetch(`${basePath}data/slokas-complete.json`)
       .then(res => res.json())
       .then(data => {
         setSlokas(data.slokas)
