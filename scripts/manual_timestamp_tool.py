@@ -55,7 +55,7 @@ def extract_sample_frames(video_path, output_dir="timestamp_samples", num_sample
     
     return sample_times
 
-def create_template_csv(duration, output_file="timestamps_template.csv"):
+def create_template_csv(duration, output_file="scripts/data/timestamps_template.csv"):
     """
     Create a CSV template for manual timestamp entry
     """
@@ -98,7 +98,7 @@ if __name__ == "__main__":
     print("I recommend:")
     print("1. Watch the video yourself")
     print("2. Note when you see text change (new sloka starts)")
-    print("3. Fill in timestamps_template.csv")
+    print("3. Fill in scripts/data/timestamps_template.csv")
     print("4. Or tell me the first 5-10 sloka timestamps")
     print("   and I can estimate the rest")
     print("=" * 60)

@@ -156,7 +156,7 @@ if __name__ == "__main__":
     slokas = generate_timestamps(calibration, total_slokas=109, video_duration=2200)
     
     # Save to file
-    create_final_json(slokas, 'public/audio/sloka_timestamps_accurate.json')
+    create_final_json(slokas, 'scripts/data/sloka_timestamps_accurate.json')
     
     print("\n" + "=" * 60)
     print("SUCCESS! Accurate timestamps generated")

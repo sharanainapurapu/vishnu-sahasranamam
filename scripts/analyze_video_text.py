@@ -196,7 +196,7 @@ if __name__ == "__main__":
             slokas = create_sloka_timestamps(boundaries, result['duration'], 109)
             
             # Save to JSON
-            output_file = "public/audio/sloka_timestamps_detected.json"
+            output_file = "scripts/data/sloka_timestamps_detected.json"
             with open(output_file, 'w') as f:
                 json.dump(slokas, f, indent=2)
             

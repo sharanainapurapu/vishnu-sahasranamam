@@ -63,7 +63,7 @@ if __name__ == "__main__":
     print(f"Average sloka duration: {avg_duration:.1f} seconds")
     
     # Save to JSON
-    output_file = "public/audio/sloka_timestamps.json"
+    output_file = "scripts/data/sloka_timestamps.json"
     with open(output_file, 'w') as f:
         json.dump(slokas, f, indent=2)
     
