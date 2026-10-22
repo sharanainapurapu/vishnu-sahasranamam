@@ -20,7 +20,8 @@ function App() {
 
   // Load slokas from JSON
   useEffect(() => {
-    fetch('/data/slokas-complete.json')
+    // Use relative path to work with GitHub Pages base path
+    fetch('./data/slokas-complete.json')
       .then(res => res.json())
       .then(data => {
         setSlokas(data.slokas)
