@@ -8,7 +8,13 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "deploy:local": "npm run build && npx serve dist -p 3000",
+    "clean": "rm -rf dist node_modules/.cache",
+    "test:local": "npm run dev",
+    "test:build": "npm run build && npm run preview",
+    "lint": "echo 'No linter configured yet'",
+    "format": "echo 'No formatter configured yet'"
   },
   "dependencies": {
     "howler": "^2.2.4",
