@@ -28,7 +28,7 @@ const Player = ({
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
   const [currentRepeat, setCurrentRepeat] = useState(1)
-  const [speed, setSpeed] = useState(2)
+  const [speed, setSpeed] = useState(1)
 
   const [audioElement, setAudioElement] = useState(null)
 
@@ -39,7 +39,7 @@ const Player = ({
   const continueRef = useRef(false)      // next sloka change should keep playing (range mode)
   const advanceTimerRef = useRef(null)   // pending advance timeout
   const isPlayingRef = useRef(false)     // mirror of isPlaying (user intent)
-  const speedRef = useRef(2)
+  const speedRef = useRef(1)
 
   latestRef.current = {
     sloka,
