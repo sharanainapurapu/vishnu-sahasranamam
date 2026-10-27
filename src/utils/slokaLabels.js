@@ -6,9 +6,10 @@
 
 const SECTION_TITLES = {
   intro: 'Introduction',
-  section_1: 'Section 1',
-  section_2: 'Section 2',
-  section_3: 'Section 3',
+  section_1: 'Pūrvapīṭhikā',
+  section_2: 'Dhyānam',
+  section_3: 'Sahasranāmam',
+  section_4: 'Uttarapīṭhikā',
   outro: 'Conclusion'
 }
 

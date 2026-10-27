@@ -1,5 +1,5 @@
 /* Sanskrit fonts */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Tamil:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Noto+Sans+Kannada:wght@400;600;700&family=Noto+Sans+Malayalam:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Tamil:wght@400;600;700&family=Noto+Sans+Telugu:wght@400;600;700&family=Noto+Sans+Kannada:wght@400;600;700&family=Noto+Sans+Malayalam:wght@400;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,14 +7,28 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #1c1b19;
+  background: #faf8f4;
   min-height: 100vh;
 }
+
+/* Subtle devotional scrollbar + smoother sloka grid scroll area */
+.grid-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #DDB13A transparent;
+}
+.grid-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+.grid-scroll::-webkit-scrollbar-thumb {
+  background: #DDB13A; border-radius: 9999px;
+}
+.grid-scroll::-webkit-scrollbar-track { background: transparent; }
+
+/* Hide scrollbar for the horizontal language pills on mobile */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
 
 .sloka-text-sanskrit,
 .sloka-text-hindi {
@@ -38,5 +52,32 @@ body {
 }
 
 .sloka-text-english {
-  font-family: 'Courier New', monospace;
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+/* Range input (audio scrubber) thumb styling for the saffron theme */
+input[type="range"].scrubber {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 9999px;
+}
+input[type="range"].scrubber::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: #d2691e;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+input[type="range"].scrubber::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: #d2691e;
+  border: 2px solid #ffffff;
+  cursor: pointer;
 }

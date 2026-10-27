@@ -1,50 +1,39 @@
-import { Target, Repeat } from 'lucide-react'
 import { getSlokaLabel, groupSlokasBySection } from '../utils/slokaLabels'
 
 const RangeSelector = ({
-  slokas,
-  rangeStart,
-  rangeEnd,
-  onRangeStartChange,
-  onRangeEndChange,
-  onStartPractice,
-  repeatCount,
-  onRepeatChange
+  slokas, rangeStart, rangeEnd,
+  onRangeStartChange, onRangeEndChange, onStartPractice,
+  repeatCount, onRepeatChange,
 }) => {
   const repeatOptions = [1, 3, 5, 10, 20]
   const groups = groupSlokasBySection(slokas)
   const startLabel = getSlokaLabel(slokas[rangeStart - 1])
   const endLabel = getSlokaLabel(slokas[rangeEnd - 1])
+  const total = (rangeEnd - rangeStart + 1) * repeatCount
 
-  // Option values are 1-based array positions (same entry the grid card selects);
-  // labels come from the grid's own label. Grouped by section since numbers restart.
   const renderOptions = (minPosition) =>
     groups
-      .map((group) => ({ ...group, items: group.items.filter((item) => item.position >= minPosition) }))
-      .filter((group) => group.items.length > 0)
-      .map((group) => (
-        <optgroup key={group.section} label={group.title}>
-          {group.items.map((item) => (
-            <option key={item.position} value={item.position}>
-              {item.label}
-            </option>
+      .map((g) => ({ ...g, items: g.items.filter((it) => it.position >= minPosition) }))
+      .filter((g) => g.items.length > 0)
+      .map((g) => (
+        <optgroup key={g.section} label={g.title}>
+          {g.items.map((it) => (
+            <option key={it.position} value={it.position}>{it.label}</option>
           ))}
         </optgroup>
       ))
 
-  return (
-    <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-6 h-full">
-      <div className="flex items-center gap-3 mb-6">
-        <Target className="w-6 h-6 text-orange-600" />
-        <h3 className="text-xl font-bold text-gray-800">Practice Range</h3>
-      </div>
+  const selectClass =
+    'w-full p-2.5 border border-paper-line rounded-lg bg-paper-card text-sm text-ink-900 focus:outline-none focus:ring-2 focus:ring-saff-500'
 
-      {/* Range Selection: same entries, order and labels as the "All Slokas" grid */}
-      <div className="space-y-4 mb-6">
+  return (
+    <div className="bg-paper-card border border-paper-line rounded-2xl p-7">
+      <div className="w-7 h-0.5 bg-saff-500 mb-4" />
+      <h3 className="font-serif font-medium text-xl text-ink-900 mb-5">Practice Range</h3>
+
+      <div className="grid grid-cols-2 gap-3">
         <div>
-          <label htmlFor="range-from" className="block text-sm font-semibold text-gray-700 mb-2">
-            From Sloka:
-          </label>
+          <label htmlFor="range-from" className="block text-xs text-ink-500 mb-1.5">From</label>
           <select
             id="range-from"
             value={rangeStart}
@@ -53,87 +42,55 @@ const RangeSelector = ({
               onRangeStartChange(start)
               if (start > rangeEnd) onRangeEndChange(start)
             }}
-            className="w-full p-3 border-2 border-purple-200 rounded-xl focus:border-purple-500 focus:outline-none font-semibold text-lg"
+            className={selectClass}
           >
             {renderOptions(1)}
           </select>
         </div>
-
         <div>
-          <label htmlFor="range-to" className="block text-sm font-semibold text-gray-700 mb-2">
-            To Sloka:
-          </label>
+          <label htmlFor="range-to" className="block text-xs text-ink-500 mb-1.5">To</label>
           <select
             id="range-to"
             value={rangeEnd}
             onChange={(e) => onRangeEndChange(Number(e.target.value))}
-            className="w-full p-3 border-2 border-purple-200 rounded-xl focus:border-purple-500 focus:outline-none font-semibold text-lg"
+            className={selectClass}
           >
             {renderOptions(rangeStart)}
           </select>
         </div>
       </div>
 
-      {/* Repeat Count */}
-      <div className="mb-6">
-        <div className="flex items-center gap-2 mb-3">
-          <Repeat className="w-5 h-5 text-purple-600" />
-          <label className="block text-sm font-semibold text-gray-700">
-            Repeat Each Sloka (times):
-          </label>
-        </div>
-        <div className="grid grid-cols-5 gap-2">
-          {repeatOptions.map((count) => (
-            <button
-              key={count}
-              type="button"
-              onClick={() => onRepeatChange(count)}
-              aria-pressed={repeatCount === count}
-              aria-label={`Repeat each sloka ${count} times`}
-              className={`p-3 rounded-lg font-bold transition-all transform hover:scale-105 ${
-                repeatCount === count
-                  ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-lg scale-105'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              {count}
-            </button>
-          ))}
-        </div>
+      <label className="block text-xs text-ink-500 mt-5 mb-2">Repeat whole range</label>
+      <div className="grid grid-cols-5 gap-1.5">
+        {repeatOptions.map((count) => (
+          <button
+            key={count}
+            type="button"
+            onClick={() => onRepeatChange(count)}
+            aria-pressed={repeatCount === count}
+            aria-label={`Repeat the whole range ${count} times`}
+            className={`py-2.5 min-h-[44px] rounded-lg text-sm font-semibold border transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-saff-500 ${
+              repeatCount === count
+                ? 'bg-saff-500 text-white border-saff-500'
+                : 'bg-paper-card text-ink-500 border-paper-line hover:text-ink-900'
+            }`}
+          >
+            {count}
+          </button>
+        ))}
       </div>
 
-      {/* Practice Info */}
-      <div className="bg-purple-50 border-2 border-purple-200 rounded-xl p-4 mb-6">
-        <div className="text-sm text-purple-800 space-y-1">
-          <div className="font-semibold">📚 You will practice:</div>
-          <div className="ml-4">
-            • {startLabel} to {endLabel} ({rangeEnd - rangeStart + 1} slokas)
-          </div>
-          <div className="ml-4">
-            • Each sloka {repeatCount} time{repeatCount > 1 ? 's' : ''}
-          </div>
-          <div className="ml-4 font-bold text-purple-900">
-            • Total: {(rangeEnd - rangeStart + 1) * repeatCount} repetitions
-          </div>
-        </div>
-      </div>
+      <p className="text-sm text-ink-500 leading-relaxed mt-4">
+        {startLabel} to {endLabel}, {repeatCount === 1 ? 'one full round' : `${repeatCount} rounds`}.{' '}
+        <span className="font-semibold text-ink-900">{total} verses total.</span>
+      </p>
 
-      {/* Start Button */}
       <button
         onClick={onStartPractice}
-        className="w-full py-4 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold text-lg rounded-xl transition-all transform hover:scale-105 shadow-lg flex items-center justify-center gap-2"
+        className="mt-4 w-full py-3 rounded-lg bg-ink-900 text-white text-[15px] font-semibold hover:bg-ink-800 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-saff-500"
       >
-        <span className="text-2xl">▶️</span>
-        <span>Start Practice & Auto-Play</span>
+        Start practice
       </button>
-
-      {/* Tips */}
-      <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-xl">
-        <div className="text-xs text-yellow-800">
-          <strong>💡 Tip for Kids:</strong> Start with 1-5 slokas and repeat 3-5 times. 
-          Practice daily for best results! 🌟
-        </div>
-      </div>
     </div>
   )
 }

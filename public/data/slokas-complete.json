@@ -18,7 +18,7 @@
   "slokas": [
     {
       "id": 0,
-      "number": "U0",
+      "number": "Section 1 Intro",
       "section": "intro",
       "text": {
         "sanskrit": "[Intro/Outro - No text]",
@@ -27,27 +27,7 @@
         "kannada": "[Intro/Outro - No text]",
         "malayalam": "[Intro/Outro - No text]",
         "hindi": "[Intro/Outro - No text]",
-        "english": "intro/outro 0"
-      },
-      "audio": {
-        "file": "full_slokas.mp4",
-        "startTime": 0,
-        "endTime": 8,
-        "duration": 8
-      }
-    },
-    {
-      "id": 1,
-      "number": "U1",
-      "section": "intro",
-      "text": {
-        "sanskrit": "[Intro/Outro - No text]",
-        "tamil": "[Intro/Outro - No text]",
-        "telugu": "[Intro/Outro - No text]",
-        "kannada": "[Intro/Outro - No text]",
-        "malayalam": "[Intro/Outro - No text]",
-        "hindi": "[Intro/Outro - No text]",
-        "english": "intro/outro 1"
+        "english": "Ōm śuklāmbaradharaṁ viṣṇuṁ śaśivarṇaṁ caturbhujam\nprasanna vadanaṁ dhyāyēt sarva vighnōpaśāntayē ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -57,8 +37,28 @@
       }
     },
     {
-      "id": 2,
+      "id": 1,
       "number": 1,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Intro/Outro - No text]",
+        "tamil": "[Intro/Outro - No text]",
+        "telugu": "[Intro/Outro - No text]",
+        "kannada": "[Intro/Outro - No text]",
+        "malayalam": "[Intro/Outro - No text]",
+        "hindi": "[Intro/Outro - No text]",
+        "english": "vyāsaṁ vaśiṣṭhanaptāraṁ śaktēḥ pautramakalmaṣam\nparāśarātmajaṁ vandē śukatātaṁ tapōnidhim ॥"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 24,
+        "endTime": 35,
+        "duration": 11
+      }
+    },
+    {
+      "id": 2,
+      "number": 2,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 1 - text to be added from bhajanmala.com]",
@@ -67,27 +67,7 @@
         "kannada": "[Section 1, Sloka 1 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 1 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 1 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 1"
-      },
-      "audio": {
-        "file": "full_slokas.mp4",
-        "startTime": 24.0,
-        "endTime": 35.0,
-        "duration": 11.0
-      }
-    },
-    {
-      "id": 3,
-      "number": 2,
-      "section": "section_1",
-      "text": {
-        "sanskrit": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
-        "tamil": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
-        "telugu": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
-        "kannada": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
-        "malayalam": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
-        "hindi": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 2"
+        "english": "vyāsāya viṣṇurūpāya vyāsarūpāya viṣṇavē\nnamō vai brahmanidhayē vāsiṣṭhāya namō namaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -97,17 +77,17 @@
       }
     },
     {
-      "id": 4,
+      "id": 3,
       "number": 3,
       "section": "section_1",
       "text": {
-        "sanskrit": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
-        "tamil": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
-        "telugu": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
-        "kannada": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
-        "malayalam": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
-        "hindi": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 3"
+        "sanskrit": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 2 - text to be added from bhajanmala.com]",
+        "english": "avikārāya śuddhāya nityāya paramātmanē\nsadaikarūpa rūpāya viṣṇavē sarvajiṣṇavē ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -117,8 +97,28 @@
       }
     },
     {
-      "id": 5,
+      "id": 4,
       "number": 4,
+      "section": "section_1",
+      "text": {
+        "sanskrit": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
+        "tamil": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
+        "telugu": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
+        "kannada": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
+        "malayalam": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
+        "hindi": "[Section 1, Sloka 3 - text to be added from bhajanmala.com]",
+        "english": "yasya smaraṇa mātrēṇa janma samsāra bandhanāt\nvimucyatē namastasmai viṣṇavē prabhaviṣṇavē\nŌṁ namō viṣṇavē prabhaviṣṇavē ॥"
+      },
+      "audio": {
+        "file": "full_slokas.mp4",
+        "startTime": 56.5,
+        "endTime": 71.5,
+        "duration": 15
+      }
+    },
+    {
+      "id": 5,
+      "number": 5,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 4 - text to be added from bhajanmala.com]",
@@ -127,18 +127,18 @@
         "kannada": "[Section 1, Sloka 4 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 4 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 4 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 4"
+        "english": "saccidānanda rūpāya kr̥ṣṇāyāఽkliṣṭakāriṇē\nnamō vēdāntavēdyāya guravē buddhisākṣiṇē ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 56.0,
-        "endTime": 74.0,
-        "duration": 18.0
+        "startTime": 74.0,
+        "endTime": 85.0,
+        "duration": 11.0
       }
     },
     {
       "id": 6,
-      "number": 5,
+      "number": 6,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 5 - text to be added from bhajanmala.com]",
@@ -147,18 +147,18 @@
         "kannada": "[Section 1, Sloka 5 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 5 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 5 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 5"
+        "english": "kr̥ṣṇadvaipāyanaṁ vyāsaṁ sarvalōkahitēratam\nvēdāntabhāskaraṁ vandē śamādi nilayaṁ munim ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 74.0,
-        "endTime": 90.0,
-        "duration": 16.0
+        "startTime": 85.5,
+        "endTime": 96.5,
+        "duration": 11
       }
     },
     {
       "id": 7,
-      "number": 6,
+      "number": 7,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 6 - text to be added from bhajanmala.com]",
@@ -167,18 +167,18 @@
         "kannada": "[Section 1, Sloka 6 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 6 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 6 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 6"
+        "english": "sahasramūrtēḥ puruṣōttamasya\nsahasranētrānana pādabāhōḥ\nsahasranāmnāṁ stavanaṁ praśastaṁ\nnirucyatē janmajarādi śāntyai ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 90.0,
-        "endTime": 105.0,
-        "duration": 15.0
+        "startTime": 97.5,
+        "endTime": 111.5,
+        "duration": 14.0
       }
     },
     {
       "id": 8,
-      "number": 7,
+      "number": 8,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 7 - text to be added from bhajanmala.com]",
@@ -187,18 +187,18 @@
         "kannada": "[Section 1, Sloka 7 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 7 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 7 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 7"
+        "english": "Śrī vaiśampāyana uvāca :-\nśrutvā dharmā naśēṣēṇa pāvanāni ca sarvaśaḥ\nyudhiṣṭhira śśāntanavaṁ punarēvābhyabhāṣata ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 105.0,
-        "endTime": 120.0,
-        "duration": 15.0
+        "startTime": 114.0,
+        "endTime": 127.0,
+        "duration": 13.0
       }
     },
     {
       "id": 9,
-      "number": 8,
+      "number": 9,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 8 - text to be added from bhajanmala.com]",
@@ -207,18 +207,18 @@
         "kannada": "[Section 1, Sloka 8 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 8 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 8 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 8"
+        "english": "Yudhiṣṭhira uvāca :-\nkimēkaṁ daivataṁ lōkē kiṁ vāpyēkaṁ parāyaṇam\nstuvantaḥ kaṁ kamarcantaḥ prāpnuyurmānavā śśubham ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 120.0,
-        "endTime": 135.0,
-        "duration": 15.0
+        "startTime": 129.0,
+        "endTime": 142.0,
+        "duration": 13.0
       }
     },
     {
       "id": 10,
-      "number": 9,
+      "number": 10,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 9 - text to be added from bhajanmala.com]",
@@ -227,18 +227,18 @@
         "kannada": "[Section 1, Sloka 9 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 9 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 9 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 9"
+        "english": "kō dharma ssarvadharmāṇāṁ bhavataḥ paramō mataḥ\nkiṁ japanmucyatē janturjanma samsāra bandhanāt ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 135.0,
-        "endTime": 150.0,
-        "duration": 15.0
+        "startTime": 142.0,
+        "endTime": 152.0,
+        "duration": 10.0
       }
     },
     {
       "id": 11,
-      "number": 10,
+      "number": 11,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 10 - text to be added from bhajanmala.com]",
@@ -247,7 +247,7 @@
         "kannada": "[Section 1, Sloka 10 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 10 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 10 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 10"
+        "english": "Śrī bhīṣma uvāca :-\njagatprabhuṁ dēvadēva manantaṁ puruṣōttamam\nstuvannāma sahasrēṇa puruṣa ssatatōtthitaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -258,7 +258,7 @@
     },
     {
       "id": 12,
-      "number": 11,
+      "number": 12,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 11 - text to be added from bhajanmala.com]",
@@ -267,7 +267,7 @@
         "kannada": "[Section 1, Sloka 11 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 11 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 11 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 11"
+        "english": "tamēva cārcaya nnityaṁ bhaktyā puruṣamavyayam\ndhyāyan stuvannamasyamśca yajamāna stamēva ca ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -278,7 +278,7 @@
     },
     {
       "id": 13,
-      "number": 12,
+      "number": 13,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 12 - text to be added from bhajanmala.com]",
@@ -287,7 +287,7 @@
         "kannada": "[Section 1, Sloka 12 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 12 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 12 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 12"
+        "english": "anādinidhanaṁ viṣṇuṁ sarvalōka mahēśvaram\nlōkādhyakṣaṁ stuvannityaṁ sarvaduḥkhātigō bhavēt ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -298,7 +298,7 @@
     },
     {
       "id": 14,
-      "number": 13,
+      "number": 14,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 13 - text to be added from bhajanmala.com]",
@@ -307,7 +307,7 @@
         "kannada": "[Section 1, Sloka 13 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 13 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 13 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 13"
+        "english": "brahmaṇyaṁ sarvadharmajñaṁ lōkānāṁ kīrti vardhanam\nlōkanāthaṁ mahadbhūtaṁ sarvabhūtabhavōdbhavam ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -318,7 +318,7 @@
     },
     {
       "id": 15,
-      "number": 14,
+      "number": 15,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 14 - text to be added from bhajanmala.com]",
@@ -327,7 +327,7 @@
         "kannada": "[Section 1, Sloka 14 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 14 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 14 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 14"
+        "english": "ēṣa mē sarvadharmāṇāṁ dharmōఽdhikatamō mataḥ\nyadbhaktyā puṇḍarīkākṣaṁ stavai rarcē nnara ssadā ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -338,7 +338,7 @@
     },
     {
       "id": 16,
-      "number": 15,
+      "number": 16,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 15 - text to be added from bhajanmala.com]",
@@ -347,7 +347,7 @@
         "kannada": "[Section 1, Sloka 15 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 15 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 15 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 15"
+        "english": "paramaṁ yō mahattējaḥ paramaṁ yō mahattapaḥ\nparamaṁ yō mahadbrahma paramaṁ yaḥ parāyaṇam ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -358,7 +358,7 @@
     },
     {
       "id": 17,
-      "number": 16,
+      "number": 17,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 16 - text to be added from bhajanmala.com]",
@@ -367,7 +367,7 @@
         "kannada": "[Section 1, Sloka 16 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 16 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 16 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 16"
+        "english": "pavitrāṇāṁ pavitraṁ yō maṅgaḷānāṁ ca maṅgaḷam\ndaivataṁ dēvatānāṁ ca bhūtānāṁ yōఽvyayaḥ pitā ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -378,7 +378,7 @@
     },
     {
       "id": 18,
-      "number": 17,
+      "number": 18,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 17 - text to be added from bhajanmala.com]",
@@ -387,7 +387,7 @@
         "kannada": "[Section 1, Sloka 17 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 17 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 17 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 17"
+        "english": "yatassarvāṇi bhūtāni bhavantyādi yugāgamē\nyasmimśca praḷayaṁ yānti punarēva yugakṣayē ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -398,7 +398,7 @@
     },
     {
       "id": 19,
-      "number": 18,
+      "number": 19,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 18 - text to be added from bhajanmala.com]",
@@ -407,7 +407,7 @@
         "kannada": "[Section 1, Sloka 18 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 18 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 18 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 18"
+        "english": "tasyalōka pradhānasya jagannāthasya bhūpatē\nviṣṇōrnāma sahasraṁ mē śr̥ṇu pāpabhayāpaham"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -418,7 +418,7 @@
     },
     {
       "id": 20,
-      "number": 19,
+      "number": 20,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 19 - text to be added from bhajanmala.com]",
@@ -427,7 +427,7 @@
         "kannada": "[Section 1, Sloka 19 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 19 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 19 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 19"
+        "english": "yāni nāmāni gauṇāni vikhyātāni mahātmanaḥ ॥\nr̥ṣibhiḥ parigītāni tāni vakṣyāmi bhūtayē"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -438,7 +438,7 @@
     },
     {
       "id": 21,
-      "number": 20,
+      "number": 21,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 20 - text to be added from bhajanmala.com]",
@@ -447,7 +447,7 @@
         "kannada": "[Section 1, Sloka 20 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 20 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 20 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 20"
+        "english": "r̥ṣirnāmnāṁ sahasrasya vēdavyāsō mahāmuniḥ\nchandōఽnuṣṭup tathā dēvō bhagavān dēvakīsutaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -458,7 +458,7 @@
     },
     {
       "id": 22,
-      "number": 21,
+      "number": 22,
       "section": "section_1",
       "text": {
         "sanskrit": "[Section 1, Sloka 21 - text to be added from bhajanmala.com]",
@@ -467,7 +467,7 @@
         "kannada": "[Section 1, Sloka 21 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 1, Sloka 21 - text to be added from bhajanmala.com]",
         "hindi": "[Section 1, Sloka 21 - text to be added from bhajanmala.com]",
-        "english": "Section 1, Sloka 21"
+        "english": "amr̥tāmśūdbhavō bījaṁ śaktirdēvakinandanaḥ\ntrisāmā hr̥dayaṁ tasya śāntyarthē viniyujyatē ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -478,8 +478,8 @@
     },
     {
       "id": 23,
-      "number": 1,
-      "section": "section_2",
+      "number": 23,
+      "section": "section_1",
       "text": {
         "sanskrit": "[Section 2, Sloka 1 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 1 - text to be added from bhajanmala.com]",
@@ -487,7 +487,7 @@
         "kannada": "[Section 2, Sloka 1 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 1 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 1 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 1"
+        "english": "viṣṇuṁ jiṣṇuṁ mahāviṣṇuṁ prabhaviṣṇuṁ mahēśvaram\nanēkarūpa daityāntaṁ namāmi puruṣōttamam ॥\n\nAsya śrī viṣṇōrdivya sahasranāmastōtra mahāmantrasya,\nŚrīvēdavyāsō bhagavānr̥ṣiḥ, anuṣṭup chandaḥ,\nŚrī mahāviṣṇuḥ paramātmā śrīmannārāyaṇō dēvatā,\namr̥tāmśūdbhavō bhānuriti bījam,\ndēvakī nandana ssraṣṭēti śaktiḥ,\nudbhavaḥ kṣōbhaṇō dēva iti paramō mantraḥ,\nśaṅkha bhr̥nnandakī cakrīti kīlakam,\nśār‌ṅgadhanvā gadādhara ityastram,\nrathāṅgapāṇi rakṣōbhya iti nētram,\ntrisāmā sāmagassāmēti kavacam,\nānandaṁ parabrahmēti yōniḥ,\nr̥tussudarśanaḥ kāla iti digbandhaḥ,\nviśvarūpa iti dhyānaṁ,\nŚrīmahāviṣṇu prītyarthē pārāyaṇē viniyōgaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -498,7 +498,7 @@
     },
     {
       "id": 24,
-      "number": 2,
+      "number": 1,
       "section": "section_2",
       "text": {
         "sanskrit": "[Section 2, Sloka 2 - text to be added from bhajanmala.com]",
@@ -518,7 +518,7 @@
     },
     {
       "id": 25,
-      "number": 3,
+      "number": 2,
       "section": "section_2",
       "text": {
         "sanskrit": "[Section 2, Sloka 3 - text to be added from bhajanmala.com]",
@@ -538,7 +538,7 @@
     },
     {
       "id": 26,
-      "number": 4,
+      "number": 3,
       "section": "section_2",
       "text": {
         "sanskrit": "[Section 2, Sloka 4 - text to be added from bhajanmala.com]",
@@ -558,7 +558,7 @@
     },
     {
       "id": 27,
-      "number": 5,
+      "number": 4,
       "section": "section_2",
       "text": {
         "sanskrit": "[Section 2, Sloka 5 - text to be added from bhajanmala.com]",
@@ -578,7 +578,7 @@
     },
     {
       "id": 28,
-      "number": 6,
+      "number": 5,
       "section": "section_2",
       "text": {
         "sanskrit": "[Section 2, Sloka 6 - text to be added from bhajanmala.com]",
@@ -598,7 +598,7 @@
     },
     {
       "id": 29,
-      "number": 7,
+      "number": 6,
       "section": "section_2",
       "text": {
         "sanskrit": "[Section 2, Sloka 7 - text to be added from bhajanmala.com]",
@@ -618,8 +618,8 @@
     },
     {
       "id": 30,
-      "number": 8,
-      "section": "section_2",
+      "number": 1,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 8 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 8 - text to be added from bhajanmala.com]",
@@ -627,7 +627,7 @@
         "kannada": "[Section 2, Sloka 8 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 8 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 8 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 8"
+        "english": "Hariḥ ōm\nviśvaṁ viṣṇurvaṣaṭkārō bhūta bhavyabhavatprabhuḥ\nbhūtakr̥dbhūtabhr̥dbhāvō bhūtātmā bhūtabhāvanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -638,8 +638,8 @@
     },
     {
       "id": 31,
-      "number": 9,
-      "section": "section_2",
+      "number": 2,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 9 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 9 - text to be added from bhajanmala.com]",
@@ -647,7 +647,7 @@
         "kannada": "[Section 2, Sloka 9 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 9 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 9 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 9"
+        "english": "pūtātmā paramātmā ca muktānāṁ paramā gatiḥ\navyayaḥ puruṣassākṣī kṣētrajñōఽkṣara ēva ca ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -658,8 +658,8 @@
     },
     {
       "id": 32,
-      "number": 10,
-      "section": "section_2",
+      "number": 3,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 10 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 10 - text to be added from bhajanmala.com]",
@@ -667,7 +667,7 @@
         "kannada": "[Section 2, Sloka 10 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 10 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 10 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 10"
+        "english": "yōgō yōgavidāṁ nētā pradhāna puruṣēśvaraḥ\nnārasimhavapuśśrīmān kēśavaḥ puruṣōttamaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -678,8 +678,8 @@
     },
     {
       "id": 33,
-      "number": 11,
-      "section": "section_2",
+      "number": 4,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 11 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 11 - text to be added from bhajanmala.com]",
@@ -687,7 +687,7 @@
         "kannada": "[Section 2, Sloka 11 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 11 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 11 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 11"
+        "english": "sarva śśarva śśivas-sthāṇu rbhūtādirnidhi ravyayaḥ\nsambhavō bhāvanō bhartā prabhavaḥ prabhurīśvaraḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -698,8 +698,8 @@
     },
     {
       "id": 34,
-      "number": 12,
-      "section": "section_2",
+      "number": 5,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 12 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 12 - text to be added from bhajanmala.com]",
@@ -707,7 +707,7 @@
         "kannada": "[Section 2, Sloka 12 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 12 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 12 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 12"
+        "english": "svayambhū śśambhurādityaḥ puṣkarākṣō mahāsvanaḥ\nanādinidhanō dhātā vidhātā dhāturuttamaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -718,8 +718,8 @@
     },
     {
       "id": 35,
-      "number": 13,
-      "section": "section_2",
+      "number": 6,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 13 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 13 - text to be added from bhajanmala.com]",
@@ -727,7 +727,7 @@
         "kannada": "[Section 2, Sloka 13 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 13 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 13 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 13"
+        "english": "apramēyō hr̥ṣīkēśaḥ padmanābhōఽmaraprabhuḥ\nviśvakarmā manustvaṣṭā sthaviṣṭhas-sthavirō dhruvaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -738,8 +738,8 @@
     },
     {
       "id": 36,
-      "number": 14,
-      "section": "section_2",
+      "number": 7,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 14 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 14 - text to be added from bhajanmala.com]",
@@ -747,7 +747,7 @@
         "kannada": "[Section 2, Sloka 14 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 14 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 14 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 14"
+        "english": "agrāhyaśśāśvataḥ kr̥ṣṇō lōhitākṣaḥ pratardanaḥ\nprabhūtastrikakubdhāma pavitraṁ maṅgaḷaṁ paraṁ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -758,8 +758,8 @@
     },
     {
       "id": 37,
-      "number": 15,
-      "section": "section_2",
+      "number": 8,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 15 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 15 - text to be added from bhajanmala.com]",
@@ -767,7 +767,7 @@
         "kannada": "[Section 2, Sloka 15 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 15 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 15 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 15"
+        "english": "īśānaḥ prāṇadaḥ prāṇō jyēṣṭhaśśrēṣṭhaḥ prajāpatiḥ\nhiraṇyagarbhō bhūgarbhō mādhavō madhusūdanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -778,8 +778,8 @@
     },
     {
       "id": 38,
-      "number": 16,
-      "section": "section_2",
+      "number": 9,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 16 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 16 - text to be added from bhajanmala.com]",
@@ -787,7 +787,7 @@
         "kannada": "[Section 2, Sloka 16 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 16 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 16 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 16"
+        "english": "īśvarō vikramī dhanvī mēdhāvī vikramaḥ kramaḥ\nanuttamō durādharṣaḥ kr̥tajñaḥ kr̥tirātmavān ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -798,8 +798,8 @@
     },
     {
       "id": 39,
-      "number": 17,
-      "section": "section_2",
+      "number": 10,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 17 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 17 - text to be added from bhajanmala.com]",
@@ -807,7 +807,7 @@
         "kannada": "[Section 2, Sloka 17 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 17 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 17 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 17"
+        "english": "surēśaśśaraṇaṁ śarma viśvarētāḥ prajābhavaḥ\nahassanvatsarō vyāḷaḥ pratyaya ssarvadarśanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -818,8 +818,8 @@
     },
     {
       "id": 40,
-      "number": 18,
-      "section": "section_2",
+      "number": 11,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 18 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 18 - text to be added from bhajanmala.com]",
@@ -827,7 +827,7 @@
         "kannada": "[Section 2, Sloka 18 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 18 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 18 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 18"
+        "english": "aja ssarvēśvara ssiddha ssiddhi ssarvādiracyutaḥ\nvr̥ṣākapi ramēyātmā sarvayōgavinissr̥taḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -838,8 +838,8 @@
     },
     {
       "id": 41,
-      "number": 19,
-      "section": "section_2",
+      "number": 12,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 19 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 19 - text to be added from bhajanmala.com]",
@@ -847,7 +847,7 @@
         "kannada": "[Section 2, Sloka 19 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 19 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 19 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 19"
+        "english": "vasurvasumanā ssatya ssamātmā sammita ssamaḥ\namōghaḥ puṇḍarīkākṣō vr̥ṣakarmā vr̥ṣākr̥tiḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -858,8 +858,8 @@
     },
     {
       "id": 42,
-      "number": 20,
-      "section": "section_2",
+      "number": 13,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 20 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 20 - text to be added from bhajanmala.com]",
@@ -867,7 +867,7 @@
         "kannada": "[Section 2, Sloka 20 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 20 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 20 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 20"
+        "english": "rudrō bahuśirā babhru rviśvayōni śśuciśravāḥ\namr̥ta śśāśvata ssthāṇu rvarārōhō mahātapāḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -878,8 +878,8 @@
     },
     {
       "id": 43,
-      "number": 21,
-      "section": "section_2",
+      "number": 14,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 21 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 21 - text to be added from bhajanmala.com]",
@@ -887,7 +887,7 @@
         "kannada": "[Section 2, Sloka 21 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 21 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 21 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 21"
+        "english": "sarvaga ssarvavidbhānurviṣvaksēnō janārdanaḥ\nvēdō vēdavidavyaṅgō vēdāṅgō vēdavitkaviḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -898,8 +898,8 @@
     },
     {
       "id": 44,
-      "number": 22,
-      "section": "section_2",
+      "number": 15,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 22 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 22 - text to be added from bhajanmala.com]",
@@ -907,7 +907,7 @@
         "kannada": "[Section 2, Sloka 22 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 22 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 22 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 22"
+        "english": "lōkādhyakṣa ssurādhyakṣō dharmādhyakṣaḥ kr̥tākr̥taḥ\ncaturātmā caturvyūha ścaturdamṣṭra ścaturbhujaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -918,8 +918,8 @@
     },
     {
       "id": 45,
-      "number": 23,
-      "section": "section_2",
+      "number": 16,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 23 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 23 - text to be added from bhajanmala.com]",
@@ -927,7 +927,7 @@
         "kannada": "[Section 2, Sloka 23 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 23 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 23 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 23"
+        "english": "bhrājiṣṇu rbhōjanaṁ bhōktā sahiṣṇu rjagadādijaḥ\nanaghō vijayō jētā viśvayōniḥ punarvasuḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -938,8 +938,8 @@
     },
     {
       "id": 46,
-      "number": 24,
-      "section": "section_2",
+      "number": 17,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 24 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 24 - text to be added from bhajanmala.com]",
@@ -947,7 +947,7 @@
         "kannada": "[Section 2, Sloka 24 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 24 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 24 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 24"
+        "english": "upēndrō vāmanaḥ prāmśu ramōgha śśucirūrjitaḥ\natīndra ssaṅgraha ssargō dhr̥tātmā niyamō yamaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -958,8 +958,8 @@
     },
     {
       "id": 47,
-      "number": 25,
-      "section": "section_2",
+      "number": 18,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 25 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 25 - text to be added from bhajanmala.com]",
@@ -967,7 +967,7 @@
         "kannada": "[Section 2, Sloka 25 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 25 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 25 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 25"
+        "english": "vēdyō vaidya ssadāyōgī vīrahā mādhavō madhuḥ\natīndriyō mahāmāyō mahōtsāhō mahābalaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -978,8 +978,8 @@
     },
     {
       "id": 48,
-      "number": 26,
-      "section": "section_2",
+      "number": 19,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 26 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 26 - text to be added from bhajanmala.com]",
@@ -987,7 +987,7 @@
         "kannada": "[Section 2, Sloka 26 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 26 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 26 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 26"
+        "english": "mahābuddhi rmahāvīryō mahāśakti rmahādyutiḥ\nanirdēśyavapu śśrīmānamēyātmā mahādridhr̥k ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -998,8 +998,8 @@
     },
     {
       "id": 49,
-      "number": 27,
-      "section": "section_2",
+      "number": 20,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 27 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 27 - text to be added from bhajanmala.com]",
@@ -1007,7 +1007,7 @@
         "kannada": "[Section 2, Sloka 27 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 27 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 27 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 27"
+        "english": "mahēṣvāsō mahībhartā śrīnivāsa ssatāṁ gatiḥ\naniruddha ssurānandō gōvindō gōvidāṁ patiḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1018,8 +1018,8 @@
     },
     {
       "id": 50,
-      "number": 28,
-      "section": "section_2",
+      "number": 21,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 28 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 28 - text to be added from bhajanmala.com]",
@@ -1027,7 +1027,7 @@
         "kannada": "[Section 2, Sloka 28 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 28 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 28 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 28"
+        "english": "marīcirdamanō hamsa ssuparṇō bhujagōttamaḥ\nhiraṇyanābha ssutapāḥ padmanābhaḥ prajāpatiḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1038,8 +1038,8 @@
     },
     {
       "id": 51,
-      "number": 29,
-      "section": "section_2",
+      "number": 22,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 29 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 29 - text to be added from bhajanmala.com]",
@@ -1047,7 +1047,7 @@
         "kannada": "[Section 2, Sloka 29 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 29 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 29 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 29"
+        "english": "amr̥tyu ssarvadr̥ksimha ssandhātā sandhimān sthiraḥ\najō durmarṣaṇaśśāstā viśrutātmā surārihā ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1058,8 +1058,8 @@
     },
     {
       "id": 52,
-      "number": 30,
-      "section": "section_2",
+      "number": 23,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 30 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 30 - text to be added from bhajanmala.com]",
@@ -1067,7 +1067,7 @@
         "kannada": "[Section 2, Sloka 30 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 30 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 30 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 30"
+        "english": "gururgurutamō dhāma satya ssatyaparākramaḥ\nnimiṣōఽnimiṣa ssragvī vācaspatirudāradhīḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1078,8 +1078,8 @@
     },
     {
       "id": 53,
-      "number": 31,
-      "section": "section_2",
+      "number": 24,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 31 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 31 - text to be added from bhajanmala.com]",
@@ -1087,7 +1087,7 @@
         "kannada": "[Section 2, Sloka 31 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 31 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 31 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 31"
+        "english": "agraṇī rgrāmaṇī śśrīmān nyāyō nētā samīraṇaḥ\nsahasramūrdhā viśvātmā sahasrākṣa ssahasrapāt ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1098,8 +1098,8 @@
     },
     {
       "id": 54,
-      "number": 32,
-      "section": "section_2",
+      "number": 25,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 32 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 32 - text to be added from bhajanmala.com]",
@@ -1107,7 +1107,7 @@
         "kannada": "[Section 2, Sloka 32 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 32 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 32 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 32"
+        "english": "āvartanō nivr̥ttātmā sanvr̥ta ssampramardanaḥ\nahassanvartakō vahni ranilō dharaṇīdharaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1118,8 +1118,8 @@
     },
     {
       "id": 55,
-      "number": 33,
-      "section": "section_2",
+      "number": 26,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 33 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 33 - text to be added from bhajanmala.com]",
@@ -1127,7 +1127,7 @@
         "kannada": "[Section 2, Sloka 33 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 33 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 33 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 33"
+        "english": "suprasādaḥ prasannātmā viśvadhr̥gviśvabhugvibhuḥ\nsatkartā satkr̥ta ssādhu rjahnurnārāyaṇō naraḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1138,8 +1138,8 @@
     },
     {
       "id": 56,
-      "number": 34,
-      "section": "section_2",
+      "number": 27,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 34 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 34 - text to be added from bhajanmala.com]",
@@ -1147,7 +1147,7 @@
         "kannada": "[Section 2, Sloka 34 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 34 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 34 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 34"
+        "english": "asaṅkhyēyōఽpramēyātmā viśiṣṭa śśiṣṭakr̥cchuciḥ\nsiddhārtha ssiddhasaṅkalpa ssiddhida ssiddhi sādhanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1158,8 +1158,8 @@
     },
     {
       "id": 57,
-      "number": 35,
-      "section": "section_2",
+      "number": 28,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 35 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 35 - text to be added from bhajanmala.com]",
@@ -1167,7 +1167,7 @@
         "kannada": "[Section 2, Sloka 35 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 35 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 35 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 35"
+        "english": "vr̥ṣāhī vr̥ṣabhō viṣṇurvr̥ṣaparvā vr̥ṣōdaraḥ\nvardhanō vardhamānaśca vivikta śśrutisāgaraḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1178,8 +1178,8 @@
     },
     {
       "id": 58,
-      "number": 36,
-      "section": "section_2",
+      "number": 29,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 36 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 36 - text to be added from bhajanmala.com]",
@@ -1187,7 +1187,7 @@
         "kannada": "[Section 2, Sloka 36 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 36 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 36 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 36"
+        "english": "subhujō durdharō vāgmī mahēndrō vasudō vasuḥ\nnaikarūpō br̥hadrūpa śśipiviṣṭaḥ prakāśanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1198,8 +1198,8 @@
     },
     {
       "id": 59,
-      "number": 37,
-      "section": "section_2",
+      "number": 30,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 37 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 37 - text to be added from bhajanmala.com]",
@@ -1207,7 +1207,7 @@
         "kannada": "[Section 2, Sloka 37 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 37 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 37 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 37"
+        "english": "ōjastējō dyutidharaḥ prakāśātmā pratāpanaḥ\nr̥ddhasspaṣṭākṣarō mantra ścandrāśu rbhāskaradyutiḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1218,8 +1218,8 @@
     },
     {
       "id": 60,
-      "number": 38,
-      "section": "section_2",
+      "number": 31,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 38 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 38 - text to be added from bhajanmala.com]",
@@ -1227,7 +1227,7 @@
         "kannada": "[Section 2, Sloka 38 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 38 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 38 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 38"
+        "english": "amr̥tāmśūdbhavō bhānu śśaśabindu ssurēśvaraḥ\nauṣadhaṁ jagatassētu ssatyadharma parākramaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1238,8 +1238,8 @@
     },
     {
       "id": 61,
-      "number": 39,
-      "section": "section_2",
+      "number": 32,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 39 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 39 - text to be added from bhajanmala.com]",
@@ -1247,7 +1247,7 @@
         "kannada": "[Section 2, Sloka 39 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 39 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 39 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 39"
+        "english": "bhūtabhavya bhavannāthaḥ pavanaḥ pāvanōఽnalaḥ\nkāmahā kāmakr̥tkāntaḥ kāmaḥ kāmapradaḥ prabhuḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1258,8 +1258,8 @@
     },
     {
       "id": 62,
-      "number": 40,
-      "section": "section_2",
+      "number": 33,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 40 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 40 - text to be added from bhajanmala.com]",
@@ -1267,7 +1267,7 @@
         "kannada": "[Section 2, Sloka 40 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 40 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 40 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 40"
+        "english": "yugādikr̥dyugāvartō naikamāyō mahāśanaḥ\nadr̥śyōఽvyaktarūpaśca sahasrajidanantajit ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1278,8 +1278,8 @@
     },
     {
       "id": 63,
-      "number": 41,
-      "section": "section_2",
+      "number": 34,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 41 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 41 - text to be added from bhajanmala.com]",
@@ -1287,7 +1287,7 @@
         "kannada": "[Section 2, Sloka 41 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 41 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 41 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 41"
+        "english": "iṣṭōఽviśiṣṭa śśiṣṭēṣṭa śśikhaṇḍī nahuṣō vr̥ṣaḥ\nkrōdhahā krōdhakr̥tkartā viśvabāhu rmahīdharaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1298,8 +1298,8 @@
     },
     {
       "id": 64,
-      "number": 42,
-      "section": "section_2",
+      "number": 35,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 42 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 42 - text to be added from bhajanmala.com]",
@@ -1307,7 +1307,7 @@
         "kannada": "[Section 2, Sloka 42 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 42 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 42 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 42"
+        "english": "acyutaḥ prathitaḥ prāṇaḥ prāṇadō vāsavānujaḥ\napāṁ nidhi radhiṣṭhāna mapramattaḥ pratiṣṭhitaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1318,8 +1318,8 @@
     },
     {
       "id": 65,
-      "number": 43,
-      "section": "section_2",
+      "number": 36,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 43 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 43 - text to be added from bhajanmala.com]",
@@ -1327,7 +1327,7 @@
         "kannada": "[Section 2, Sloka 43 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 43 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 43 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 43"
+        "english": "skandasskandadharō dhuryō varadō vāyuvāhanaḥ\nvāsudēvō br̥hadbhānu rādidēvaḥ purandaraḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1338,8 +1338,8 @@
     },
     {
       "id": 66,
-      "number": 44,
-      "section": "section_2",
+      "number": 37,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 44 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 44 - text to be added from bhajanmala.com]",
@@ -1347,7 +1347,7 @@
         "kannada": "[Section 2, Sloka 44 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 44 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 44 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 44"
+        "english": "aśōkastāraṇa stāra śśūra śśaurirjanēśvaraḥ\nanukūla śśatāvartaḥ padmī padmanibhēkṣaṇaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1358,8 +1358,8 @@
     },
     {
       "id": 67,
-      "number": 45,
-      "section": "section_2",
+      "number": 38,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 45 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 45 - text to be added from bhajanmala.com]",
@@ -1367,7 +1367,7 @@
         "kannada": "[Section 2, Sloka 45 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 45 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 45 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 45"
+        "english": "padmanābhōఽravindākṣaḥ padmagarbha śśarīrabhr̥t\nmahardhirr̥ddhō vr̥ddhātmā mahākṣō garuḍadhvajaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1378,8 +1378,8 @@
     },
     {
       "id": 68,
-      "number": 46,
-      "section": "section_2",
+      "number": 39,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 46 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 46 - text to be added from bhajanmala.com]",
@@ -1387,7 +1387,7 @@
         "kannada": "[Section 2, Sloka 46 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 46 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 46 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 46"
+        "english": "atulaśśarabhō bhīma ssamayajñō havirhariḥ\nsarvalakṣaṇa lakṣaṇyō lakṣmīvān samitiñjayaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1398,8 +1398,8 @@
     },
     {
       "id": 69,
-      "number": 47,
-      "section": "section_2",
+      "number": 40,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 47 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 47 - text to be added from bhajanmala.com]",
@@ -1407,7 +1407,7 @@
         "kannada": "[Section 2, Sloka 47 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 47 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 47 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 47"
+        "english": "vikṣarō rōhitō mārgō hēturdāmōdara ssahaḥ\nmahīdharō mahābhāgō vēgavānamitāśanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1418,8 +1418,8 @@
     },
     {
       "id": 70,
-      "number": 48,
-      "section": "section_2",
+      "number": 41,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 48 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 48 - text to be added from bhajanmala.com]",
@@ -1427,7 +1427,7 @@
         "kannada": "[Section 2, Sloka 48 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 48 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 48 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 48"
+        "english": "udbhavaḥ kṣōbhaṇō dēva śśrīgarbhaḥ paramēśvaraḥ\nkaraṇaṁ kāraṇaṁ kartā vikartā gahanō guhaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1438,8 +1438,8 @@
     },
     {
       "id": 71,
-      "number": 49,
-      "section": "section_2",
+      "number": 42,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 49 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 49 - text to be added from bhajanmala.com]",
@@ -1447,7 +1447,7 @@
         "kannada": "[Section 2, Sloka 49 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 49 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 49 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 49"
+        "english": "vyavasāyō vyavasthāna ssamsthānas-sthānadō dhruvaḥ\nparardhiḥ paramaspaṣṭa stuṣṭaḥ puṣṭa śśubhēkṣaṇaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1458,8 +1458,8 @@
     },
     {
       "id": 72,
-      "number": 50,
-      "section": "section_2",
+      "number": 43,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 50 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 50 - text to be added from bhajanmala.com]",
@@ -1467,7 +1467,7 @@
         "kannada": "[Section 2, Sloka 50 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 50 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 50 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 50"
+        "english": "rāmō virāmō viratō mārgō nēyō nayōఽnayaḥ\nvīra śśaktimatāṁ śrēṣṭhō dharmō dharmaviduttamaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1478,8 +1478,8 @@
     },
     {
       "id": 73,
-      "number": 51,
-      "section": "section_2",
+      "number": 44,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 51 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 51 - text to be added from bhajanmala.com]",
@@ -1487,7 +1487,7 @@
         "kannada": "[Section 2, Sloka 51 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 51 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 51 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 51"
+        "english": "vaikuṇṭhaḥ puruṣaḥ prāṇaḥ prāṇadaḥ praṇavaḥ pr̥thuḥ\nhiraṇyagarbha śśatrughnō vyāptō vāyuradhōkṣajaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1498,8 +1498,8 @@
     },
     {
       "id": 74,
-      "number": 52,
-      "section": "section_2",
+      "number": 45,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 52 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 52 - text to be added from bhajanmala.com]",
@@ -1507,7 +1507,7 @@
         "kannada": "[Section 2, Sloka 52 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 52 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 52 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 52"
+        "english": "r̥tussudarśanaḥ kālaḥ paramēṣṭhī parigrahaḥ\nugra ssanvatsarō dakṣō viśrāmō viśvadakṣiṇaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1518,8 +1518,8 @@
     },
     {
       "id": 75,
-      "number": 53,
-      "section": "section_2",
+      "number": 46,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 53 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 53 - text to be added from bhajanmala.com]",
@@ -1527,7 +1527,7 @@
         "kannada": "[Section 2, Sloka 53 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 53 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 53 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 53"
+        "english": "vistāra ssthāvara ssthāṇuḥ pramāṇaṁ bījamavyayam\narthōఽnarthō mahākōśō mahābhōgō mahādhanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1538,8 +1538,8 @@
     },
     {
       "id": 76,
-      "number": 54,
-      "section": "section_2",
+      "number": 47,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 54 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 54 - text to be added from bhajanmala.com]",
@@ -1547,7 +1547,7 @@
         "kannada": "[Section 2, Sloka 54 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 54 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 54 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 54"
+        "english": "anirviṇṇa sthaviṣṭhō bhūrdharmayūpō mahāmakhaḥ\nnakṣatranēmirnakṣatrī kṣamaḥ kṣāmassamīhanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1558,8 +1558,8 @@
     },
     {
       "id": 77,
-      "number": 55,
-      "section": "section_2",
+      "number": 48,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 55 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 55 - text to be added from bhajanmala.com]",
@@ -1567,7 +1567,7 @@
         "kannada": "[Section 2, Sloka 55 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 55 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 55 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 55"
+        "english": "yajña ijyō mahējyaśca kratussatraṁ satāṅgatiḥ\nsarvadarśī vimuktātmā sarvajñō jñānamuttamam ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1578,8 +1578,8 @@
     },
     {
       "id": 78,
-      "number": 56,
-      "section": "section_2",
+      "number": 49,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 56 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 56 - text to be added from bhajanmala.com]",
@@ -1587,7 +1587,7 @@
         "kannada": "[Section 2, Sloka 56 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 56 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 56 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 56"
+        "english": "suvrata ssumukha ssūkṣma ssughōṣa ssukhada ssuhr̥t\nmanōharō jitakrōdhō vīrabāhu rvidāraṇaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1598,8 +1598,8 @@
     },
     {
       "id": 79,
-      "number": 57,
-      "section": "section_2",
+      "number": 50,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 57 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 57 - text to be added from bhajanmala.com]",
@@ -1607,7 +1607,7 @@
         "kannada": "[Section 2, Sloka 57 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 57 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 57 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 57"
+        "english": "svāpana ssvavaśō vyāpī naikātmā naikakarmakr̥t\nvatsarō vatsalō vatsī ratnagarbhō dhanēśvaraḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1618,8 +1618,8 @@
     },
     {
       "id": 80,
-      "number": 58,
-      "section": "section_2",
+      "number": 51,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 58 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 58 - text to be added from bhajanmala.com]",
@@ -1627,7 +1627,7 @@
         "kannada": "[Section 2, Sloka 58 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 58 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 58 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 58"
+        "english": "dharmagubdharmakr̥ddharmī sadasat‌kṣaramakṣaram\navijñātā sahasrāmśu rvidhātā kr̥talakṣaṇaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1638,8 +1638,8 @@
     },
     {
       "id": 81,
-      "number": 59,
-      "section": "section_2",
+      "number": 52,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 59 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 59 - text to be added from bhajanmala.com]",
@@ -1647,7 +1647,7 @@
         "kannada": "[Section 2, Sloka 59 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 59 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 59 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 59"
+        "english": "gabhastinēmi ssatvastha ssimhōbhūta mahēśvaraḥ\nādidēvō mahādēvō dēvēśō dēvabhr̥dguruḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1658,8 +1658,8 @@
     },
     {
       "id": 82,
-      "number": 60,
-      "section": "section_2",
+      "number": 53,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 60 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 60 - text to be added from bhajanmala.com]",
@@ -1667,7 +1667,7 @@
         "kannada": "[Section 2, Sloka 60 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 60 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 60 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 60"
+        "english": "uttarō gōpatirgōptā jñānagamyaḥ purātanaḥ\nśarīrabhūtabhr̥dbhōktā kapīndrō bhūridakṣiṇaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1678,8 +1678,8 @@
     },
     {
       "id": 83,
-      "number": 61,
-      "section": "section_2",
+      "number": 54,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 61 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 61 - text to be added from bhajanmala.com]",
@@ -1687,7 +1687,7 @@
         "kannada": "[Section 2, Sloka 61 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 61 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 61 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 61"
+        "english": "sōmapōఽmr̥tapassōmaḥ purujitpurusattamaḥ\nvinayō jaya ssatyasandhō dāśārha ssātvatāṁ patiḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1698,8 +1698,8 @@
     },
     {
       "id": 84,
-      "number": 62,
-      "section": "section_2",
+      "number": 55,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 62 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 62 - text to be added from bhajanmala.com]",
@@ -1707,7 +1707,7 @@
         "kannada": "[Section 2, Sloka 62 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 62 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 62 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 62"
+        "english": "jīvō vinayitā sākṣī mukundōఽmita vikramaḥ\nambhōnidhi ranantātmā mahōdadhiśayōఽntakaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1718,8 +1718,8 @@
     },
     {
       "id": 85,
-      "number": 63,
-      "section": "section_2",
+      "number": 56,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 63 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 63 - text to be added from bhajanmala.com]",
@@ -1727,7 +1727,7 @@
         "kannada": "[Section 2, Sloka 63 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 63 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 63 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 63"
+        "english": "ajō mahārha ssvābhāvyō jitāmitraḥ pramōdanaḥ\nānandō nandanō nanda ssatyadharmā trivikramaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1738,8 +1738,8 @@
     },
     {
       "id": 86,
-      "number": 64,
-      "section": "section_2",
+      "number": 57,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 64 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 64 - text to be added from bhajanmala.com]",
@@ -1747,7 +1747,7 @@
         "kannada": "[Section 2, Sloka 64 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 64 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 64 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 64"
+        "english": "maharṣiḥ kapilācāryaḥ kr̥tajñō mēdinīpatiḥ\ntripadastridaśādhyakṣō mahāśr̥ṅgaḥ kr̥tāntakr̥t ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1758,8 +1758,8 @@
     },
     {
       "id": 87,
-      "number": 65,
-      "section": "section_2",
+      "number": 58,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 65 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 65 - text to be added from bhajanmala.com]",
@@ -1767,7 +1767,7 @@
         "kannada": "[Section 2, Sloka 65 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 65 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 65 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 65"
+        "english": "mahāvarāhō gōvinda ssuṣēṇaḥ kanakāṅgadī\nguhyō gabhīrō gahanō guptaścakra gadādharaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1778,8 +1778,8 @@
     },
     {
       "id": 88,
-      "number": 66,
-      "section": "section_2",
+      "number": 59,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 66 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 66 - text to be added from bhajanmala.com]",
@@ -1787,7 +1787,7 @@
         "kannada": "[Section 2, Sloka 66 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 66 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 66 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 66"
+        "english": "vēdhā ssvāṅgōఽjitaḥ kr̥ṣṇō dr̥ḍha ssaṅkarṣaṇōcyutaḥ\nvaruṇō vāruṇō vr̥kṣaḥ puṣkarākṣō mahāmanāḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1798,8 +1798,8 @@
     },
     {
       "id": 89,
-      "number": 67,
-      "section": "section_2",
+      "number": 60,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 67 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 67 - text to be added from bhajanmala.com]",
@@ -1807,7 +1807,7 @@
         "kannada": "[Section 2, Sloka 67 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 67 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 67 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 67"
+        "english": "bhagavān bhagahānandī vanamālī halāyudhaḥ\nādityō jyōtirāditya ssahiṣṇurgatisattamaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1818,8 +1818,8 @@
     },
     {
       "id": 90,
-      "number": 68,
-      "section": "section_2",
+      "number": 61,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 68 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 68 - text to be added from bhajanmala.com]",
@@ -1827,7 +1827,7 @@
         "kannada": "[Section 2, Sloka 68 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 68 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 68 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 68"
+        "english": "sudhanvā khaṇḍaparaśu rdāruṇō draviṇapradaḥ\ndivaspr̥k sarvadr̥gvyāsō vācaspati rayōnijaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1838,8 +1838,8 @@
     },
     {
       "id": 91,
-      "number": 69,
-      "section": "section_2",
+      "number": 62,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 69 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 69 - text to be added from bhajanmala.com]",
@@ -1847,7 +1847,7 @@
         "kannada": "[Section 2, Sloka 69 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 69 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 69 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 69"
+        "english": "trisāmā sāmagassāma nirvāṇaṁ bhēṣajaṁ bhiṣak\nsanyāsakr̥cchamaśśāntō niṣṭhā śāntiḥ parāyaṇam ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1858,8 +1858,8 @@
     },
     {
       "id": 92,
-      "number": 70,
-      "section": "section_2",
+      "number": 63,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 70 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 70 - text to be added from bhajanmala.com]",
@@ -1867,7 +1867,7 @@
         "kannada": "[Section 2, Sloka 70 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 70 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 70 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 70"
+        "english": "śubhāṅga śśāntida ssraṣṭā kumudaḥ kuvalēśayaḥ\ngōhitō gōpatirgōptā vr̥ṣabhākṣō vr̥ṣapriyaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1878,8 +1878,8 @@
     },
     {
       "id": 93,
-      "number": 71,
-      "section": "section_2",
+      "number": 64,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 71 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 71 - text to be added from bhajanmala.com]",
@@ -1887,7 +1887,7 @@
         "kannada": "[Section 2, Sloka 71 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 71 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 71 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 71"
+        "english": "anivartī nivr̥ttātmā saṅkṣēptā kṣēmakr̥cchivaḥ\nśrīvatsavakṣā śśrīvāsa śśrīpati śśrīmatāṁ varaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1898,8 +1898,8 @@
     },
     {
       "id": 94,
-      "number": 72,
-      "section": "section_2",
+      "number": 65,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 72 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 72 - text to be added from bhajanmala.com]",
@@ -1907,7 +1907,7 @@
         "kannada": "[Section 2, Sloka 72 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 72 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 72 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 72"
+        "english": "śrīda śśrīśa śśrīnivāsa śśrīnidhi śśrīvibhāvanaḥ\nśrīdhara śśrīkara śśrēya śśrīmān lōkatrayāśrayaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1918,8 +1918,8 @@
     },
     {
       "id": 95,
-      "number": 73,
-      "section": "section_2",
+      "number": 66,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 73 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 73 - text to be added from bhajanmala.com]",
@@ -1927,7 +1927,7 @@
         "kannada": "[Section 2, Sloka 73 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 73 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 73 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 73"
+        "english": "svakṣa ssvaṅga śśatānandō nandirjyōtirgaṇēśvaraḥ\nvijitātmā vidhēyātmā satkīrti śchinnasamśayaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1938,8 +1938,8 @@
     },
     {
       "id": 96,
-      "number": 74,
-      "section": "section_2",
+      "number": 67,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 74 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 74 - text to be added from bhajanmala.com]",
@@ -1947,7 +1947,7 @@
         "kannada": "[Section 2, Sloka 74 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 74 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 74 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 74"
+        "english": "udīrṇa ssarvataścakṣu ranīśa śśāśvata ssthiraḥ\nbhūśayō bhūṣaṇō bhūtirviśōka śśōkanāśanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1958,8 +1958,8 @@
     },
     {
       "id": 97,
-      "number": 75,
-      "section": "section_2",
+      "number": 68,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 75 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 75 - text to be added from bhajanmala.com]",
@@ -1967,7 +1967,7 @@
         "kannada": "[Section 2, Sloka 75 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 75 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 75 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 75"
+        "english": "arciṣmānarcitaḥ kumbhō viśuddhātmā viśōdhanaḥ\naniruddhōఽpratirathaḥ pradyumnōఽmitavikramaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1978,8 +1978,8 @@
     },
     {
       "id": 98,
-      "number": 76,
-      "section": "section_2",
+      "number": 69,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 76 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 76 - text to be added from bhajanmala.com]",
@@ -1987,7 +1987,7 @@
         "kannada": "[Section 2, Sloka 76 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 76 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 76 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 76"
+        "english": "kālanēminihā vīra śśauri śśūra janēśvaraḥ\ntrilōkātmā trilōkēśaḥ kēśavaḥ kēśihā hariḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -1998,8 +1998,8 @@
     },
     {
       "id": 99,
-      "number": 77,
-      "section": "section_2",
+      "number": 70,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 77 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 77 - text to be added from bhajanmala.com]",
@@ -2007,7 +2007,7 @@
         "kannada": "[Section 2, Sloka 77 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 77 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 77 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 77"
+        "english": "kāmadēvaḥ kāmapālaḥ kāmī kāntaḥ kr̥tāgamaḥ\nanirdēśyavapu rviṣṇu rvīrōఽnantō dhanan̄jayaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2018,8 +2018,8 @@
     },
     {
       "id": 100,
-      "number": 78,
-      "section": "section_2",
+      "number": 71,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 78 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 78 - text to be added from bhajanmala.com]",
@@ -2027,7 +2027,7 @@
         "kannada": "[Section 2, Sloka 78 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 78 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 78 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 78"
+        "english": "brahmaṇyō brahmakr̥dbrahmā brahma brahmavivardhanaḥ\nbrahmavidbrāhmaṇō brahmī brahmajñō brāhmaṇapriyaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2038,8 +2038,8 @@
     },
     {
       "id": 101,
-      "number": 79,
-      "section": "section_2",
+      "number": 72,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 79 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 79 - text to be added from bhajanmala.com]",
@@ -2047,7 +2047,7 @@
         "kannada": "[Section 2, Sloka 79 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 79 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 79 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 79"
+        "english": "mahākramō mahākarmā mahātējā mahōragaḥ\nmahākratu rmahāyajvā mahāyajñō mahāhaviḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2058,8 +2058,8 @@
     },
     {
       "id": 102,
-      "number": 80,
-      "section": "section_2",
+      "number": 73,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 80 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 80 - text to be added from bhajanmala.com]",
@@ -2067,7 +2067,7 @@
         "kannada": "[Section 2, Sloka 80 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 80 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 80 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 80"
+        "english": "stavya sstavapriya sstōtraṁ stuti sstōtā raṇapriyaḥ\npūrṇaḥ pūrayitā puṇyaḥ puṇyakīrti ranāmayaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2078,8 +2078,8 @@
     },
     {
       "id": 103,
-      "number": 81,
-      "section": "section_2",
+      "number": 74,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 81 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 81 - text to be added from bhajanmala.com]",
@@ -2087,7 +2087,7 @@
         "kannada": "[Section 2, Sloka 81 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 81 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 81 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 81"
+        "english": "manōjava stīrthakarō vasurētā vasupradaḥ\nvasupradō vāsudēvō vasurvasumanā haviḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2098,8 +2098,8 @@
     },
     {
       "id": 104,
-      "number": 82,
-      "section": "section_2",
+      "number": 75,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 82 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 82 - text to be added from bhajanmala.com]",
@@ -2107,7 +2107,7 @@
         "kannada": "[Section 2, Sloka 82 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 82 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 82 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 82"
+        "english": "sadgati ssatkr̥ti ssattā sadbhūti ssatparāyaṇaḥ\nśūrasēnō yaduśrēṣṭha ssannivāsa ssuyāmunaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2118,8 +2118,8 @@
     },
     {
       "id": 105,
-      "number": 83,
-      "section": "section_2",
+      "number": 76,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 83 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 83 - text to be added from bhajanmala.com]",
@@ -2127,7 +2127,7 @@
         "kannada": "[Section 2, Sloka 83 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 83 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 83 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 83"
+        "english": "bhūtāvāsō vāsudēva ssarvāsu nilayōఽnalaḥ\ndarpahā darpadōఽdr̥ptō durdharōఽthāparājitaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2138,8 +2138,8 @@
     },
     {
       "id": 106,
-      "number": 84,
-      "section": "section_2",
+      "number": 77,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 84 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 84 - text to be added from bhajanmala.com]",
@@ -2147,7 +2147,7 @@
         "kannada": "[Section 2, Sloka 84 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 84 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 84 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 84"
+        "english": "viśvamūrti rmahāmūrti rdīptamūrti ramūrtimān\nanēkamūrti ravyakta śśatamūrti śśatānanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2158,8 +2158,8 @@
     },
     {
       "id": 107,
-      "number": 85,
-      "section": "section_2",
+      "number": 78,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 85 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 85 - text to be added from bhajanmala.com]",
@@ -2167,7 +2167,7 @@
         "kannada": "[Section 2, Sloka 85 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 85 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 85 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 85"
+        "english": "ēkōnaikassavaḥ kaḥ kiṁ yattatpada manuttamam\nlōkabandhurlōkanāthō mādhavō bhaktavatsalaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2178,8 +2178,8 @@
     },
     {
       "id": 108,
-      "number": 86,
-      "section": "section_2",
+      "number": 79,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 86 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 86 - text to be added from bhajanmala.com]",
@@ -2187,7 +2187,7 @@
         "kannada": "[Section 2, Sloka 86 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 86 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 86 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 86"
+        "english": "suvarṇavarṇō hēmāṅgō varāṅga ścandanāṅgadī\nvīrahā viṣamaśśūnyō ghr̥tāśī racalaścalaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2198,8 +2198,8 @@
     },
     {
       "id": 109,
-      "number": 87,
-      "section": "section_2",
+      "number": 80,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 87 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 87 - text to be added from bhajanmala.com]",
@@ -2207,7 +2207,7 @@
         "kannada": "[Section 2, Sloka 87 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 87 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 87 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 87"
+        "english": "amānī mānadō mānyō lōkasvāmī trilōkadhr̥t\nsumēdhā mēdhajō dhanya ssatyamēdhā dharādharaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2218,8 +2218,8 @@
     },
     {
       "id": 110,
-      "number": 88,
-      "section": "section_2",
+      "number": 81,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 88 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 88 - text to be added from bhajanmala.com]",
@@ -2227,7 +2227,7 @@
         "kannada": "[Section 2, Sloka 88 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 88 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 88 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 88"
+        "english": "tējō vr̥ṣō dyutidhara ssarvaśastrabhr̥tāṁ varaḥ\npragrahō nigrahō vyagrō naikaśr̥ṅgō gadāgrajaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2238,8 +2238,8 @@
     },
     {
       "id": 111,
-      "number": 89,
-      "section": "section_2",
+      "number": 82,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 89 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 89 - text to be added from bhajanmala.com]",
@@ -2247,7 +2247,7 @@
         "kannada": "[Section 2, Sloka 89 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 89 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 89 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 89"
+        "english": "caturmūrti ścaturbāhu ścaturvyūha ścaturgatiḥ\ncaturātmā caturbhāva ścaturvēdavidēkapāt ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2258,8 +2258,8 @@
     },
     {
       "id": 112,
-      "number": 90,
-      "section": "section_2",
+      "number": 83,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 90 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 90 - text to be added from bhajanmala.com]",
@@ -2267,7 +2267,7 @@
         "kannada": "[Section 2, Sloka 90 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 90 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 90 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 90"
+        "english": "samāvartō nivr̥ttātmā durjayō duratikramaḥ\ndurlabhō durgamō durgō durāvāsō durārihā ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2278,8 +2278,8 @@
     },
     {
       "id": 113,
-      "number": 91,
-      "section": "section_2",
+      "number": 84,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 91 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 91 - text to be added from bhajanmala.com]",
@@ -2287,7 +2287,7 @@
         "kannada": "[Section 2, Sloka 91 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 91 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 91 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 91"
+        "english": "śubhāṅgō lōkasāraṅga ssutantu stantuvardhanaḥ\nindrakarmā mahākarmā kr̥takarmā kr̥tāgamaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2298,8 +2298,8 @@
     },
     {
       "id": 114,
-      "number": 92,
-      "section": "section_2",
+      "number": 85,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 92 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 92 - text to be added from bhajanmala.com]",
@@ -2307,7 +2307,7 @@
         "kannada": "[Section 2, Sloka 92 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 92 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 92 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 92"
+        "english": "udbhava ssundara ssundō ratnanābha ssulōcanaḥ\narkō vājasana śśr̥ṅgī jayanta ssarvavijjayī ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2318,8 +2318,8 @@
     },
     {
       "id": 115,
-      "number": 93,
-      "section": "section_2",
+      "number": 86,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 93 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 93 - text to be added from bhajanmala.com]",
@@ -2327,7 +2327,7 @@
         "kannada": "[Section 2, Sloka 93 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 93 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 93 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 93"
+        "english": "suvarṇabindurakṣōbhya ssarvavāgīśvarēśvaraḥ\nmahāhradō mahāgartō mahābhūtō mahānidhiḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2338,8 +2338,8 @@
     },
     {
       "id": 116,
-      "number": 94,
-      "section": "section_2",
+      "number": 87,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 94 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 94 - text to be added from bhajanmala.com]",
@@ -2347,7 +2347,7 @@
         "kannada": "[Section 2, Sloka 94 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 94 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 94 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 94"
+        "english": "kumudaḥ kundaraḥ kundaḥ parjanyaḥ pāvanōఽnilaḥ\namr̥tāśōఽmr̥tavapu ssarvajña ssarvatōmukhaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2358,8 +2358,8 @@
     },
     {
       "id": 117,
-      "number": 95,
-      "section": "section_2",
+      "number": 88,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 95 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 95 - text to be added from bhajanmala.com]",
@@ -2367,7 +2367,7 @@
         "kannada": "[Section 2, Sloka 95 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 95 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 95 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 95"
+        "english": "sulabha ssuvrata ssiddha śśatrujicchatrutāpanaḥ\nnyagrōdhōdumbarōఽśvattha ścāṇūrāndhra niṣūdanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2378,8 +2378,8 @@
     },
     {
       "id": 118,
-      "number": 96,
-      "section": "section_2",
+      "number": 89,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 96 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 96 - text to be added from bhajanmala.com]",
@@ -2387,7 +2387,7 @@
         "kannada": "[Section 2, Sloka 96 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 96 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 96 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 96"
+        "english": "sahasrārci ssaptajihva ssaptaidhā ssaptavāhanaḥ\namūrti ranaghōఽcintyō bhayakr̥dbhayanāśanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2398,8 +2398,8 @@
     },
     {
       "id": 119,
-      "number": 97,
-      "section": "section_2",
+      "number": 90,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 97 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 97 - text to be added from bhajanmala.com]",
@@ -2407,7 +2407,7 @@
         "kannada": "[Section 2, Sloka 97 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 97 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 97 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 97"
+        "english": "aṇurbr̥hatkr̥śa ssthūlō guṇabhr̥nnirguṇō mahān\nadhr̥ta ssvadhr̥ta ssvāsyaḥ prāgvamśō vamśavardhanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2418,8 +2418,8 @@
     },
     {
       "id": 120,
-      "number": 98,
-      "section": "section_2",
+      "number": 91,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 98 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 98 - text to be added from bhajanmala.com]",
@@ -2427,7 +2427,7 @@
         "kannada": "[Section 2, Sloka 98 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 98 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 98 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 98"
+        "english": "bhārabhr̥tkathitō yōgī yōgīśa ssarvakāmadaḥ\nāśrama śśramaṇaḥ kṣāma ssuparṇō vāyuvāhanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2438,8 +2438,8 @@
     },
     {
       "id": 121,
-      "number": 99,
-      "section": "section_2",
+      "number": 92,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 99 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 99 - text to be added from bhajanmala.com]",
@@ -2447,7 +2447,7 @@
         "kannada": "[Section 2, Sloka 99 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 99 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 99 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 99"
+        "english": "dhanurdharō dhanurvēdō daṇḍō damayitā damaḥ\naparājita ssarvasahō niyantā niyamō yamaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2458,8 +2458,8 @@
     },
     {
       "id": 122,
-      "number": 100,
-      "section": "section_2",
+      "number": 93,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 100 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 100 - text to be added from bhajanmala.com]",
@@ -2467,7 +2467,7 @@
         "kannada": "[Section 2, Sloka 100 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 100 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 100 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 100"
+        "english": "satvavān sātvika ssatya ssatyadharmaparāyaṇaḥ\nabhiprāyaḥ priyārhōఽrhaḥ priyakr̥tprītivardhanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2478,8 +2478,8 @@
     },
     {
       "id": 123,
-      "number": 101,
-      "section": "section_2",
+      "number": 94,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 101 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 101 - text to be added from bhajanmala.com]",
@@ -2487,7 +2487,7 @@
         "kannada": "[Section 2, Sloka 101 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 101 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 101 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 101"
+        "english": "vihāyasagatirjyōti ssuruci rhutabhugvibhuḥ\nravirvirōcana ssūrya ssavitā ravilōcanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2498,8 +2498,8 @@
     },
     {
       "id": 124,
-      "number": 102,
-      "section": "section_2",
+      "number": 95,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 102 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 102 - text to be added from bhajanmala.com]",
@@ -2507,7 +2507,7 @@
         "kannada": "[Section 2, Sloka 102 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 102 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 102 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 102"
+        "english": "anantō hutabhugbhōktā sukhadō naikajōఽgrajaḥ\nanirviṇṇa ssadāmarṣī lōkādhiṣṭhāna madbhutaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2518,8 +2518,8 @@
     },
     {
       "id": 125,
-      "number": 103,
-      "section": "section_2",
+      "number": 96,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 103 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 103 - text to be added from bhajanmala.com]",
@@ -2527,7 +2527,7 @@
         "kannada": "[Section 2, Sloka 103 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 103 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 103 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 103"
+        "english": "sanātsanātanatamaḥ kapilaḥ kapiravyayaḥ\nsvastida ssvastikr̥t‌svasti svastibhuk svastidakṣiṇaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2538,8 +2538,8 @@
     },
     {
       "id": 126,
-      "number": 104,
-      "section": "section_2",
+      "number": 97,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 104 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 104 - text to be added from bhajanmala.com]",
@@ -2547,7 +2547,7 @@
         "kannada": "[Section 2, Sloka 104 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 104 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 104 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 104"
+        "english": "araudraḥ kuṇḍalī cakrī vikramyūrjitaśāsanaḥ\nśabdātiga śśabdasaha śśiśira śśarvarīkaraḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2558,8 +2558,8 @@
     },
     {
       "id": 127,
-      "number": 105,
-      "section": "section_2",
+      "number": 98,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 105 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 105 - text to be added from bhajanmala.com]",
@@ -2567,7 +2567,7 @@
         "kannada": "[Section 2, Sloka 105 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 105 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 105 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 105"
+        "english": "akrūraḥ pēśalō dakṣō dakṣiṇaḥ kṣamiṇāṁ varaḥ\nvidvattamō vītabhayaḥ puṇyaśravaṇakīrtanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2578,8 +2578,8 @@
     },
     {
       "id": 128,
-      "number": 106,
-      "section": "section_2",
+      "number": 99,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 106 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 106 - text to be added from bhajanmala.com]",
@@ -2587,7 +2587,7 @@
         "kannada": "[Section 2, Sloka 106 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 106 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 106 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 106"
+        "english": "uttāraṇō duṣkr̥tihā puṇyō dussvapnanāśanaḥ\nvīrahā rakṣaṇassantō jīvanaḥ paryavasthitaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2598,8 +2598,8 @@
     },
     {
       "id": 129,
-      "number": 107,
-      "section": "section_2",
+      "number": 100,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 107 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 107 - text to be added from bhajanmala.com]",
@@ -2607,7 +2607,7 @@
         "kannada": "[Section 2, Sloka 107 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 107 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 107 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 107"
+        "english": "ananta rūpōఽnanta śrīrjitamanyurbhayāpahaḥ\ncaturaśrō gabhīrātmā vidiśō vyādiśō diśaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2618,8 +2618,8 @@
     },
     {
       "id": 130,
-      "number": 108,
-      "section": "section_2",
+      "number": 101,
+      "section": "section_3",
       "text": {
         "sanskrit": "[Section 2, Sloka 108 - text to be added from bhajanmala.com]",
         "tamil": "[Section 2, Sloka 108 - text to be added from bhajanmala.com]",
@@ -2627,7 +2627,7 @@
         "kannada": "[Section 2, Sloka 108 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 2, Sloka 108 - text to be added from bhajanmala.com]",
         "hindi": "[Section 2, Sloka 108 - text to be added from bhajanmala.com]",
-        "english": "Section 2, Sloka 108"
+        "english": "anādirbhūrbhuvō lakṣmī ssuvīrō rucirāṅgadaḥ\njananō janajanmādirbhīmō bhīmaparākramaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2638,7 +2638,7 @@
     },
     {
       "id": 131,
-      "number": 8,
+      "number": 102,
       "section": "section_3",
       "text": {
         "sanskrit": "[Section 3, Sloka 8 - text to be added from bhajanmala.com]",
@@ -2647,7 +2647,7 @@
         "kannada": "[Section 3, Sloka 8 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 3, Sloka 8 - text to be added from bhajanmala.com]",
         "hindi": "[Section 3, Sloka 8 - text to be added from bhajanmala.com]",
-        "english": "Section 3, Sloka 8"
+        "english": "ādhāranilayō dhātā puṣpahāsaḥ prajāgaraḥ\nūrdhvaga ssatpathācāraḥ prāṇadaḥ praṇavaḥ paṇaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2658,7 +2658,7 @@
     },
     {
       "id": 132,
-      "number": 9,
+      "number": 103,
       "section": "section_3",
       "text": {
         "sanskrit": "[Section 3, Sloka 9 - text to be added from bhajanmala.com]",
@@ -2667,7 +2667,7 @@
         "kannada": "[Section 3, Sloka 9 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 3, Sloka 9 - text to be added from bhajanmala.com]",
         "hindi": "[Section 3, Sloka 9 - text to be added from bhajanmala.com]",
-        "english": "Section 3, Sloka 9"
+        "english": "pramāṇaṁ prāṇanilayaḥ prāṇabhr̥tprāṇajīvanaḥ\ntattvaṁ tattvavidēkātmā janmamr̥tyujarātigaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2678,7 +2678,7 @@
     },
     {
       "id": 133,
-      "number": 10,
+      "number": 104,
       "section": "section_3",
       "text": {
         "sanskrit": "[Section 3, Sloka 10 - text to be added from bhajanmala.com]",
@@ -2687,7 +2687,7 @@
         "kannada": "[Section 3, Sloka 10 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 3, Sloka 10 - text to be added from bhajanmala.com]",
         "hindi": "[Section 3, Sloka 10 - text to be added from bhajanmala.com]",
-        "english": "Section 3, Sloka 10"
+        "english": "bhūrbhuva ssvastarustāra ssavitā prapitāmahaḥ\nyajñō yajñapatiryajvā yajñāṅgō yajñavāhanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2698,7 +2698,7 @@
     },
     {
       "id": 134,
-      "number": 11,
+      "number": 105,
       "section": "section_3",
       "text": {
         "sanskrit": "[Section 3, Sloka 11 - text to be added from bhajanmala.com]",
@@ -2707,7 +2707,7 @@
         "kannada": "[Section 3, Sloka 11 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 3, Sloka 11 - text to be added from bhajanmala.com]",
         "hindi": "[Section 3, Sloka 11 - text to be added from bhajanmala.com]",
-        "english": "Section 3, Sloka 11"
+        "english": "yajñabhr̥dyajñakr̥dyajñī yajñabhugyajña sādhanaḥ\nyajñāntakr̥dyajñaguhya mannamannāda ēva ca ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2718,7 +2718,7 @@
     },
     {
       "id": 135,
-      "number": 12,
+      "number": 106,
       "section": "section_3",
       "text": {
         "sanskrit": "[Section 3, Sloka 12 - text to be added from bhajanmala.com]",
@@ -2727,7 +2727,7 @@
         "kannada": "[Section 3, Sloka 12 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 3, Sloka 12 - text to be added from bhajanmala.com]",
         "hindi": "[Section 3, Sloka 12 - text to be added from bhajanmala.com]",
-        "english": "Section 3, Sloka 12"
+        "english": "ātmayōni ssvayan̄jātō vaikhānassāmagāyanaḥ\ndēvakī nandana ssraṣṭā kṣitīśaḥ pāpanāśanaḥ ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2738,7 +2738,7 @@
     },
     {
       "id": 136,
-      "number": 13,
+      "number": 107,
       "section": "section_3",
       "text": {
         "sanskrit": "[Section 3, Sloka 13 - text to be added from bhajanmala.com]",
@@ -2747,7 +2747,7 @@
         "kannada": "[Section 3, Sloka 13 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 3, Sloka 13 - text to be added from bhajanmala.com]",
         "hindi": "[Section 3, Sloka 13 - text to be added from bhajanmala.com]",
-        "english": "Section 3, Sloka 13"
+        "english": "śaṅkhabhr̥nnandakī cakrī śār‌ṅgadhanvā gadādharaḥ\nrathāṅgapāṇirakṣōbhya ssarvapraharaṇāyudhaḥ ॥\nŚrīsarvapraharaṇāyudha ōṁ nama iti ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2758,7 +2758,7 @@
     },
     {
       "id": 137,
-      "number": 14,
+      "number": 108,
       "section": "section_3",
       "text": {
         "sanskrit": "[Section 3, Sloka 14 - text to be added from bhajanmala.com]",
@@ -2767,7 +2767,7 @@
         "kannada": "[Section 3, Sloka 14 - text to be added from bhajanmala.com]",
         "malayalam": "[Section 3, Sloka 14 - text to be added from bhajanmala.com]",
         "hindi": "[Section 3, Sloka 14 - text to be added from bhajanmala.com]",
-        "english": "Section 3, Sloka 14"
+        "english": "vanamālī gadī śār‌ṅgī śaṅkhī cakrī ca nandakī\nśrīmānnārāyaṇō viṣṇurvāsudēvōఽbhirakṣatu ॥\n॥ śrīvāsudēvōఽbhirakṣatvōṁ nama iti ॥"
       },
       "audio": {
         "file": "full_slokas.mp4",
@@ -2778,8 +2778,8 @@
     },
     {
       "id": 138,
-      "number": 15,
-      "section": "section_3",
+      "number": 1,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Section 3, Sloka 15 - text to be added from bhajanmala.com]",
         "tamil": "[Section 3, Sloka 15 - text to be added from bhajanmala.com]",
@@ -2798,8 +2798,8 @@
     },
     {
       "id": 139,
-      "number": 16,
-      "section": "section_3",
+      "number": 2,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Section 3, Sloka 16 - text to be added from bhajanmala.com]",
         "tamil": "[Section 3, Sloka 16 - text to be added from bhajanmala.com]",
@@ -2818,8 +2818,8 @@
     },
     {
       "id": 140,
-      "number": 17,
-      "section": "section_3",
+      "number": 3,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Section 3, Sloka 17 - text to be added from bhajanmala.com]",
         "tamil": "[Section 3, Sloka 17 - text to be added from bhajanmala.com]",
@@ -2838,8 +2838,8 @@
     },
     {
       "id": 141,
-      "number": 18,
-      "section": "section_3",
+      "number": 4,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Section 3, Sloka 18 - text to be added from bhajanmala.com]",
         "tamil": "[Section 3, Sloka 18 - text to be added from bhajanmala.com]",
@@ -2858,8 +2858,8 @@
     },
     {
       "id": 142,
-      "number": 19,
-      "section": "section_3",
+      "number": 5,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Section 3, Sloka 19 - text to be added from bhajanmala.com]",
         "tamil": "[Section 3, Sloka 19 - text to be added from bhajanmala.com]",
@@ -2878,8 +2878,8 @@
     },
     {
       "id": 143,
-      "number": 20,
-      "section": "section_3",
+      "number": 6,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Section 3, Sloka 20 - text to be added from bhajanmala.com]",
         "tamil": "[Section 3, Sloka 20 - text to be added from bhajanmala.com]",
@@ -2898,8 +2898,8 @@
     },
     {
       "id": 144,
-      "number": 21,
-      "section": "section_3",
+      "number": 7,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Section 3, Sloka 21 - text to be added from bhajanmala.com]",
         "tamil": "[Section 3, Sloka 21 - text to be added from bhajanmala.com]",
@@ -2918,8 +2918,8 @@
     },
     {
       "id": 145,
-      "number": 22,
-      "section": "section_3",
+      "number": 8,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Section 3, Sloka 22 - text to be added from bhajanmala.com]",
         "tamil": "[Section 3, Sloka 22 - text to be added from bhajanmala.com]",
@@ -2938,8 +2938,8 @@
     },
     {
       "id": 146,
-      "number": 23,
-      "section": "section_3",
+      "number": 9,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Section 3, Sloka 23 - text to be added from bhajanmala.com]",
         "tamil": "[Section 3, Sloka 23 - text to be added from bhajanmala.com]",
@@ -2958,8 +2958,8 @@
     },
     {
       "id": 147,
-      "number": 24,
-      "section": "section_3",
+      "number": 10,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Section 3, Sloka 24 - text to be added from bhajanmala.com]",
         "tamil": "[Section 3, Sloka 24 - text to be added from bhajanmala.com]",
@@ -2978,8 +2978,8 @@
     },
     {
       "id": 148,
-      "number": 25,
-      "section": "section_3",
+      "number": 11,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Section 3, Sloka 25 - text to be added from bhajanmala.com]",
         "tamil": "[Section 3, Sloka 25 - text to be added from bhajanmala.com]",
@@ -2998,8 +2998,8 @@
     },
     {
       "id": 149,
-      "number": 26,
-      "section": "section_3",
+      "number": 12,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Section 3, Sloka 26 - text to be added from bhajanmala.com]",
         "tamil": "[Section 3, Sloka 26 - text to be added from bhajanmala.com]",
@@ -3018,8 +3018,8 @@
     },
     {
       "id": 150,
-      "number": 27,
-      "section": "section_3",
+      "number": 13,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Section 3, Sloka 27 - text to be added from bhajanmala.com]",
         "tamil": "[Section 3, Sloka 27 - text to be added from bhajanmala.com]",
@@ -3038,8 +3038,8 @@
     },
     {
       "id": 151,
-      "number": "U151",
-      "section": "outro",
+      "number": 14,
+      "section": "section_4",
       "text": {
         "sanskrit": "[Intro/Outro - No text]",
         "tamil": "[Intro/Outro - No text]",

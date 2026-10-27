@@ -14,6 +14,7 @@ const Player = ({
   currentIndex,
   onPrevious,
   onNext,
+  onRangeRestart,
   onSlokaComplete,
   repeatCount,
   setRepeatCount,
@@ -27,27 +28,29 @@ const Player = ({
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
   const [currentRepeat, setCurrentRepeat] = useState(1)
-  const [speed, setSpeed] = useState(1)
+  const [speed, setSpeed] = useState(2)
 
   const [audioElement, setAudioElement] = useState(null)
 
   // Refs read by the single long-lived timeupdate listener (avoids stale closures)
   const latestRef = useRef({})
-  const repeatRef = useRef(1)            // current repeat number of this sloka
+  const iterationRef = useRef(1)         // current pass (iteration) through the range
   const endHandledRef = useRef(false)    // end-of-segment logic already ran for this segment
   const continueRef = useRef(false)      // next sloka change should keep playing (range mode)
   const advanceTimerRef = useRef(null)   // pending advance timeout
   const isPlayingRef = useRef(false)     // mirror of isPlaying (user intent)
-  const speedRef = useRef(1)
+  const speedRef = useRef(2)
 
   latestRef.current = {
     sloka,
     currentIndex,
     rangeMode,
+    rangeStart,
     rangeEnd,
     repeatCount,
     slokasLength: slokas.length,
     onNext,
+    onRangeRestart,
     onSlokaComplete
   }
   isPlayingRef.current = isPlaying
@@ -138,8 +141,12 @@ const Player = ({
   useEffect(() => {
     if (!audioElement || !sloka?.audio) return
     clearAdvanceTimer()
-    repeatRef.current = 1
-    setCurrentRepeat(1)
+    // Keep the iteration counter during a range loop-back (driven by continueRef);
+    // only a fresh, non-continued selection resets the pass count to 1.
+    if (!continueRef.current) {
+      iterationRef.current = 1
+      setCurrentRepeat(1)
+    }
     seekToStart(audioElement, sloka)
     setDuration(sloka.audio.duration)
 
@@ -160,7 +167,7 @@ const Player = ({
     setAutoPlay(false)
     clearAdvanceTimer()
     continueRef.current = false
-    repeatRef.current = 1
+    iterationRef.current = 1
     setCurrentRepeat(1)
     seekToStart(audioElement, latestRef.current.sloka)
     startPlayback(audioElement)
@@ -175,6 +182,7 @@ const Player = ({
         sloka: s,
         currentIndex: idx,
         rangeMode: inRange,
+        rangeStart: start,
         rangeEnd: end,
         repeatCount: repeats,
         slokasLength,
@@ -189,33 +197,11 @@ const Player = ({
       endHandledRef.current = true
       audioElement.pause()
 
-      if (repeatRef.current < repeats) {
-        // Repeat this sloka
-        repeatRef.current += 1
-        setCurrentRepeat(repeatRef.current)
-        seekToStart(audioElement, s)
-        startPlayback(audioElement)
-        return
-      }
-
       complete(s.id)
 
-      if (inRange) {
-        if (idx < end - 1) {
-          // Advance and keep playing after a short gap
-          advanceTimerRef.current = setTimeout(() => {
-            advanceTimerRef.current = null
-            continueRef.current = true
-            latestRef.current.onNext()
-          }, 500)
-        } else {
-          // End of range: stop on the last sloka
-          seekToStart(audioElement, s)
-          isPlayingRef.current = false
-          setIsPlaying(false)
-        }
-      } else {
-        // Single sloka: stop, then show the next sloka (paused)
+      if (!inRange) {
+        // Single sloka (e.g. grid click): play exactly once, then stop.
+        // Repeat count does not apply outside range mode.
         isPlayingRef.current = false
         setIsPlaying(false)
         if (idx < slokasLength - 1) {
@@ -224,6 +210,44 @@ const Player = ({
             latestRef.current.onNext()
           }, 500)
         }
+        return
+      }
+
+      // Range mode: the repeat count repeats the WHOLE range as a block.
+      if (idx < end - 1) {
+        // More slokas left in this pass: advance and keep playing after a gap.
+        advanceTimerRef.current = setTimeout(() => {
+          advanceTimerRef.current = null
+          continueRef.current = true
+          latestRef.current.onNext()
+        }, 500)
+        return
+      }
+
+      // Reached the last sloka of the range.
+      const totalPasses = repeats > 0 ? repeats : 1
+      if (iterationRef.current < totalPasses) {
+        // Another pass remains: loop back to the first sloka of the range.
+        iterationRef.current += 1
+        setCurrentRepeat(iterationRef.current)
+        advanceTimerRef.current = setTimeout(() => {
+          advanceTimerRef.current = null
+          const targetIndex = start - 1
+          if (targetIndex === idx) {
+            // Single-sloka range: index won't change, so restart in place.
+            seekToStart(audioElement, s)
+            startPlayback(audioElement)
+          } else {
+            // Multi-sloka range: jump back to the range start and keep playing.
+            continueRef.current = true
+            latestRef.current.onRangeRestart()
+          }
+        }, 500)
+      } else {
+        // Final pass complete: stop on the last sloka of the range.
+        seekToStart(audioElement, s)
+        isPlayingRef.current = false
+        setIsPlaying(false)
       }
     }
 
@@ -295,67 +319,66 @@ const Player = ({
     applySpeed(audioElement)
   }
 
+  const progressPct = (currentTime / duration) * 100 || 0
+
   return (
-    <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-6 md:p-8">
-      {/* Current Sloka Info */}
-      <div className="text-center mb-6">
-        <div className="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full text-lg font-bold mb-2">
-          Sloka {sloka.number}
+    <div className="bg-paper-card border border-paper-line rounded-2xl p-7 md:p-8">
+      {/* Title */}
+      <div className="text-center mb-5">
+        <div className="text-sm text-ink-500">
+          {getSlokaLabel(sloka)}
+          {rangeMode && (
+            <span className="text-ink-400">
+              {'  ·  '}Range {getSlokaLabel(slokas[rangeStart - 1])}–{getSlokaLabel(slokas[rangeEnd - 1])}
+            </span>
+          )}
         </div>
-        {rangeMode && (
-          <div className="text-sm text-purple-600 font-semibold">
-            Range Mode: {getSlokaLabel(slokas[rangeStart - 1])} - {getSlokaLabel(slokas[rangeEnd - 1])}
-          </div>
-        )}
         {repeatCount > 1 && (
-          <div className="text-sm text-orange-600 font-semibold mt-1">
-            Repeat: {currentRepeat} / {repeatCount}
+          <div className="mt-1 text-xs font-semibold text-saff-700">
+            Round {currentRepeat} / {repeatCount}
           </div>
         )}
       </div>
 
-      {/* Progress Bar */}
+      {/* Progress */}
       <div className="mb-6">
         <input
           type="range"
           min="0"
           max="100"
-          value={(currentTime / duration) * 100 || 0}
+          value={progressPct}
           onChange={handleSeek}
-          className="w-full h-3 bg-gradient-to-r from-purple-200 to-pink-200 rounded-full appearance-none cursor-pointer slider"
+          aria-label="Seek within sloka"
+          className="scrubber w-full cursor-pointer"
           style={{
-            background: `linear-gradient(to right, #ec4899 0%, #ec4899 ${(currentTime / duration) * 100}%, #e9d5ff ${(currentTime / duration) * 100}%, #e9d5ff 100%)`
+            background: `linear-gradient(to right, #d2691e 0%, #d2691e ${progressPct}%, #eceae5 ${progressPct}%, #eceae5 100%)`
           }}
         />
-        <div className="flex justify-between text-sm text-gray-600 mt-2">
+        <div className="flex justify-between text-xs text-ink-500 mt-2">
           <span>{formatTime(currentTime)}</span>
           <span>{formatTime(duration)}</span>
         </div>
       </div>
 
-      {/* Playback Controls */}
-      <div className="flex items-center justify-center gap-4 mb-6">
+      {/* Controls */}
+      <div className="flex items-center justify-center gap-6 mb-6">
         <button
           type="button"
           onClick={handlePrevious}
           aria-label="Previous sloka"
           disabled={currentIndex === 0 || (rangeMode && currentIndex <= rangeStart - 1)}
-          className="p-4 rounded-full bg-purple-100 hover:bg-purple-200 disabled:opacity-30 disabled:cursor-not-allowed transition-all transform hover:scale-110"
+          className="w-10 h-10 grid place-items-center rounded-full bg-paper-card text-ink-900 border border-paper-line hover:bg-paper-bg disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
         >
-          <SkipBack className="w-6 h-6 text-purple-600" />
+          <SkipBack className="w-4 h-4" />
         </button>
 
         <button
           type="button"
           onClick={togglePlay}
           aria-label={isPlaying ? 'Pause' : 'Play'}
-          className="p-6 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 transition-all transform hover:scale-110 shadow-lg"
+          className="w-[58px] h-[58px] grid place-items-center rounded-full bg-ink-900 text-white hover:bg-ink-800 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-saff-500"
         >
-          {isPlaying ? (
-            <Pause className="w-8 h-8 text-white" />
-          ) : (
-            <Play className="w-8 h-8 text-white" />
-          )}
+          {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6 translate-x-0.5" />}
         </button>
 
         <button
@@ -363,41 +386,30 @@ const Player = ({
           onClick={handleNext}
           aria-label="Next sloka"
           disabled={currentIndex === slokas.length - 1 || (rangeMode && currentIndex >= rangeEnd - 1)}
-          className="p-4 rounded-full bg-purple-100 hover:bg-purple-200 disabled:opacity-30 disabled:cursor-not-allowed transition-all transform hover:scale-110"
+          className="w-10 h-10 grid place-items-center rounded-full bg-paper-card text-ink-900 border border-paper-line hover:bg-paper-bg disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
         >
-          <SkipForward className="w-6 h-6 text-purple-600" />
+          <SkipForward className="w-4 h-4" />
         </button>
       </div>
 
-      {/* Speed Control */}
-      <div role="group" aria-label="Playback speed">
-        <div className="flex items-center gap-2 mb-3">
-          <Gauge className="w-5 h-5 text-purple-600" aria-hidden="true" />
-          <span className="text-sm font-semibold text-gray-700">Speed</span>
-        </div>
-        <div className="grid grid-cols-4 gap-2">
+      {/* Speed — segmented control */}
+      <div className="flex justify-center">
+        <div role="group" aria-label="Playback speed" className="inline-flex gap-1 bg-paper-bg border border-paper-line rounded-xl p-1">
           {SPEED_OPTIONS.map((rate) => (
             <button
               key={rate}
               type="button"
               onClick={() => handleSpeedChange(rate)}
               aria-pressed={speed === rate}
-              aria-label={`Play at ${rate} times speed`}
-              className={`py-3 min-h-[48px] text-lg font-bold rounded-xl transition-all transform focus:outline-none focus-visible:ring-4 focus-visible:ring-purple-300 ${
-                speed === rate
-                  ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg scale-105'
-                  : 'bg-purple-100 text-purple-700 hover:bg-purple-200'
+              aria-label={`${rate}x playback speed`}
+              className={`px-4 py-2 rounded-lg text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-saff-500 ${
+                speed === rate ? 'bg-paper-card text-ink-900 shadow-sm' : 'text-ink-500 hover:text-ink-900'
               }`}
             >
               {rate}x
             </button>
           ))}
         </div>
-      </div>
-
-      {/* Note about audio */}
-      <div className="mt-4 p-3 bg-green-50 border border-green-200 rounded-lg text-xs text-green-800">
-        <strong>✓ Real Audio Loaded!</strong> Playing from full audio file with timestamp-based navigation.
       </div>
     </div>
   )
