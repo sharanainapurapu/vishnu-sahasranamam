@@ -1,41 +1,44 @@
-# Helper scripts
+# Scripts
 
-Python helpers used to extract audio and calibrate sloka timestamps. They are not part of the web app build.
+Python helpers that prepare the app's data from the raw teacher recordings.
+They are not part of the web build — you run them by hand when the recordings
+or the language script change. Both need `ffmpeg`/`ffprobe` on your PATH.
 
-Run every script from the repo root, because input and output paths are relative to it:
+## `build_audio_manifest.py`
+
+Reads the raw recordings from `Audio Recordings/` (git-ignored) and produces:
+
+- `public/audio/tutorial/<key>.m4a` and `public/audio/nontutorial/<key>.m4a` —
+  every clip re-encoded to ~64 kbps mono AAC (fine for a single voice, ~3x
+  smaller than the 128k+ originals). Filenames are opaque hashes so sloka
+  numbers never appear in a URL.
+- `public/data/manifest.json` — the single source of truth for which slokas and
+  bundles exist in each mode, whether each is enabled, and which audio key it
+  maps to.
 
 ```bash
-python3 scripts/calculate_timestamps.py
+python3 scripts/build_audio_manifest.py --probe-only   # print the plan, no encoding
+python3 scripts/build_audio_manifest.py                # encode + write manifest
 ```
 
-For npm commands (`npm run dev`, `npm run build`, ...) see [../docs/scripts.md](../docs/scripts.md).
+The script resolves all the messy bits of the raw files (mixed extensions, two
+naming schemes for Pūrvapīṭhikā, gaps, the combined 8–12 clip). The decisions it
+bakes in are documented at the top of the file; change them there.
 
-## Scripts
+Missing files (e.g. Namalu sloka with no recording, non-tutorial bundles 27–30
+and 51–52, Uttarapīṭhikā bundles) are written to the manifest as `enabled: false`
+placeholders. When the teacher sends them, drop the file in, re-run, and they
+turn on automatically.
 
-| Script | Purpose | Input | Output |
-|---|---|---|---|
-| `analyze_video_text.py` | Detect sloka boundaries from on-screen text changes | `public/audio/full_slokas.mp4` | `scripts/data/sloka_timestamps_detected.json` |
-| `audio_silence_detection.py` | Extract audio and detect silences between slokas | `public/audio/full_slokas.mp4` | `temp_audio.wav` (temporary, git-ignored) |
-| `calculate_timestamps.py` | Interpolate timestamps from manual calibration points | calibration points in the script | `scripts/data/sloka_timestamps_accurate.json` |
-| `extract_subtitles.py` | Read subtitle/metadata tracks from the source MP4 | `public/audio/full_slokas.mp4` | console output |
-| `manual_timestamp_tool.py` | Extract sample frames and create a CSV for manual timestamping | `public/audio/full_slokas.mp4` | `timestamp_samples/` (git-ignored), `scripts/data/timestamps_template.csv` |
-| `split_audio_simple.py` | Legacy: equal-duration split of the full MP3 | `public/audio/vishnu_sahasranamam_full.mp3` | `scripts/data/sloka_timestamps.json` |
-| `split_audio_smart.py` | Legacy: silence-based split into per-sloka MP3s | `public/audio/vishnu_sahasranamam_full.mp3` | per-sloka MP3s and `timestamps.json` in `public/audio/` |
+## `build_text_skeleton.py`
 
-Notes:
+Reads `manifest.json` and writes `public/data/text-content.json` — the per-sloka
+multi-language text, keyed by `(section, slokaNumber)` so it always lines up with
+the audio. It seeds every language field with a placeholder.
 
-- The source `public/audio/*.mp4` file is large and git-ignored; place it there locally before running the video-based scripts.
-- `split_audio_simple.py` and `split_audio_smart.py` belong to the old per-sloka MP3 approach. The app now plays a single self-hosted file, `public/audio/full_slokas.m4a` (see [../docs/audio.md](../docs/audio.md)). `split_audio_smart.py` still writes into `public/audio/`, so anything it produces would be deployed.
-- `manual_timestamp_tool.py` mentions `convert_csv_to_json.py`, which does not exist in this repo.
+```bash
+python3 scripts/build_text_skeleton.py
+```
 
-## Data files (`scripts/data/`)
-
-| File | Description |
-|---|---|
-| `scripts/data/slokas-sample.json` | Sloka text in Sanskrit, Tamil, Telugu, Kannada, Malayalam and Hindi for all 109 slokas. Kept as the source for future-version language scripts; not loaded by the app. |
-| `scripts/data/sloka_timestamps.json` | Historical timestamp output from the equal-duration split. |
-| `scripts/data/sloka_timestamps_final.json` | Historical calibrated timestamps (see [../docs/timestamp-calibration.md](../docs/timestamp-calibration.md)). |
-| `scripts/data/timestamps_template.csv` | Template for entering sloka start times manually. |
-| `scripts/data/sloka_tracking_template.csv` | Template for tracking sloka progress while calibrating. |
-
-The app loads its data at runtime from `public/data/slokas-complete.json`.
+Paste the real language script over the placeholders. Re-running merges: real
+text you already added is preserved, new sloka numbers are added.

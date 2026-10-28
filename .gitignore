@@ -29,28 +29,10 @@ yarn-error.log*
 .vscode/
 .idea/
 
-# Temporary files created during timestamp calibration
-timestamp_check_*.jpg
-corner_*.jpg
-frame_*.jpg
-frames/
-sloka_tracking/
-key_frames/
-verify_frames/
-frame_timestamps.json
-
-# Voice samples (test files)
-voice_samples/
-
-# Alternative timestamp files (keeping only the final one)
-scripts/data/sloka_timestamps_detected.json
-scripts/data/sloka_timestamps_accurate.json
-# Outputs of scripts/audio_silence_detection.py and scripts/manual_timestamp_tool.py
-temp_audio.wav
-timestamp_samples/
-
-# Source video for audio extraction (>100MB, do not commit)
-public/audio/*.mp4
+# Raw teacher recordings — source material, never committed.
+# scripts/build_audio_manifest.py encodes these into public/audio/.
+Audio Recordings/
+Audio Recordings 2/
 
 # Agent workflow files
 .agents/

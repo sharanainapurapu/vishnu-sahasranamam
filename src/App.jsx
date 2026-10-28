@@ -1,150 +1,163 @@
-import { useState, useEffect } from 'react'
-import Player from './components/Player'
-import SlokaDisplay from './components/SlokaDisplay'
-import RangeSelector from './components/RangeSelector'
-import SlokaGrid from './components/SlokaGrid'
-import LanguageSelector from './components/LanguageSelector'
-import { SHOW_LANGUAGES, isSlokaEnabled } from './config'
+import { useState, useEffect, useMemo } from 'react'
+import PracticeCard from './components/PracticeCard'
+import SelectionCard from './components/SelectionCard'
+import { loadData, itemsForMode, displayItemForRange } from './utils/manifest'
+import { DEFAULT_MODE } from './config'
 
 const SWAMIJI_IMG = `${import.meta.env.BASE_URL}images/swamiji.png`
 
+const firstEnabledFrom = (items, from = 0) => {
+  for (let i = Math.max(0, from); i < items.length; i++) if (items[i].enabled) return i
+  for (let i = 0; i < items.length; i++) if (items[i].enabled) return i
+  return 0
+}
+
 function App() {
-  const [slokas, setSlokas] = useState([])
-  const [currentSlokaIndex, setCurrentSlokaIndex] = useState(0)
+  const [sections, setSections] = useState([])
+  const [mode, setMode] = useState(DEFAULT_MODE)
   const [language, setLanguage] = useState('english')
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [completed, setCompleted] = useState([])
+
+  // Grid selection: selStart is the first tapped index; selEnd the second.
+  // selStart === selEnd means a single verse is selected.
+  const [selStart, setSelStart] = useState(0)
+  const [selEnd, setSelEnd] = useState(0)
+
+  // rangeMode drives the player's loop behaviour; autoPlay asks it to start.
   const [rangeMode, setRangeMode] = useState(false)
-  const [rangeStart, setRangeStart] = useState(1)
-  const [rangeEnd, setRangeEnd] = useState(10)
-  const [repeatCount, setRepeatCount] = useState(Infinity)
-  const [completedSlokas, setCompletedSlokas] = useState([])
-  const [metadata, setMetadata] = useState(null)
   const [autoPlay, setAutoPlay] = useState(false)
 
+  const items = useMemo(() => itemsForMode(sections, mode), [sections, mode])
+
   useEffect(() => {
-    const basePath = import.meta.env.BASE_URL || '/'
-    fetch(`${basePath}data/slokas-complete.json`)
-      .then(res => res.json())
-      .then(data => {
-        const enabled = (data.slokas || []).filter(isSlokaEnabled)
-        setSlokas(enabled)
-        setMetadata({ ...data.metadata, totalSlokas: enabled.length })
-      })
-      .catch(error => console.error('Error loading slokas:', error))
+    loadData()
+      .then((data) => setSections(data.sections))
+      .catch((e) => console.error('Failed to load data:', e))
   }, [])
 
   useEffect(() => {
-    const saved = localStorage.getItem('completedSlokas')
-    if (saved) setCompletedSlokas(JSON.parse(saved))
+    const saved = localStorage.getItem('vsn.completed')
+    if (saved) { try { setCompleted(JSON.parse(saved)) } catch (e) {} }
   }, [])
-
   useEffect(() => {
-    localStorage.setItem('completedSlokas', JSON.stringify(completedSlokas))
-  }, [completedSlokas])
+    localStorage.setItem('vsn.completed', JSON.stringify(completed))
+  }, [completed])
 
-  // Keep range + current selection within the enabled sloka count.
+  // On mode change / first load, reset selection to the first enabled verse.
   useEffect(() => {
-    const n = slokas.length
-    if (!n) return
-    setRangeEnd((e) => Math.min(e, n))
-    setRangeStart((st) => Math.min(st, n))
-    setCurrentSlokaIndex((i) => Math.min(i, n - 1))
-  }, [slokas.length])
+    if (!items.length) return
+    const start = firstEnabledFrom(items, 0)
+    setCurrentIndex(start)
+    setSelStart(start)
+    setSelEnd(start)
+    setRangeMode(false)
+    setAutoPlay(false)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode, items.length])
 
-  const handleSlokaComplete = (slokaId) => {
-    if (!completedSlokas.includes(slokaId)) setCompletedSlokas([...completedSlokas, slokaId])
+  const markComplete = (key) => {
+    if (key && !completed.includes(key)) setCompleted((c) => [...c, key])
   }
 
-  const handleSlokaSelect = (index) => {
-    setCurrentSlokaIndex(index)
+  // Grid tap: the state machine for single vs range selection. Tapping only
+  // SELECTS (it loads the verse + shows its text); playback starts from the
+  // Play button, so browsing verses never auto-plays.
+  //   - No range in progress (selStart === selEnd): this tap selects a single
+  //     verse (and shows it in the player).
+  //   - A single is already selected and a different verse is tapped: form a
+  //     range (selStart..this).
+  //   - A full range already exists: start fresh with a new single selection.
+  const handleTapItem = (index) => {
+    const rangeComplete = selStart !== selEnd
+    if (rangeComplete || selStart === index) {
+      // Fresh single selection (no auto-play).
+      setSelStart(index)
+      setSelEnd(index)
+      setRangeMode(false)
+      setCurrentIndex(index)
+      return
+    }
+    // A single is selected; this second, different tap completes a range.
+    setSelEnd(index)
     setRangeMode(false)
   }
 
-  const currentSloka = slokas[currentSlokaIndex]
+  // Play the current single selection (from the Play button).
+  const handlePlaySingle = () => {
+    setRangeMode(false)
+    setCurrentIndex(selStart)
+    setAutoPlay(true)
+  }
+
+  const handlePlayRange = () => {
+    const lo = Math.min(selStart, selEnd)
+    const start = firstEnabledFrom(items, lo)
+    setRangeMode(true)
+    setCurrentIndex(start)
+    setAutoPlay(true)
+  }
+
+  const currentItem = items[currentIndex] || null
+  const rangeStart = Math.min(selStart, selEnd)
+  const rangeEnd = Math.max(selStart, selEnd)
+
+  // Text shown in the card: the whole selected range concatenated (same in both
+  // modes). The player still walks items one at a time via currentItem.
+  const displayItem = items.length
+    ? displayItemForRange(items, rangeStart, rangeEnd)
+    : null
 
   return (
     <div className="min-h-screen bg-paper-bg">
       <div className="max-w-5xl mx-auto px-5 py-10">
-        {/* Header */}
-        <header className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
-          <div className="flex items-center gap-4">
-            <img
-              src={SWAMIJI_IMG}
-              alt="Swamiji blessing"
-              className="w-14 h-14 rounded-full object-cover"
-              loading="eager"
-            />
-            <div>
-              <h1 className="font-serif font-medium text-2xl md:text-[26px] tracking-tight text-ink-900 leading-none">
-                Vishnu Sahasranamam
-              </h1>
-              <p className="text-sm text-ink-500 mt-1">
-                Learning app for kids{metadata ? ` · ${metadata.totalSlokas} verses` : ''}
-              </p>
-            </div>
+        <header className="flex items-center gap-4 mb-8">
+          <img src={SWAMIJI_IMG} alt="Swamiji blessing"
+               className="w-14 h-14 rounded-full object-cover" loading="eager" />
+          <div>
+            <h1 className="font-serif font-medium text-2xl md:text-[26px] tracking-tight text-ink-900 leading-none">
+              Vishnu Sahasranamam
+            </h1>
+            <p className="text-sm text-ink-500 mt-1">
+              Learning app for kids{items.length ? ` · ${items.filter(i => i.enabled).length} verses` : ''}
+            </p>
           </div>
-
-          {SHOW_LANGUAGES && (
-            <LanguageSelector
-              languages={metadata?.languages || []}
-              currentLanguage={language}
-              onLanguageChange={setLanguage}
-            />
-          )}
         </header>
 
-        {/* Main two-column area */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-start">
-          <div className="lg:col-span-2 space-y-5">
-            {SHOW_LANGUAGES && currentSloka && (
-              <SlokaDisplay sloka={currentSloka} language={language} />
-            )}
-
-            {currentSloka && (
-              <Player
-                sloka={currentSloka}
-                slokas={slokas}
-                currentIndex={currentSlokaIndex}
-                onPrevious={() => setCurrentSlokaIndex(Math.max(0, currentSlokaIndex - 1))}
-                onNext={() => setCurrentSlokaIndex(Math.min(slokas.length - 1, currentSlokaIndex + 1))}
-                onRangeRestart={() => setCurrentSlokaIndex(rangeStart - 1)}
-                onSlokaComplete={handleSlokaComplete}
-                repeatCount={repeatCount}
-                setRepeatCount={setRepeatCount}
-                rangeMode={rangeMode}
-                rangeStart={rangeStart}
-                rangeEnd={rangeEnd}
-                autoPlay={autoPlay}
-                setAutoPlay={setAutoPlay}
-              />
-            )}
-          </div>
-
-          <div className="lg:col-span-1">
-            <RangeSelector
-              slokas={slokas}
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 items-start">
+          <div className="lg:col-span-3">
+            <PracticeCard
+              item={currentItem}
+              displayItem={displayItem}
+              items={items}
+              currentIndex={currentIndex}
+              mode={mode}
+              language={language}
+              onPrevious={() => setCurrentIndex((i) => Math.max(0, i - 1))}
+              onNext={() => setCurrentIndex((i) => Math.min(items.length - 1, i + 1))}
+              onRangeRestart={() => setCurrentIndex(firstEnabledFrom(items, rangeStart))}
+              onSlokaComplete={markComplete}
+              rangeMode={rangeMode}
               rangeStart={rangeStart}
               rangeEnd={rangeEnd}
-              onRangeStartChange={setRangeStart}
-              onRangeEndChange={setRangeEnd}
-              onStartPractice={() => {
-                setRangeMode(true)
-                setCurrentSlokaIndex(rangeStart - 1)
-                setAutoPlay(true)
-              }}
-              repeatCount={repeatCount}
-              onRepeatChange={setRepeatCount}
+              autoPlay={autoPlay}
+              setAutoPlay={setAutoPlay}
             />
           </div>
-        </div>
 
-        {/* Grid */}
-        <div className="mt-5">
-          <SlokaGrid
-            slokas={slokas}
-            currentIndex={currentSlokaIndex}
-            completedSlokas={completedSlokas}
-            onSlokaSelect={handleSlokaSelect}
-          />
+          <div className="lg:col-span-2">
+            <SelectionCard
+              mode={mode} onModeChange={setMode}
+              language={language} onLanguageChange={setLanguage}
+              items={items}
+              currentIndex={currentIndex}
+              completed={completed}
+              selStart={selStart} selEnd={selEnd}
+              onTapItem={handleTapItem}
+              onPlayRange={handlePlayRange}
+              onPlaySingle={handlePlaySingle}
+            />
+          </div>
         </div>
 
         <footer className="text-center text-xs text-ink-500 py-6">

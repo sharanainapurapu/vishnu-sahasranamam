@@ -1,33 +1,31 @@
-// The bottom grid (SlokaGrid) is the source of truth for how each entry is named:
-// it shows `sloka.number` and titles the card `Sloka ${sloka.number}`.
-// The range dropdowns use the same helper so they list the same entries, in the
-// same order, with the same labels. Sloka numbers restart per section, so the
-// dropdowns group options by section; option values are array positions (1-based).
+import { getSectionName } from './sectionTheme'
 
-const SECTION_TITLES = {
-  intro: 'Introduction',
-  section_1: 'Pūrvapīṭhikā',
-  section_2: 'Dhyānam',
-  section_3: 'Sahasranāmam',
-  section_4: 'Uttarapīṭhikā',
-  outro: 'Conclusion'
+// A selectable item (from utils/manifest.js) already carries `label` ("3" or
+// "8–19") and `section`. These helpers format it for display consistently.
+
+export const getItemLabel = (item) => {
+  if (!item) return ''
+  return item.start === item.end ? `Sloka ${item.start}` : `Slokas ${item.start}–${item.end}`
 }
 
-export const getSlokaLabel = (sloka) => `Sloka ${sloka?.number}`
+export const getSectionTitle = (sectionKey) => getSectionName(sectionKey)
 
-export const getSectionTitle = (section) =>
-  SECTION_TITLES[section] || String(section || '')
-
-// [{ section, title, items: [{ position, label }] }] in array order
-export const groupSlokasBySection = (slokas) => {
+// Group a flat item list (for one mode) by section, preserving order, so the
+// range dropdowns and grid can show section headers. Option values are the
+// item's index in the flat list.
+export const groupItemsBySection = (items) => {
   const groups = []
-  slokas.forEach((sloka, index) => {
-    const item = { position: index + 1, label: getSlokaLabel(sloka) }
+  items.forEach((item, index) => {
     const last = groups[groups.length - 1]
-    if (last && last.section === sloka.section) {
-      last.items.push(item)
+    const row = { index, item }
+    if (last && last.section === item.section) {
+      last.items.push(row)
     } else {
-      groups.push({ section: sloka.section, title: getSectionTitle(sloka.section), items: [item] })
+      groups.push({
+        section: item.section,
+        title: getSectionTitle(item.section),
+        items: [row],
+      })
     }
   })
   return groups

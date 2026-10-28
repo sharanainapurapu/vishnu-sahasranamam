@@ -1,30 +1,58 @@
-# Audio File
+# Audio
 
-The app plays `full_slokas.m4a`, served from `public/audio/` (same origin as the app).
+## Model
 
-**File Details:**
-- Size: ~34 MB
-- Duration: 36.7 minutes (2200 seconds)
-- Format: M4A (AAC, 128 kbps, 44.1 kHz stereo), audio stream copied unchanged from the original MP4
-- Contains: 152 sloka segments across 4 sections (plus an intro)
+Every sloka (tutorial mode) or bundle of ~6–7 slokas (non-tutorial mode) is its
+own short clip. There is no single long track and no timestamp seeking — a clip
+plays from start to end. The clips live under:
 
-The audio timeline is identical to the original MP4, so the timestamps in
-[`scripts/data/sloka_timestamps_final.json`](../scripts/data/sloka_timestamps_final.json) and [`public/data/slokas-complete.json`](../public/data/slokas-complete.json) apply as-is.
-[`src/components/Player.jsx`](../src/components/Player.jsx) loads it via `${import.meta.env.BASE_URL}audio/full_slokas.m4a`,
-which resolves to `/audio/...` in dev and `/vsn/audio/...` on GitHub Pages.
+```
+public/audio/tutorial/<key>.m4a      # one per individual sloka
+public/audio/nontutorial/<key>.m4a   # one per bundle
+```
 
-## Why not Google Drive?
+Filenames are opaque hashes (not sloka numbers). The mapping from sloka → clip
+lives in [`public/data/manifest.json`](../public/data/manifest.json).
 
-The audio was previously streamed from Google Drive. Drive returns an HTML page
-(not the media file) to browser media requests, which caused
-`NotSupportedError: The element has no supported sources`.
+## Encoding
+
+All clips are re-encoded to ~64 kbps mono AAC by `build_audio_manifest.py`. For
+a single speaking voice this is indistinguishable from the 128k+ originals and
+roughly a third of the size. The source recordings stay in the git-ignored
+`Audio Recordings/` folder; only the encoded output is committed.
+
+The full encoded set is large (tutorial clips are long teaching recordings —
+several hours in total). See the loading strategy below for why that is fine.
+
+## Loading strategy
+
+The app never downloads the whole set. It:
+
+1. loads only the manifest + text on open (tiny),
+2. fetches a clip on demand, as a `Blob` → `blob:` object URL
+   ([`src/utils/audioLoader.js`](../src/utils/audioLoader.js)),
+3. prefetches the next clip in a range while the current one plays, and
+4. caches played clips in a service worker ([`public/sw.js`](../public/sw.js)),
+   so the infinite repeat loop and re-visits replay from disk with no extra
+   network.
+
+So the only network cost is the first play of each clip a learner actually uses.
+
+## Download protection
+
+Serving via `blob:` URLs, opaque filenames, and the service-worker cache means
+there is no obvious "save audio as" target and no plain file URL in the page.
+This deters casual copying. It is **not** DRM: any audio a browser can play has
+been downloaded, so a determined user can still capture it. True protection
+would require signed URLs or encrypted streaming behind a backend, which this
+static GitHub Pages site intentionally does not use.
 
 ## Regenerating
 
-If the source MP4 changes, re-extract the audio without re-encoding (keeps the timeline exact):
+When the teacher shares new or corrected recordings, drop them into
+`Audio Recordings/` and re-run:
 
 ```bash
-ffmpeg -y -i public/audio/full_slokas.mp4 -vn -map 0:a:0 -c:a copy -movflags +faststart public/audio/full_slokas.m4a
+python3 scripts/build_audio_manifest.py
+python3 scripts/build_text_skeleton.py   # if new sloka numbers appeared
 ```
-
-Do not commit the MP4 (it is >100MB and git-ignored).

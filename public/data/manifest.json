@@ -1,0 +1,1587 @@
+{
+  "schemaVersion": 2,
+  "title": "Vishnu Sahasranamam",
+  "encoding": {
+    "codec": "aac",
+    "bitrate": "64k",
+    "channels": 1
+  },
+  "languages": [
+    "sanskrit",
+    "tamil",
+    "telugu",
+    "kannada",
+    "malayalam",
+    "hindi",
+    "english"
+  ],
+  "sections": [
+    {
+      "id": "section_purva",
+      "key": "purvapithika",
+      "name": "Pūrvapīṭhikā",
+      "order": 1,
+      "tutorial": [
+        {
+          "start": 1,
+          "end": 1,
+          "enabled": true,
+          "audioKey": "da85ece69a9e385e",
+          "duration": 233.365,
+          "note": ""
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "enabled": false,
+          "audioKey": null,
+          "duration": 0.0,
+          "note": "missing file — enable when teacher shares"
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "enabled": true,
+          "audioKey": "33673f0f269014be",
+          "duration": 222.187,
+          "note": ""
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "enabled": true,
+          "audioKey": "f4698c621c203700",
+          "duration": 203.499,
+          "note": ""
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "enabled": true,
+          "audioKey": "e1ca40897147e5cd",
+          "duration": 219.883,
+          "note": ""
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "enabled": true,
+          "audioKey": "58d08ecfdaa06df3",
+          "duration": 197.021,
+          "note": ""
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "enabled": true,
+          "audioKey": "a021d9fd55e335a1",
+          "duration": 246.921,
+          "note": ""
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "enabled": true,
+          "audioKey": "e5358b36c6918c53",
+          "duration": 219.008,
+          "note": ""
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "enabled": true,
+          "audioKey": "21b9c54c56df5048",
+          "duration": 237.056,
+          "note": ""
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "enabled": true,
+          "audioKey": "65cabd3bd964494c",
+          "duration": 200.597,
+          "note": ""
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "enabled": true,
+          "audioKey": "9f9c9babb7fbd40a",
+          "duration": 200.384,
+          "note": ""
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "enabled": true,
+          "audioKey": "470250d95a767749",
+          "duration": 198.368,
+          "note": ""
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "enabled": true,
+          "audioKey": "c2d42d03c2f80594",
+          "duration": 219.243,
+          "note": ""
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "enabled": true,
+          "audioKey": "33dc7ec93eda3ea0",
+          "duration": 211.051,
+          "note": ""
+        },
+        {
+          "start": 15,
+          "end": 15,
+          "enabled": true,
+          "audioKey": "8ad6a377258a992a",
+          "duration": 220.45,
+          "note": ""
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "enabled": true,
+          "audioKey": "021210738667e8c2",
+          "duration": 185.109,
+          "note": ""
+        },
+        {
+          "start": 17,
+          "end": 17,
+          "enabled": true,
+          "audioKey": "e49cf8e34ed969cd",
+          "duration": 213.867,
+          "note": ""
+        },
+        {
+          "start": 18,
+          "end": 18,
+          "enabled": true,
+          "audioKey": "59ddefd85b7aec3c",
+          "duration": 199.829,
+          "note": ""
+        },
+        {
+          "start": 19,
+          "end": 19,
+          "enabled": true,
+          "audioKey": "975592f9f8cb62f5",
+          "duration": 213.182,
+          "note": ""
+        },
+        {
+          "start": 20,
+          "end": 20,
+          "enabled": true,
+          "audioKey": "d887234d525e4225",
+          "duration": 231.125,
+          "note": ""
+        },
+        {
+          "start": 21,
+          "end": 21,
+          "enabled": true,
+          "audioKey": "3c4f926bc579ee91",
+          "duration": 212.393,
+          "note": ""
+        },
+        {
+          "start": 22,
+          "end": 22,
+          "enabled": true,
+          "audioKey": "c668b554056de505",
+          "duration": 215.992,
+          "note": ""
+        },
+        {
+          "start": 23,
+          "end": 23,
+          "enabled": true,
+          "audioKey": "57daff9e4f4c34e4",
+          "duration": 195.008,
+          "note": ""
+        },
+        {
+          "start": 24,
+          "end": 24,
+          "enabled": true,
+          "audioKey": "3d772ce18907d313",
+          "duration": 326.635,
+          "note": ""
+        }
+      ],
+      "nonTutorial": [
+        {
+          "start": 1,
+          "end": 5,
+          "enabled": true,
+          "audioKey": "528b7890b8be0569",
+          "duration": 159.445,
+          "note": ""
+        },
+        {
+          "start": 6,
+          "end": 13,
+          "enabled": true,
+          "audioKey": "3050dba1095631be",
+          "duration": 242.24,
+          "note": ""
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "enabled": true,
+          "audioKey": "917fa06cd4aa773f",
+          "duration": 196.651,
+          "note": ""
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "enabled": true,
+          "audioKey": "d2a3770135c80dd1",
+          "duration": 188.608,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "section_dhyanam",
+      "key": "dhyanam",
+      "name": "Dhyānam",
+      "order": 2,
+      "tutorial": [
+        {
+          "start": 1,
+          "end": 1,
+          "enabled": true,
+          "audioKey": "87811b8a4f2ed57d",
+          "duration": 644.145,
+          "note": ""
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "enabled": true,
+          "audioKey": "99e7e566dddcac3b",
+          "duration": 646.653,
+          "note": ""
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "enabled": true,
+          "audioKey": "efb82046aeb6691d",
+          "duration": 551.335,
+          "note": ""
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "enabled": true,
+          "audioKey": "21fde1b01fc76327",
+          "duration": 271.552,
+          "note": ""
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "enabled": true,
+          "audioKey": "62e59035a5a78b0f",
+          "duration": 347.835,
+          "note": ""
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "enabled": true,
+          "audioKey": "227d35af25d50a35",
+          "duration": 508.912,
+          "note": ""
+        }
+      ],
+      "nonTutorial": [
+        {
+          "start": 1,
+          "end": 4,
+          "enabled": true,
+          "audioKey": "5717f1dfcb55c352",
+          "duration": 189.909,
+          "note": ""
+        },
+        {
+          "start": 5,
+          "end": 6,
+          "enabled": true,
+          "audioKey": "35b4d09048b21733",
+          "duration": 72.427,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "section_namalu",
+      "key": "namalu",
+      "name": "Namavali",
+      "order": 3,
+      "tutorial": [
+        {
+          "start": 1,
+          "end": 1,
+          "enabled": true,
+          "audioKey": "e6bb1fa3dfc43b04",
+          "duration": 234.405,
+          "note": ""
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "enabled": true,
+          "audioKey": "43a6a0d2cdaf9390",
+          "duration": 211.673,
+          "note": ""
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "enabled": true,
+          "audioKey": "772b0c8b0da9750b",
+          "duration": 192.427,
+          "note": ""
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "enabled": true,
+          "audioKey": "01fd45a653c802d1",
+          "duration": 190.682,
+          "note": ""
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "enabled": true,
+          "audioKey": "2e002ebff2553fe2",
+          "duration": 207.772,
+          "note": ""
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "enabled": true,
+          "audioKey": "2d3b58330646c848",
+          "duration": 183.6,
+          "note": ""
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "enabled": true,
+          "audioKey": "bdfd9d0fd5437c4c",
+          "duration": 194.142,
+          "note": ""
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "enabled": true,
+          "audioKey": "396a1b4c00b53fd9",
+          "duration": 231.294,
+          "note": ""
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "enabled": true,
+          "audioKey": "ae7b6c2d8879c132",
+          "duration": 210.791,
+          "note": ""
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "enabled": true,
+          "audioKey": "15f13eb730f300b3",
+          "duration": 208.817,
+          "note": ""
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "enabled": true,
+          "audioKey": "be222768f76bc866",
+          "duration": 197.88,
+          "note": ""
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "enabled": true,
+          "audioKey": "1d5a52d279e54b19",
+          "duration": 210.953,
+          "note": ""
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "enabled": true,
+          "audioKey": "6abc19f5f06b172b",
+          "duration": 209.165,
+          "note": ""
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "enabled": true,
+          "audioKey": "5c21b7e9d02a7daa",
+          "duration": 216.131,
+          "note": ""
+        },
+        {
+          "start": 15,
+          "end": 15,
+          "enabled": true,
+          "audioKey": "a396acd7980a6561",
+          "duration": 195.489,
+          "note": ""
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "enabled": true,
+          "audioKey": "07ed4379ef732d4b",
+          "duration": 211.243,
+          "note": ""
+        },
+        {
+          "start": 17,
+          "end": 17,
+          "enabled": true,
+          "audioKey": "7b3f4aed464ba553",
+          "duration": 230.203,
+          "note": ""
+        },
+        {
+          "start": 18,
+          "end": 18,
+          "enabled": true,
+          "audioKey": "4bc16863aa8c233e",
+          "duration": 241.302,
+          "note": ""
+        },
+        {
+          "start": 19,
+          "end": 19,
+          "enabled": true,
+          "audioKey": "6048da058a73424c",
+          "duration": 208.939,
+          "note": ""
+        },
+        {
+          "start": 20,
+          "end": 20,
+          "enabled": true,
+          "audioKey": "1026afc403821229",
+          "duration": 230.464,
+          "note": ""
+        },
+        {
+          "start": 21,
+          "end": 21,
+          "enabled": true,
+          "audioKey": "d56e543e3fd8d026",
+          "duration": 215.616,
+          "note": ""
+        },
+        {
+          "start": 22,
+          "end": 22,
+          "enabled": true,
+          "audioKey": "59da6b913bfc6b31",
+          "duration": 225.344,
+          "note": ""
+        },
+        {
+          "start": 23,
+          "end": 23,
+          "enabled": true,
+          "audioKey": "093ac4c1d58062d6",
+          "duration": 201.503,
+          "note": ""
+        },
+        {
+          "start": 24,
+          "end": 24,
+          "enabled": true,
+          "audioKey": "07ea69ec9680eb47",
+          "duration": 254.653,
+          "note": ""
+        },
+        {
+          "start": 25,
+          "end": 25,
+          "enabled": true,
+          "audioKey": "b412f75d7f3be4bd",
+          "duration": 190.775,
+          "note": ""
+        },
+        {
+          "start": 26,
+          "end": 26,
+          "enabled": true,
+          "audioKey": "37eb5348e81e1e5e",
+          "duration": 211.776,
+          "note": ""
+        },
+        {
+          "start": 27,
+          "end": 27,
+          "enabled": true,
+          "audioKey": "f143cfdec292135a",
+          "duration": 242.091,
+          "note": ""
+        },
+        {
+          "start": 28,
+          "end": 28,
+          "enabled": true,
+          "audioKey": "46b85721e91d7234",
+          "duration": 189.684,
+          "note": ""
+        },
+        {
+          "start": 29,
+          "end": 29,
+          "enabled": true,
+          "audioKey": "e5f2a886bfbc578c",
+          "duration": 200.277,
+          "note": ""
+        },
+        {
+          "start": 30,
+          "end": 30,
+          "enabled": true,
+          "audioKey": "65f620dbb676cbd4",
+          "duration": 216.944,
+          "note": ""
+        },
+        {
+          "start": 31,
+          "end": 31,
+          "enabled": true,
+          "audioKey": "9a12fa97d06bf669",
+          "duration": 223.376,
+          "note": ""
+        },
+        {
+          "start": 32,
+          "end": 32,
+          "enabled": true,
+          "audioKey": "0743619a8f96c39d",
+          "duration": 224.607,
+          "note": ""
+        },
+        {
+          "start": 33,
+          "end": 33,
+          "enabled": true,
+          "audioKey": "dc939a0da8c4c26b",
+          "duration": 221.611,
+          "note": ""
+        },
+        {
+          "start": 34,
+          "end": 34,
+          "enabled": true,
+          "audioKey": "09e3be76152dfb4b",
+          "duration": 247.176,
+          "note": ""
+        },
+        {
+          "start": 35,
+          "end": 35,
+          "enabled": true,
+          "audioKey": "1e9ed93657286e71",
+          "duration": 224.026,
+          "note": ""
+        },
+        {
+          "start": 36,
+          "end": 36,
+          "enabled": true,
+          "audioKey": "7a5ed2bf9914ed74",
+          "duration": 218.56,
+          "note": ""
+        },
+        {
+          "start": 37,
+          "end": 37,
+          "enabled": true,
+          "audioKey": "5cba1afaad7855ab",
+          "duration": 234.155,
+          "note": ""
+        },
+        {
+          "start": 38,
+          "end": 38,
+          "enabled": true,
+          "audioKey": "58ebe823ea5bf3b3",
+          "duration": 242.453,
+          "note": ""
+        },
+        {
+          "start": 39,
+          "end": 39,
+          "enabled": true,
+          "audioKey": "f792c39eaf8f9358",
+          "duration": 224.862,
+          "note": ""
+        },
+        {
+          "start": 40,
+          "end": 40,
+          "enabled": true,
+          "audioKey": "6fd4ab182e52b884",
+          "duration": 214.251,
+          "note": ""
+        },
+        {
+          "start": 41,
+          "end": 41,
+          "enabled": true,
+          "audioKey": "459ca6a207a3b321",
+          "duration": 199.723,
+          "note": ""
+        },
+        {
+          "start": 42,
+          "end": 42,
+          "enabled": true,
+          "audioKey": "6e2e6e0c3f34c1a0",
+          "duration": 231.085,
+          "note": ""
+        },
+        {
+          "start": 43,
+          "end": 43,
+          "enabled": true,
+          "audioKey": "1d656d2dc1de4bf6",
+          "duration": 221.44,
+          "note": ""
+        },
+        {
+          "start": 44,
+          "end": 44,
+          "enabled": true,
+          "audioKey": "8d1a7d9c6bf0c5ed",
+          "duration": 226.65,
+          "note": ""
+        },
+        {
+          "start": 45,
+          "end": 45,
+          "enabled": true,
+          "audioKey": "6752423d79d284ce",
+          "duration": 221.824,
+          "note": ""
+        },
+        {
+          "start": 46,
+          "end": 46,
+          "enabled": true,
+          "audioKey": "85c91bf71ce8280c",
+          "duration": 203.861,
+          "note": ""
+        },
+        {
+          "start": 47,
+          "end": 47,
+          "enabled": true,
+          "audioKey": "529ed92ba41ed7d2",
+          "duration": 228.043,
+          "note": ""
+        },
+        {
+          "start": 48,
+          "end": 48,
+          "enabled": true,
+          "audioKey": "f69a9117c4c6554d",
+          "duration": 241.024,
+          "note": ""
+        },
+        {
+          "start": 49,
+          "end": 49,
+          "enabled": true,
+          "audioKey": "9c0b870d86e3d70c",
+          "duration": 227.718,
+          "note": ""
+        },
+        {
+          "start": 50,
+          "end": 50,
+          "enabled": true,
+          "audioKey": "636bbd1d83e149ef",
+          "duration": 244.245,
+          "note": ""
+        },
+        {
+          "start": 51,
+          "end": 51,
+          "enabled": true,
+          "audioKey": "29c0c53f9272c8cc",
+          "duration": 235.706,
+          "note": ""
+        },
+        {
+          "start": 52,
+          "end": 52,
+          "enabled": true,
+          "audioKey": "cb1fe820a3f8a694",
+          "duration": 226.112,
+          "note": ""
+        },
+        {
+          "start": 53,
+          "end": 53,
+          "enabled": true,
+          "audioKey": "793c967ba9d763ad",
+          "duration": 238.848,
+          "note": ""
+        },
+        {
+          "start": 54,
+          "end": 54,
+          "enabled": true,
+          "audioKey": "91f83f1eaa13a7b5",
+          "duration": 220.117,
+          "note": ""
+        },
+        {
+          "start": 55,
+          "end": 55,
+          "enabled": true,
+          "audioKey": "631fc47c97183f20",
+          "duration": 225.749,
+          "note": ""
+        },
+        {
+          "start": 56,
+          "end": 56,
+          "enabled": true,
+          "audioKey": "b0e5e8105d104902",
+          "duration": 241.899,
+          "note": ""
+        },
+        {
+          "start": 57,
+          "end": 57,
+          "enabled": true,
+          "audioKey": "8648be0fb30db171",
+          "duration": 219.968,
+          "note": ""
+        },
+        {
+          "start": 58,
+          "end": 58,
+          "enabled": true,
+          "audioKey": "ebdcf31ae6253a29",
+          "duration": 221.1,
+          "note": ""
+        },
+        {
+          "start": 59,
+          "end": 59,
+          "enabled": true,
+          "audioKey": "058f841884b776e9",
+          "duration": 236.24,
+          "note": ""
+        },
+        {
+          "start": 60,
+          "end": 60,
+          "enabled": true,
+          "audioKey": "3100e834fb539ba3",
+          "duration": 213.299,
+          "note": ""
+        },
+        {
+          "start": 61,
+          "end": 61,
+          "enabled": true,
+          "audioKey": "a948adc2e7cc6e5b",
+          "duration": 227.904,
+          "note": ""
+        },
+        {
+          "start": 62,
+          "end": 62,
+          "enabled": true,
+          "audioKey": "e186531c7a5bdec7",
+          "duration": 239.142,
+          "note": ""
+        },
+        {
+          "start": 63,
+          "end": 63,
+          "enabled": true,
+          "audioKey": "3a54f13204a4d641",
+          "duration": 207.509,
+          "note": ""
+        },
+        {
+          "start": 64,
+          "end": 64,
+          "enabled": true,
+          "audioKey": "54ba2c0a14a90569",
+          "duration": 228.416,
+          "note": ""
+        },
+        {
+          "start": 65,
+          "end": 65,
+          "enabled": true,
+          "audioKey": "287c66568cd55003",
+          "duration": 227.068,
+          "note": ""
+        },
+        {
+          "start": 66,
+          "end": 66,
+          "enabled": true,
+          "audioKey": "c266ee3ef88a735c",
+          "duration": 249.493,
+          "note": ""
+        },
+        {
+          "start": 67,
+          "end": 67,
+          "enabled": true,
+          "audioKey": "0cddb67b95ad20d6",
+          "duration": 231.898,
+          "note": ""
+        },
+        {
+          "start": 68,
+          "end": 68,
+          "enabled": true,
+          "audioKey": "6883f802b86b60b9",
+          "duration": 236.727,
+          "note": ""
+        },
+        {
+          "start": 69,
+          "end": 69,
+          "enabled": true,
+          "audioKey": "b98d652ff85cbade",
+          "duration": 239.509,
+          "note": ""
+        },
+        {
+          "start": 70,
+          "end": 70,
+          "enabled": true,
+          "audioKey": "e99476cb0fc4d760",
+          "duration": 237.973,
+          "note": ""
+        },
+        {
+          "start": 71,
+          "end": 71,
+          "enabled": true,
+          "audioKey": "00fe339bbef81ab6",
+          "duration": 264.963,
+          "note": ""
+        },
+        {
+          "start": 72,
+          "end": 72,
+          "enabled": true,
+          "audioKey": "6f2aeda8941a54a4",
+          "duration": 229.111,
+          "note": ""
+        },
+        {
+          "start": 73,
+          "end": 73,
+          "enabled": true,
+          "audioKey": "fba80571a86b82dc",
+          "duration": 219.916,
+          "note": ""
+        },
+        {
+          "start": 74,
+          "end": 74,
+          "enabled": true,
+          "audioKey": "b25a81f1045eee94",
+          "duration": 198.037,
+          "note": ""
+        },
+        {
+          "start": 75,
+          "end": 75,
+          "enabled": true,
+          "audioKey": "788853a40ca0fb71",
+          "duration": 234.87,
+          "note": ""
+        },
+        {
+          "start": 76,
+          "end": 76,
+          "enabled": true,
+          "audioKey": "5f17dc2fcd638c27",
+          "duration": 231.659,
+          "note": ""
+        },
+        {
+          "start": 77,
+          "end": 77,
+          "enabled": true,
+          "audioKey": "7441642641539824",
+          "duration": 240.164,
+          "note": ""
+        },
+        {
+          "start": 78,
+          "end": 78,
+          "enabled": true,
+          "audioKey": "3d9982ec7894045c",
+          "duration": 222.101,
+          "note": ""
+        },
+        {
+          "start": 79,
+          "end": 79,
+          "enabled": true,
+          "audioKey": "637bae5328f35a7f",
+          "duration": 242.765,
+          "note": ""
+        },
+        {
+          "start": 80,
+          "end": 80,
+          "enabled": true,
+          "audioKey": "df6ac21c33cbcf4c",
+          "duration": 245.227,
+          "note": ""
+        },
+        {
+          "start": 81,
+          "end": 81,
+          "enabled": true,
+          "audioKey": "d04d3065d473db82",
+          "duration": 246.294,
+          "note": ""
+        },
+        {
+          "start": 82,
+          "end": 82,
+          "enabled": true,
+          "audioKey": "acba2cb5400a374d",
+          "duration": 213.415,
+          "note": ""
+        },
+        {
+          "start": 83,
+          "end": 83,
+          "enabled": true,
+          "audioKey": "23ac6bbb7059c709",
+          "duration": 222.869,
+          "note": ""
+        },
+        {
+          "start": 84,
+          "end": 84,
+          "enabled": true,
+          "audioKey": "3b5353c9d32662db",
+          "duration": 213.397,
+          "note": ""
+        },
+        {
+          "start": 85,
+          "end": 85,
+          "enabled": true,
+          "audioKey": "f2e08fae7170b67f",
+          "duration": 210.535,
+          "note": ""
+        },
+        {
+          "start": 86,
+          "end": 86,
+          "enabled": true,
+          "audioKey": "e356737f2d31b9b7",
+          "duration": 225.396,
+          "note": ""
+        },
+        {
+          "start": 87,
+          "end": 87,
+          "enabled": true,
+          "audioKey": "f964d35d40784eae",
+          "duration": 216.201,
+          "note": ""
+        },
+        {
+          "start": 88,
+          "end": 88,
+          "enabled": true,
+          "audioKey": "dc67c3d1c33710fe",
+          "duration": 245.551,
+          "note": ""
+        },
+        {
+          "start": 89,
+          "end": 89,
+          "enabled": true,
+          "audioKey": "1b44bec148aed034",
+          "duration": 247.957,
+          "note": ""
+        },
+        {
+          "start": 90,
+          "end": 90,
+          "enabled": true,
+          "audioKey": "3fc8ee9fd6f73cd6",
+          "duration": 246.387,
+          "note": ""
+        },
+        {
+          "start": 91,
+          "end": 91,
+          "enabled": true,
+          "audioKey": "61bba5ca25cb9570",
+          "duration": 249.452,
+          "note": ""
+        },
+        {
+          "start": 92,
+          "end": 92,
+          "enabled": true,
+          "audioKey": "aee222dbc10eb514",
+          "duration": 229.952,
+          "note": ""
+        },
+        {
+          "start": 93,
+          "end": 93,
+          "enabled": true,
+          "audioKey": "9294b9b3e27f9455",
+          "duration": 232.548,
+          "note": ""
+        },
+        {
+          "start": 94,
+          "end": 94,
+          "enabled": true,
+          "audioKey": "b34413768cf83512",
+          "duration": 218.603,
+          "note": ""
+        },
+        {
+          "start": 95,
+          "end": 95,
+          "enabled": true,
+          "audioKey": "8345214caa12c232",
+          "duration": 241.472,
+          "note": ""
+        },
+        {
+          "start": 96,
+          "end": 96,
+          "enabled": true,
+          "audioKey": "f760b86f9c6b26f4",
+          "duration": 202.548,
+          "note": ""
+        },
+        {
+          "start": 97,
+          "end": 97,
+          "enabled": true,
+          "audioKey": "ae9e0b32e0797859",
+          "duration": 214.251,
+          "note": ""
+        },
+        {
+          "start": 98,
+          "end": 98,
+          "enabled": true,
+          "audioKey": "6d5d5d1df5f17b41",
+          "duration": 214.592,
+          "note": ""
+        },
+        {
+          "start": 99,
+          "end": 99,
+          "enabled": true,
+          "audioKey": "45baddf08f3790a0",
+          "duration": 225.117,
+          "note": ""
+        },
+        {
+          "start": 100,
+          "end": 100,
+          "enabled": true,
+          "audioKey": "83439730e1dad436",
+          "duration": 223.91,
+          "note": ""
+        },
+        {
+          "start": 101,
+          "end": 101,
+          "enabled": true,
+          "audioKey": "84e7299b1d8865e7",
+          "duration": 237.291,
+          "note": ""
+        },
+        {
+          "start": 102,
+          "end": 102,
+          "enabled": true,
+          "audioKey": "bd563a564b4be844",
+          "duration": 219.916,
+          "note": ""
+        },
+        {
+          "start": 103,
+          "end": 103,
+          "enabled": true,
+          "audioKey": "d0f6c0aaa979c39c",
+          "duration": 208.533,
+          "note": ""
+        },
+        {
+          "start": 104,
+          "end": 104,
+          "enabled": true,
+          "audioKey": "b72acfdcd630c4e9",
+          "duration": 226.539,
+          "note": ""
+        },
+        {
+          "start": 105,
+          "end": 105,
+          "enabled": true,
+          "audioKey": "59f59f6a55b6871b",
+          "duration": 215.104,
+          "note": ""
+        },
+        {
+          "start": 106,
+          "end": 106,
+          "enabled": true,
+          "audioKey": "9c3fceaa5eba5d12",
+          "duration": 208.96,
+          "note": ""
+        },
+        {
+          "start": 107,
+          "end": 107,
+          "enabled": true,
+          "audioKey": "dd70a1c96f11ac61",
+          "duration": 259.111,
+          "note": ""
+        },
+        {
+          "start": 108,
+          "end": 108,
+          "enabled": true,
+          "audioKey": "320282330295f7b9",
+          "duration": 262.734,
+          "note": ""
+        }
+      ],
+      "nonTutorial": [
+        {
+          "start": 1,
+          "end": 7,
+          "enabled": true,
+          "audioKey": "1f217c3fd26836ba",
+          "duration": 170.283,
+          "note": ""
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "enabled": true,
+          "audioKey": "1bf897820d9866eb",
+          "duration": 123.089,
+          "note": ""
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "enabled": true,
+          "audioKey": "a374a55c46f32c7a",
+          "duration": 181.077,
+          "note": ""
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "enabled": true,
+          "audioKey": "90fffbee0fee7f37",
+          "duration": 190.357,
+          "note": ""
+        },
+        {
+          "start": 27,
+          "end": 30,
+          "enabled": false,
+          "audioKey": null,
+          "duration": 0.0,
+          "note": "no bundle yet — enable when teacher shares"
+        },
+        {
+          "start": 31,
+          "end": 40,
+          "enabled": true,
+          "audioKey": "cec7a97cc4c958cd",
+          "duration": 276.573,
+          "note": ""
+        },
+        {
+          "start": 41,
+          "end": 50,
+          "enabled": true,
+          "audioKey": "9e98ce9e92e662a2",
+          "duration": 274.622,
+          "note": ""
+        },
+        {
+          "start": 51,
+          "end": 52,
+          "enabled": false,
+          "audioKey": null,
+          "duration": 0.0,
+          "note": "no bundle yet — enable when teacher shares"
+        },
+        {
+          "start": 53,
+          "end": 60,
+          "enabled": true,
+          "audioKey": "4d8349384290c62f",
+          "duration": 260.737,
+          "note": ""
+        },
+        {
+          "start": 61,
+          "end": 70,
+          "enabled": true,
+          "audioKey": "1cf69864e0e3b8bd",
+          "duration": 280.299,
+          "note": ""
+        },
+        {
+          "start": 71,
+          "end": 80,
+          "enabled": true,
+          "audioKey": "3f8532e7b949ec79",
+          "duration": 265.536,
+          "note": ""
+        },
+        {
+          "start": 81,
+          "end": 90,
+          "enabled": true,
+          "audioKey": "2bd1949ae9e913c9",
+          "duration": 268.267,
+          "note": ""
+        },
+        {
+          "start": 91,
+          "end": 100,
+          "enabled": true,
+          "audioKey": "5423b4a7aea6efa4",
+          "duration": 287.125,
+          "note": ""
+        },
+        {
+          "start": 101,
+          "end": 108,
+          "enabled": true,
+          "audioKey": "146d1aa9dff040e6",
+          "duration": 281.96,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "section_uttara",
+      "key": "uttarapithika",
+      "name": "Uttarapīṭhikā",
+      "order": 4,
+      "tutorial": [
+        {
+          "start": 1,
+          "end": 1,
+          "enabled": true,
+          "audioKey": "b266791b01935f62",
+          "duration": 240.443,
+          "note": ""
+        },
+        {
+          "start": 2,
+          "end": 2,
+          "enabled": true,
+          "audioKey": "fe48ba8554155500",
+          "duration": 239.253,
+          "note": ""
+        },
+        {
+          "start": 3,
+          "end": 3,
+          "enabled": true,
+          "audioKey": "4b61ace5963a6bf7",
+          "duration": 265.985,
+          "note": ""
+        },
+        {
+          "start": 4,
+          "end": 4,
+          "enabled": true,
+          "audioKey": "f2989bb99a9b6ca8",
+          "duration": 231.805,
+          "note": ""
+        },
+        {
+          "start": 5,
+          "end": 5,
+          "enabled": true,
+          "audioKey": "ca9b8fd61c51ce38",
+          "duration": 226.789,
+          "note": ""
+        },
+        {
+          "start": 6,
+          "end": 6,
+          "enabled": true,
+          "audioKey": "cba5ab240eb91a36",
+          "duration": 226.975,
+          "note": ""
+        },
+        {
+          "start": 7,
+          "end": 7,
+          "enabled": true,
+          "audioKey": "6f923d685bcd51e3",
+          "duration": 218.059,
+          "note": ""
+        },
+        {
+          "start": 8,
+          "end": 8,
+          "enabled": true,
+          "audioKey": "1f4b6394c3f3034f",
+          "duration": 256.789,
+          "note": ""
+        },
+        {
+          "start": 9,
+          "end": 9,
+          "enabled": true,
+          "audioKey": "630a43684e037433",
+          "duration": 250.005,
+          "note": ""
+        },
+        {
+          "start": 10,
+          "end": 10,
+          "enabled": true,
+          "audioKey": "11c2996418308393",
+          "duration": 249.731,
+          "note": ""
+        },
+        {
+          "start": 11,
+          "end": 11,
+          "enabled": true,
+          "audioKey": "b7941728fc6d5975",
+          "duration": 230.123,
+          "note": ""
+        },
+        {
+          "start": 12,
+          "end": 12,
+          "enabled": true,
+          "audioKey": "25fcaa4c9fc6e3a4",
+          "duration": 250.845,
+          "note": ""
+        },
+        {
+          "start": 13,
+          "end": 13,
+          "enabled": true,
+          "audioKey": "7a3671304ef3ce0b",
+          "duration": 238.4,
+          "note": ""
+        },
+        {
+          "start": 14,
+          "end": 14,
+          "enabled": true,
+          "audioKey": "eec3bd26124ba243",
+          "duration": 260.876,
+          "note": ""
+        },
+        {
+          "start": 15,
+          "end": 15,
+          "enabled": true,
+          "audioKey": "61fc12268a9fc85e",
+          "duration": 205.035,
+          "note": ""
+        },
+        {
+          "start": 16,
+          "end": 16,
+          "enabled": true,
+          "audioKey": "a293428c5ac6451e",
+          "duration": 236.913,
+          "note": ""
+        },
+        {
+          "start": 17,
+          "end": 17,
+          "enabled": true,
+          "audioKey": "8c538f82f8840d92",
+          "duration": 221.867,
+          "note": ""
+        },
+        {
+          "start": 18,
+          "end": 18,
+          "enabled": true,
+          "audioKey": "9fd0154f0d6c9d5c",
+          "duration": 238.214,
+          "note": ""
+        },
+        {
+          "start": 19,
+          "end": 19,
+          "enabled": true,
+          "audioKey": "75e53cc9132437cd",
+          "duration": 254.096,
+          "note": ""
+        },
+        {
+          "start": 20,
+          "end": 20,
+          "enabled": true,
+          "audioKey": "e23cadba7a51be8f",
+          "duration": 248.337,
+          "note": ""
+        },
+        {
+          "start": 21,
+          "end": 21,
+          "enabled": true,
+          "audioKey": "e6f77918a46df122",
+          "duration": 230.69,
+          "note": ""
+        },
+        {
+          "start": 22,
+          "end": 22,
+          "enabled": true,
+          "audioKey": "cae58bc09a8bd639",
+          "duration": 234.498,
+          "note": ""
+        },
+        {
+          "start": 23,
+          "end": 23,
+          "enabled": true,
+          "audioKey": "f1b52afe491efdde",
+          "duration": 201.28,
+          "note": ""
+        },
+        {
+          "start": 24,
+          "end": 24,
+          "enabled": true,
+          "audioKey": "ad20ce9aeb6f3a37",
+          "duration": 252.981,
+          "note": ""
+        },
+        {
+          "start": 25,
+          "end": 25,
+          "enabled": true,
+          "audioKey": "a007d9c165d8d048",
+          "duration": 255.04,
+          "note": ""
+        },
+        {
+          "start": 26,
+          "end": 26,
+          "enabled": false,
+          "audioKey": null,
+          "duration": 0.0,
+          "note": "no file yet — enable when teacher shares"
+        },
+        {
+          "start": 27,
+          "end": 27,
+          "enabled": true,
+          "audioKey": "5a2e7b5ef272ef82",
+          "duration": 262.269,
+          "note": ""
+        },
+        {
+          "start": 28,
+          "end": 28,
+          "enabled": true,
+          "audioKey": "b14837a458ba5c23",
+          "duration": 365.83,
+          "note": ""
+        },
+        {
+          "start": 29,
+          "end": 29,
+          "enabled": true,
+          "audioKey": "c3fb2d1e8b7a49ad",
+          "duration": 264.499,
+          "note": ""
+        },
+        {
+          "start": 30,
+          "end": 30,
+          "enabled": true,
+          "audioKey": "676e2c306927002d",
+          "duration": 272.858,
+          "note": ""
+        },
+        {
+          "start": 31,
+          "end": 31,
+          "enabled": true,
+          "audioKey": "efb789b98e95060b",
+          "duration": 241.131,
+          "note": ""
+        },
+        {
+          "start": 32,
+          "end": 32,
+          "enabled": true,
+          "audioKey": "7a7dda51857ab35a",
+          "duration": 314.282,
+          "note": ""
+        },
+        {
+          "start": 33,
+          "end": 33,
+          "enabled": true,
+          "audioKey": "2790f36dce0d6e72",
+          "duration": 314.096,
+          "note": ""
+        }
+      ],
+      "nonTutorial": []
+    }
+  ]
+}

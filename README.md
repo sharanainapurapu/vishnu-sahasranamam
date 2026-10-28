@@ -1,32 +1,40 @@
-# Vishnu Sahasranamam Learning App for Kids — v1
+# Vishnu Sahasranamam Learning App for Kids
 
-A calm, interactive web app that helps children learn the Vishnu Sahasranamam through audio playback, verse-by-verse practice, and range-based repetition.
+A calm, interactive web app that helps children learn the Vishnu Sahasranamam
+through audio playback and range-based repetition.
 
 **Live App:** https://sharanainapurapu.github.io/vsn/
 
 ![Status](https://img.shields.io/badge/Status-Live-brightgreen)
-![Version](https://img.shields.io/badge/Version-v1-blue)
 ![Deployed](https://img.shields.io/badge/Deployed-GitHub%20Pages-blue)
 
-## What's in v1
+## How it works
 
-v1 is a focused first release. It intentionally exposes a small, polished slice while the rest of the content is prepared:
+The app has two learning modes:
 
-- **Verses available:** only the first 10 verses of the Sahasranamam are enabled (grid, range dropdowns, and player are all limited to these).
-- **Language:** English transliteration only. The other scripts (Sanskrit, Tamil, Telugu, Kannada, Malayalam, Hindi) appear in the switcher but are disabled with a "coming soon" note.
-- **Playback speed:** 1x only. 0.5x / 0.75x / 2x are shown but disabled with a "coming soon" note.
+- **Tutorial** — one audio clip per individual sloka, at a teaching pace. Pick
+  any From/To range of slokas and practice.
+- **Non-tutorial** — clips that group ~6–7 slokas together for chanting. The
+  smallest selectable unit is a whole group, so a range always spans complete
+  groups.
 
-These limits live behind simple flags and are easy to expand in later versions.
+In both modes you pick a range and press **Start practice**; the selection
+repeats forever until you stop it.
+
+Each clip is its own audio file — there is no timestamp seeking. Clips load on
+demand and are cached after first play, so repeat practice uses no extra network.
 
 ## Features
 
-- **Verse-by-verse playback** - tap a verse to hear it once, with timestamp-accurate seeking into a single audio file.
-- **Whole-range block repeat** - repeat the entire selected range 1, 3, 5, 10, or infinite times. Repeat applies to the range as a block, not per verse.
-- **Practice range** - pick a From/To range and auto-play through it hands-free.
-- **Color-coded sections** - each section (Purvapithika, Dhyanam, Sahasranamam, Uttarapithika) has its own accent color, shown on the verse card, the range dropdowns, and the footer legend.
-- **Stable verse layout** - each verse keeps the same line-break shape on phone, tablet, and desktop (the font auto-scales to fit), so students memorize one consistent visual.
-- **Responsive & accessible** - mobile-friendly and verified against WCAG 2.1 AA color-contrast and labeling checks.
-- **Progress tracking** - completed verses are saved in the browser.
+- **Verse-by-verse playback** — tap a verse to hear it.
+- **Range practice** — pick From/To and auto-play through it, repeating forever.
+- **Two modes** — tutorial (per-sloka) and non-tutorial (grouped chanting).
+- **Color-coded sections** — Dhyānam, Pūrvapīṭhikā, Namavali, Uttarapīṭhikā,
+  each with its own accent color across the verse card, range, and grid legend.
+- **Stable verse layout** — each verse keeps the same line-break shape on every
+  device; the font auto-scales to fit.
+- **Progress tracking** — practiced verses are saved in the browser.
+- **Lock-screen controls** — play/pause/next via the OS media UI.
 
 ## Quick Start
 
@@ -39,92 +47,94 @@ npm run dev
 
 Open the URL Vite prints (typically http://localhost:5173).
 
-### Build for production
-
 ```bash
 npm run build       # outputs to dist/
 ```
 
-Deployment is automatic: pushing to `main` triggers a GitHub Actions workflow that
-builds and publishes to GitHub Pages. See [docs/deployment.md](docs/deployment.md).
+Deployment is automatic: pushing to `main` triggers a GitHub Actions workflow
+that builds and publishes to GitHub Pages. See [docs/deployment.md](docs/deployment.md).
 
-## Configuration (v1 gating)
+## Preparing audio + text
 
-The release limits are controlled in a couple of small places:
+Raw recordings live in the git-ignored `Audio Recordings/` folder. Two scripts
+turn them into what the app serves:
 
-- `src/config.js` - `SHOW_LANGUAGES`, `LIMIT_RELEASE`, and `isSlokaEnabled()` (which verses are exposed). v1 enables only `section_3` (Sahasranamam) numbers 1-10.
-- `src/components/Player.jsx` - `ENABLED_SPEEDS` (v1 = `[1]`).
-- `src/components/LanguageSelector.jsx` - `ENABLED_LANGUAGES` (v1 = `['english']`).
+```bash
+python3 scripts/build_audio_manifest.py   # encode clips + write manifest.json
+python3 scripts/build_text_skeleton.py    # write text-content.json skeleton
+```
 
-To release more in a future version: widen `isSlokaEnabled()`, add speeds to `ENABLED_SPEEDS`, and add languages to `ENABLED_LANGUAGES`.
+See [scripts/README.md](scripts/README.md) and [docs/audio.md](docs/audio.md).
+
+## Configuration
+
+UI-level switches live in `src/config.js`:
+
+- `DEFAULT_MODE` — which mode the app opens in.
+- `ENABLED_SPEEDS` — playback speeds that are clickable (others shown, disabled).
+- `ENABLED_LANGUAGES` — languages that are selectable (others shown, disabled).
+- `SHOW_LANGUAGES` — show the text card + language switcher.
+
+Which slokas/bundles exist and whether each is enabled lives in
+`public/data/manifest.json` (regenerated by the script). Missing recordings are
+written as `enabled: false` placeholders and turn on automatically once the file
+is added and the script is re-run.
 
 ## Project Structure
 
 ```
 vsn/
-  docs/                            # Project documentation (see docs/README.md)
+  docs/                              # Documentation (see docs/README.md)
   public/
-    audio/full_slokas.m4a          # Full audio (AAC, same timeline as source)
-    images/swamiji.png             # Header image
-    data/slokas-complete.json      # 152 entries with timestamps + text
-  scripts/                         # Python helpers (not part of the build)
+    audio/
+      tutorial/<key>.m4a             # one clip per sloka
+      nontutorial/<key>.m4a          # one clip per bundle
+    data/
+      manifest.json                  # audio structure (source of truth)
+      text-content.json              # per-sloka multi-language text
+    images/swamiji.png
+    sw.js                            # service worker: caches played clips
+  scripts/
+    build_audio_manifest.py          # recordings -> encoded clips + manifest
+    build_text_skeleton.py           # manifest -> text skeleton
   src/
     components/
-      Player.jsx                   # Audio player, block-repeat, speed control
-      SlokaDisplay.jsx             # Verse card: per-section color + auto-fit layout
-      RangeSelector.jsx            # From/To range, repeat (incl. infinite)
-      SlokaGrid.jsx                # Grid of enabled verses + color-coded legend
-      LanguageSelector.jsx         # Language switcher (English enabled in v1)
+      PracticeCard.jsx               # verse text + player (one card)
+      SelectionCard.jsx              # mode + language + range + grid (one card)
+      Player.jsx                     # per-file player, infinite range repeat
+      SlokaDisplay.jsx               # verse card with auto-fit layout
+      ModeToggle.jsx                 # tutorial / non-tutorial switch
+      LanguageSelector.jsx           # language switcher
+      RangeSelector.jsx              # From/To range (mode-aware)
+      SlokaGrid.jsx                  # grid of verses, grouped by section
     utils/
-      slokaLabels.js               # Verse label + section grouping helpers
-      sectionTheme.js              # Single source of truth for section names + colors
-    config.js                      # Feature flags + release gating
-    App.jsx                        # Main app component
-    main.jsx                       # Entry point
-    index.css                      # Global styles with Tailwind
+      manifest.js                    # loads + joins manifest and text
+      audioLoader.js                 # on-demand blob-URL loading + prefetch
+      sectionTheme.js                # section names + colors
+      slokaLabels.js                 # label + grouping helpers
+    config.js
+    App.jsx
+    main.jsx
   index.html
-  package.json
-  vite.config.js
-  tailwind.config.js
-  postcss.config.js
 ```
 
-## Content Structure
+## Sections
 
-The data (`public/data/slokas-complete.json`) is organized into four sections plus an intro:
-
-| Section | Name | Entries |
-|---|---|---|
-| intro | Introduction | 1 |
-| section_1 | Purvapithika | 1-23 |
-| section_2 | Dhyanam | 1-6 |
-| section_3 | Sahasranamam | 1-108 |
-| section_4 | Uttarapithika | 1-14 |
-
-English transliteration text is sourced from [Bhajan Mala](https://www.bhajanmala.com/nodes/125). Each verse stores explicit line breaks so its on-screen shape is fixed across devices.
-
-## Audio
-
-A single audio track (`public/audio/full_slokas.m4a`, AAC extracted from the original video, same timeline) is served alongside the app. Playback seeks to each verse's startTime/endTime. Timestamps were manually calibrated. See [docs/timestamp-calibration.md](docs/timestamp-calibration.md).
-
-## Documentation
-
-- [docs/README.md](docs/README.md) - docs index
-- [docs/development.md](docs/development.md) - local development
-- [docs/deployment.md](docs/deployment.md) - deploying to GitHub Pages
-- [docs/features.md](docs/features.md) - feature details
-- [docs/audio.md](docs/audio.md) - the self-hosted audio file
-- [scripts/README.md](scripts/README.md) - Python helper scripts
+| Order | Key             | Name           |
+|-------|-----------------|----------------|
+| 1     | `purvapithika`  | Pūrvapīṭhikā   |
+| 2     | `dhyanam`       | Dhyānam        |
+| 3     | `namalu`        | Namavali       |
+| 4     | `uttarapithika` | Uttarapīṭhikā  |
 
 ## Tech Stack
 
-React 18 - Vite 4 - Tailwind CSS 3 - Lucide React - HTML5 Audio API - GitHub Pages
+React 18 · Vite 4 · Tailwind CSS 3 · Lucide React · HTML5 Audio API · Service
+Worker · GitHub Pages
 
 ## Credits
 
-- **Sloka reference:** [Bhajan Mala](https://www.bhajanmala.com/nodes/125)
-- **Audio & timestamps:** user-provided recording, manually calibrated
-- Made with devotion for a young learner.
+Made with devotion for a young learner. Recordings provided by the teacher.
 
 **Repository:** https://github.com/sharanainapurapu/vsn
 **Live App:** https://sharanainapurapu.github.io/vsn/
