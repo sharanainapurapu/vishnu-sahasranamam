@@ -7,6 +7,9 @@ const AUDIO_URL = `${import.meta.env.BASE_URL}audio/full_slokas.m4a`
 
 // Playback speed choices (kept small and simple for kids)
 const SPEED_OPTIONS = [0.5, 0.75, 1, 2]
+// Only these speeds are enabled for now; others are shown but disabled.
+// Add rates here to re-enable them later.
+const ENABLED_SPEEDS = [1]
 
 const Player = ({
   sloka,
@@ -393,23 +396,34 @@ const Player = ({
       </div>
 
       {/* Speed — segmented control */}
-      <div className="flex justify-center">
+      <div className="flex flex-col items-center gap-2">
         <div role="group" aria-label="Playback speed" className="inline-flex gap-1 bg-paper-bg border border-paper-line rounded-xl p-1">
-          {SPEED_OPTIONS.map((rate) => (
-            <button
-              key={rate}
-              type="button"
-              onClick={() => handleSpeedChange(rate)}
-              aria-pressed={speed === rate}
-              aria-label={`${rate}x playback speed`}
-              className={`px-4 py-2 rounded-lg text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-saff-500 ${
-                speed === rate ? 'bg-paper-card text-ink-900 shadow-sm' : 'text-ink-500 hover:text-ink-900'
-              }`}
-            >
-              {rate}x
-            </button>
-          ))}
+          {SPEED_OPTIONS.map((rate) => {
+            const enabled = ENABLED_SPEEDS.includes(rate)
+            const active = speed === rate
+            return (
+              <button
+                key={rate}
+                type="button"
+                onClick={() => enabled && handleSpeedChange(rate)}
+                disabled={!enabled}
+                aria-pressed={active}
+                aria-label={enabled ? `${rate}x playback speed` : `${rate}x playback speed, coming soon`}
+                title={enabled ? undefined : 'Coming soon'}
+                className={`px-4 py-2 rounded-lg text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-saff-500 ${
+                  !enabled
+                    ? 'text-ink-400 opacity-40 cursor-not-allowed'
+                    : active
+                    ? 'bg-paper-card text-ink-900 shadow-sm'
+                    : 'text-ink-500 hover:text-ink-900'
+                }`}
+              >
+                {rate}x
+              </button>
+            )
+          })}
         </div>
+        <p className="text-xs text-ink-500">Other speeds coming soon.</p>
       </div>
     </div>
   )
