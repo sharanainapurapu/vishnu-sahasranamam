@@ -36,8 +36,8 @@ git --version    # Any recent version
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/sharanainapurapu/vsn.git
-cd vsn
+git clone https://github.com/sharanainapurapu/vishnu-sahasranamam.git
+cd vishnu-sahasranamam
 ```
 
 ### 2. Install Dependencies
@@ -82,7 +82,7 @@ npm run build
 **What it does:**
 - Creates optimized production build in `dist/` folder
 - Minifies JavaScript and CSS
-- Uses `BASE_URL = "/vsn/"` for GitHub Pages
+- Uses `BASE_URL = "/vishnu-sahasranamam/"` for GitHub Pages
 - Generates source maps
 
 **Output:**
@@ -163,7 +163,7 @@ npm run test:build
 
 **What to test:**
 - ✅ All features work as in dev mode
-- ✅ Paths are correct (`/vsn/` base)
+- ✅ Paths are correct (`/vishnu-sahasranamam/` base)
 - ✅ No console errors
 - ✅ Performance is optimized
 
@@ -200,7 +200,7 @@ npm run deploy
 3. Pushes `dist/` contents to `gh-pages` branch
 4. GitHub Pages serves from that branch
 
-**Live URL:** https://sharanainapurapu.github.io/vsn/
+**Live URL:** https://sharanainapurapu.github.io/vishnu-sahasranamam/
 
 **When to use:** After testing and ready to publish
 
@@ -254,7 +254,7 @@ git checkout main
 ## Project Structure
 
 ```
-vsn/
+vishnu-sahasranamam/
 ├── .github/workflows/deploy.yml    # GitHub Pages deployment
 ├── docs/                           # Project documentation (see docs/README.md)
 │   ├── README.md                   # Docs index
@@ -312,12 +312,12 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/vsn/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/vishnu-sahasranamam/' : '/',
 })
 ```
 
 **Key settings:**
-- `base: '/vsn/'` - GitHub Pages base path (production)
+- `base: '/vishnu-sahasranamam/'` - GitHub Pages base path (production)
 - `base: '/'` - Local development base path
 
 **To change repo name:**
@@ -349,7 +349,7 @@ Available in your code via `import.meta.env`:
 
 ```javascript
 import.meta.env.MODE        // 'development' or 'production'
-import.meta.env.BASE_URL    // '/' or '/vsn/'
+import.meta.env.BASE_URL    // '/' or '/vishnu-sahasranamam/'
 import.meta.env.PROD        // true in production
 import.meta.env.DEV         // true in development
 ```
@@ -563,8 +563,8 @@ For issues or questions:
 3. Create new issue with details
 4. Include error messages and console logs
 
-**Repository:** https://github.com/sharanainapurapu/vsn
-**Live App:** https://sharanainapurapu.github.io/vsn/
+**Repository:** https://github.com/sharanainapurapu/vishnu-sahasranamam
+**Live App:** https://sharanainapurapu.github.io/vishnu-sahasranamam/
 
 ---
 

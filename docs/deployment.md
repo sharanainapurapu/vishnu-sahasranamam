@@ -3,19 +3,19 @@
 This project deploys to **GitHub Pages via GitHub Actions**. Every push to `main`
 builds the app and publishes it automatically — there is no manual deploy step.
 
-**Live App:** https://sharanainapurapu.github.io/vsn/
+**Live App:** https://sharanainapurapu.github.io/vishnu-sahasranamam/
 
 ## How it works
 
 - `.github/workflows/deploy.yml` runs on every push to `main`.
 - It installs dependencies, runs `npm run build`, and uploads `dist/` as a Pages artifact.
 - GitHub Pages serves that artifact. The Pages **Source** must be set to **GitHub Actions**.
-- `vite.config.js` sets `base: '/vsn/'` in production so asset URLs resolve under the repo path.
+- `vite.config.js` sets `base: '/vishnu-sahasranamam/'` in production so asset URLs resolve under the repo path.
 
 ## One-time setup (already done for this repo)
 
 1. On GitHub: **Settings → Pages → Build and deployment → Source → GitHub Actions**.
-2. Ensure `vite.config.js` `base` matches the repository name (`/vsn/`).
+2. Ensure `vite.config.js` `base` matches the repository name (`/vishnu-sahasranamam/`).
 
 If you fork this project under a different repo name, update `base` to `/<your-repo-name>/`.
 
@@ -43,7 +43,7 @@ npm run preview    # serve the built app locally to sanity-check
 
 ## Troubleshooting
 
-**Blank page after deploy** — the `base` in `vite.config.js` must match the repo name (`/vsn/`).
+**Blank page after deploy** — the `base` in `vite.config.js` must match the repo name (`/vishnu-sahasranamam/`).
 
 **404s on assets** — confirm Pages Source is "GitHub Actions" and the latest workflow run succeeded (Actions tab).
 

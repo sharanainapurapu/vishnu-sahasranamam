@@ -3,7 +3,7 @@
 A calm, interactive web app that helps children learn the Vishnu Sahasranamam
 through audio playback and range-based repetition.
 
-**Live App:** https://sharanainapurapu.github.io/vsn/
+**Live App:** https://sharanainapurapu.github.io/vishnu-sahasranamam/
 
 ![Status](https://img.shields.io/badge/Status-Live-brightgreen)
 ![Deployed](https://img.shields.io/badge/Deployed-GitHub%20Pages-blue)
@@ -39,8 +39,8 @@ demand and are cached after first play, so repeat practice uses no extra network
 ## Quick Start
 
 ```bash
-git clone https://github.com/sharanainapurapu/vsn.git
-cd vsn
+git clone https://github.com/sharanainapurapu/vishnu-sahasranamam.git
+cd vishnu-sahasranamam
 npm install
 npm run dev
 ```
@@ -83,7 +83,7 @@ is added and the script is re-run.
 ## Project Structure
 
 ```
-vsn/
+vishnu-sahasranamam/
   docs/                              # Documentation (see docs/README.md)
   public/
     audio/
@@ -136,5 +136,5 @@ Worker · GitHub Pages
 
 Made with devotion for a young learner. Recordings provided by the teacher.
 
-**Repository:** https://github.com/sharanainapurapu/vsn
-**Live App:** https://sharanainapurapu.github.io/vsn/
+**Repository:** https://github.com/sharanainapurapu/vishnu-sahasranamam
+**Live App:** https://sharanainapurapu.github.io/vishnu-sahasranamam/

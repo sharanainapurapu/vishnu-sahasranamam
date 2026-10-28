@@ -28,7 +28,7 @@ npm run dev
 ```bash
 npm run build
 # Creates: dist/ folder
-# Uses BASE_URL = "/vsn/"
+# Uses BASE_URL = "/vishnu-sahasranamam/"
 # Minified and optimized
 ```
 
@@ -46,7 +46,7 @@ npm run preview
 npm run deploy
 # 1. Builds production
 # 2. Pushes to gh-pages branch
-# 3. Live at: https://sharanainapurapu.github.io/vsn/
+# 3. Live at: https://sharanainapurapu.github.io/vishnu-sahasranamam/
 ```
 
 ### Deploy Locally
@@ -79,8 +79,8 @@ npm run test:build      # Build + preview
 ### Setup (First Time)
 
 ```bash
-git clone https://github.com/sharanainapurapu/vsn.git
-cd vsn
+git clone https://github.com/sharanainapurapu/vishnu-sahasranamam.git
+cd vishnu-sahasranamam
 npm install
 ```
 
@@ -135,7 +135,7 @@ npm run test:build
 npm run deploy
 
 # Wait 2-3 minutes
-# Visit: https://sharanainapurapu.github.io/vsn/
+# Visit: https://sharanainapurapu.github.io/vishnu-sahasranamam/
 # Test all features
 # Hard refresh: Ctrl+F5 (Windows) or Cmd+Shift+R (Mac)
 ```
@@ -498,5 +498,5 @@ git checkout HEAD -- filename
 - Timestamp info → See [timestamp-calibration.md](timestamp-calibration.md)
 - Python helper scripts → See [../scripts/README.md](../scripts/README.md)
 
-**Repository:** https://github.com/sharanainapurapu/vsn
-**Live App:** https://sharanainapurapu.github.io/vsn/
+**Repository:** https://github.com/sharanainapurapu/vishnu-sahasranamam
+**Live App:** https://sharanainapurapu.github.io/vishnu-sahasranamam/
