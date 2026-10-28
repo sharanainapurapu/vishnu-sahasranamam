@@ -1,11 +1,12 @@
 import { getSlokaLabel, groupSlokasBySection } from '../utils/slokaLabels'
+import { getSectionTheme } from '../utils/sectionTheme'
 
 const RangeSelector = ({
   slokas, rangeStart, rangeEnd,
   onRangeStartChange, onRangeEndChange, onStartPractice,
   repeatCount, onRepeatChange,
 }) => {
-  const repeatOptions = [1, 3, 5, 10, 20]
+  const repeatOptions = [1, 3, 5, 10, Infinity]
   const groups = groupSlokasBySection(slokas)
   const startLabel = getSlokaLabel(slokas[rangeStart - 1])
   const endLabel = getSlokaLabel(slokas[rangeEnd - 1])
@@ -15,13 +16,18 @@ const RangeSelector = ({
     groups
       .map((g) => ({ ...g, items: g.items.filter((it) => it.position >= minPosition) }))
       .filter((g) => g.items.length > 0)
-      .map((g) => (
-        <optgroup key={g.section} label={g.title}>
-          {g.items.map((it) => (
-            <option key={it.position} value={it.position}>{it.label}</option>
-          ))}
-        </optgroup>
-      ))
+      .map((g) => {
+        const t = getSectionTheme(g.section)
+        return (
+          <optgroup key={g.section} label={`● ${g.title}`} style={{ color: t.text }}>
+            {g.items.map((it) => (
+              <option key={it.position} value={it.position} style={{ color: '#1c1b19' }}>
+                {it.label}
+              </option>
+            ))}
+          </optgroup>
+        )
+      })
 
   const selectClass =
     'w-full p-2.5 border border-paper-line rounded-lg bg-paper-card text-sm text-ink-900 focus:outline-none focus:ring-2 focus:ring-saff-500'
@@ -62,27 +68,39 @@ const RangeSelector = ({
 
       <label className="block text-xs text-ink-500 mt-5 mb-2">Repeat whole range</label>
       <div className="grid grid-cols-5 gap-1.5">
-        {repeatOptions.map((count) => (
-          <button
-            key={count}
-            type="button"
-            onClick={() => onRepeatChange(count)}
-            aria-pressed={repeatCount === count}
-            aria-label={`Repeat the whole range ${count} times`}
-            className={`py-2.5 min-h-[44px] rounded-lg text-sm font-semibold border transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-saff-500 ${
-              repeatCount === count
-                ? 'bg-saff-500 text-white border-saff-500'
-                : 'bg-paper-card text-ink-500 border-paper-line hover:text-ink-900'
-            }`}
-          >
-            {count}
-          </button>
-        ))}
+        {repeatOptions.map((count) => {
+          const isInf = !Number.isFinite(count)
+          return (
+            <button
+              key={isInf ? 'inf' : count}
+              type="button"
+              onClick={() => onRepeatChange(count)}
+              aria-pressed={repeatCount === count}
+              aria-label={isInf ? 'Repeat the whole range forever' : `Repeat the whole range ${count} times`}
+              title={isInf ? 'Repeat forever' : undefined}
+              className={`py-2.5 min-h-[44px] rounded-lg text-sm font-semibold border transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-saff-500 ${
+                repeatCount === count
+                  ? 'bg-saff-500 text-white border-saff-500'
+                  : 'bg-paper-card text-ink-500 border-paper-line hover:text-ink-900'
+              }`}
+            >
+              {isInf ? '∞' : count}
+            </button>
+          )
+        })}
       </div>
 
       <p className="text-sm text-ink-500 leading-relaxed mt-4">
-        {startLabel} to {endLabel}, {repeatCount === 1 ? 'one full round' : `${repeatCount} rounds`}.{' '}
-        <span className="font-semibold text-ink-900">{total} verses total.</span>
+        {startLabel} to {endLabel},{' '}
+        {!Number.isFinite(repeatCount)
+          ? 'repeating forever'
+          : repeatCount === 1
+          ? 'one full round'
+          : `${repeatCount} rounds`}
+        .{' '}
+        {Number.isFinite(repeatCount) && (
+          <span className="font-semibold text-ink-900">{total} verses total.</span>
+        )}
       </p>
 
       <button

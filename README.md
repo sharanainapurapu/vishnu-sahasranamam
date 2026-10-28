@@ -1,190 +1,130 @@
-# 🕉️ Vishnu Sahasranamam Learning App for Kids
+# Vishnu Sahasranamam Learning App for Kids — v1
 
-A beautiful, interactive web app to help children learn Vishnu Sahasranamam through audio playback, sloka-by-sloka practice, and range-based learning.
+A calm, interactive web app that helps children learn the Vishnu Sahasranamam through audio playback, verse-by-verse practice, and range-based repetition.
 
-**🌐 Live App:** https://sharanainapurapu.github.io/vsn/
+**Live App:** https://sharanainapurapu.github.io/vsn/
 
-![Demo](https://img.shields.io/badge/Status-Live-brightgreen)
-![GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-blue)
+![Status](https://img.shields.io/badge/Status-Live-brightgreen)
+![Version](https://img.shields.io/badge/Version-v1-blue)
+![Deployed](https://img.shields.io/badge/Deployed-GitHub%20Pages-blue)
 
-## ✨ Features
+## What's in v1
 
-- 🎵 **Individual Sloka Playback** - Learn one sloka at a time with accurate timestamps
-- 🔁 **Smart Repeat System** - Repeat each sloka 1x, 3x, 5x, 10x, or 20x
-- 📚 **Range Selection** - Practice specific ranges (e.g., slokas 1-10 this week)
-- 🎯 **Auto-Play Mode** - Hands-free playback through entire range
-- 🌍 **Multi-language Support** - Sanskrit, Tamil, Telugu, Kannada, Malayalam, Hindi, English
-- 📱 **Mobile-Friendly** - Works perfectly on phones and tablets
-- 💾 **Progress Tracking** - Automatically saves completed slokas
-- 🎨 **Kid-Friendly Design** - Colorful, intuitive interface
-- ⏯️ **Full Playback Controls** - Play, pause, skip, volume control
-- 🎧 **152 Slokas** - Complete with accurate timestamps from user calibration
+v1 is a focused first release. It intentionally exposes a small, polished slice while the rest of the content is prepared:
 
-## 🚀 Quick Start
+- **Verses available:** only the first 10 verses of the Sahasranamam are enabled (grid, range dropdowns, and player are all limited to these).
+- **Language:** English transliteration only. The other scripts (Sanskrit, Tamil, Telugu, Kannada, Malayalam, Hindi) appear in the switcher but are disabled with a "coming soon" note.
+- **Playback speed:** 1x only. 0.5x / 0.75x / 2x are shown but disabled with a "coming soon" note.
 
-### Installation
+These limits live behind simple flags and are easy to expand in later versions.
+
+## Features
+
+- **Verse-by-verse playback** - tap a verse to hear it once, with timestamp-accurate seeking into a single audio file.
+- **Whole-range block repeat** - repeat the entire selected range 1, 3, 5, 10, or infinite times. Repeat applies to the range as a block, not per verse.
+- **Practice range** - pick a From/To range and auto-play through it hands-free.
+- **Color-coded sections** - each section (Purvapithika, Dhyanam, Sahasranamam, Uttarapithika) has its own accent color, shown on the verse card, the range dropdowns, and the footer legend.
+- **Stable verse layout** - each verse keeps the same line-break shape on phone, tablet, and desktop (the font auto-scales to fit), so students memorize one consistent visual.
+- **Responsive & accessible** - mobile-friendly and verified against WCAG 2.1 AA color-contrast and labeling checks.
+- **Progress tracking** - completed verses are saved in the browser.
+
+## Quick Start
 
 ```bash
-# Clone the repository
 git clone https://github.com/sharanainapurapu/vsn.git
 cd vsn
-
-# Install dependencies
 npm install
-
-# Run development server
 npm run dev
 ```
 
-Visit `http://localhost:5174` in your browser.
+Open the URL Vite prints (typically http://localhost:5173).
 
-### Build for Production
+### Build for production
 
 ```bash
-npm run build
+npm run build       # outputs to dist/
 ```
 
-The built files will be in the `dist/` folder.
+Deployment is automatic: pushing to `main` triggers a GitHub Actions workflow that
+builds and publishes to GitHub Pages. See [docs/deployment.md](docs/deployment.md).
 
-## 📁 Project Structure
+## Configuration (v1 gating)
+
+The release limits are controlled in a couple of small places:
+
+- `src/config.js` - `SHOW_LANGUAGES`, `LIMIT_RELEASE`, and `isSlokaEnabled()` (which verses are exposed). v1 enables only `section_3` (Sahasranamam) numbers 1-10.
+- `src/components/Player.jsx` - `ENABLED_SPEEDS` (v1 = `[1]`).
+- `src/components/LanguageSelector.jsx` - `ENABLED_LANGUAGES` (v1 = `['english']`).
+
+To release more in a future version: widen `isSlokaEnabled()`, add speeds to `ENABLED_SPEEDS`, and add languages to `ENABLED_LANGUAGES`.
+
+## Project Structure
 
 ```
 vsn/
-├── .github/workflows/deploy.yml    # GitHub Pages deployment
-├── docs/                           # Project documentation (see docs/README.md)
-│   ├── README.md                   # Docs index
-│   ├── development.md
-│   ├── deployment.md
-│   ├── scripts.md
-│   ├── features.md
-│   ├── audio.md
-│   ├── data-format.md
-│   ├── timestamp-calibration.md
-│   └── archive/                    # Older guides and reports
-├── public/                         # Static assets (copied to dist/)
-│   ├── audio/
-│   │   └── full_slokas.m4a         # Full audio (AAC, ~34MB)
-│   └── data/
-│       └── slokas-complete.json    # 152 slokas with timestamps
-├── scripts/                        # Python helpers (not part of the build)
-│   ├── README.md
-│   ├── *.py
-│   └── data/                       # Templates, old timestamp outputs, v2 text
-├── src/
-│   ├── components/
-│   │   ├── Player.jsx              # Audio player with timestamp seeking
-│   │   ├── SlokaDisplay.jsx        # Displays sloka text
-│   │   ├── RangeSelector.jsx       # Range and repeat settings
-│   │   ├── SlokaGrid.jsx           # Grid view of all slokas
-│   │   └── LanguageSelector.jsx    # Language switcher
-│   ├── utils/slokaLabels.js        # Sloka label helpers
-│   ├── config.js                   # Feature flags
-│   ├── App.jsx                     # Main app component
-│   ├── main.jsx                    # Entry point
-│   └── index.css                   # Global styles with Tailwind
-├── index.html
-├── package.json
-├── vite.config.js
-├── tailwind.config.js
-└── postcss.config.js
+  docs/                            # Project documentation (see docs/README.md)
+  public/
+    audio/full_slokas.m4a          # Full audio (AAC, same timeline as source)
+    images/swamiji.png             # Header image
+    data/slokas-complete.json      # 152 entries with timestamps + text
+  scripts/                         # Python helpers (not part of the build)
+  src/
+    components/
+      Player.jsx                   # Audio player, block-repeat, speed control
+      SlokaDisplay.jsx             # Verse card: per-section color + auto-fit layout
+      RangeSelector.jsx            # From/To range, repeat (incl. infinite)
+      SlokaGrid.jsx                # Grid of enabled verses + color-coded legend
+      LanguageSelector.jsx         # Language switcher (English enabled in v1)
+    utils/
+      slokaLabels.js               # Verse label + section grouping helpers
+      sectionTheme.js              # Single source of truth for section names + colors
+    config.js                      # Feature flags + release gating
+    App.jsx                        # Main app component
+    main.jsx                       # Entry point
+    index.css                      # Global styles with Tailwind
+  index.html
+  package.json
+  vite.config.js
+  tailwind.config.js
+  postcss.config.js
 ```
 
-## 📚 Documentation
+## Content Structure
 
-- [docs/README.md](docs/README.md) - index of all docs
+The data (`public/data/slokas-complete.json`) is organized into four sections plus an intro:
+
+| Section | Name | Entries |
+|---|---|---|
+| intro | Introduction | 1 |
+| section_1 | Purvapithika | 1-23 |
+| section_2 | Dhyanam | 1-6 |
+| section_3 | Sahasranamam | 1-108 |
+| section_4 | Uttarapithika | 1-14 |
+
+English transliteration text is sourced from [Bhajan Mala](https://www.bhajanmala.com/nodes/125). Each verse stores explicit line breaks so its on-screen shape is fixed across devices.
+
+## Audio
+
+A single audio track (`public/audio/full_slokas.m4a`, AAC extracted from the original video, same timeline) is served alongside the app. Playback seeks to each verse's startTime/endTime. Timestamps were manually calibrated. See [docs/timestamp-calibration.md](docs/timestamp-calibration.md).
+
+## Documentation
+
+- [docs/README.md](docs/README.md) - docs index
 - [docs/development.md](docs/development.md) - local development
-- [docs/deployment.md](docs/deployment.md) - deployment to GitHub Pages
-- [docs/audio.md](docs/audio.md) - self-hosted audio file
+- [docs/deployment.md](docs/deployment.md) - deploying to GitHub Pages
+- [docs/features.md](docs/features.md) - feature details
+- [docs/audio.md](docs/audio.md) - the self-hosted audio file
 - [scripts/README.md](scripts/README.md) - Python helper scripts
 
-## 🎯 Usage Guide
+## Tech Stack
 
-### For Parents
+React 18 - Vite 4 - Tailwind CSS 3 - Lucide React - HTML5 Audio API - GitHub Pages
 
-1. **Visit the Live App**: https://sharanainapurapu.github.io/vsn/
-2. **Select Language**: Choose your preferred script or English for pronunciation
-3. **Practice Range**: Set a weekly goal (e.g., slokas 1-10)
-4. **Set Repeats**: Choose how many times each sloka should repeat (3-5x recommended)
-5. **Start Practice**: Click "Start Practice" for hands-free auto-play through the range
-6. **Track Progress**: Green checkmarks show completed slokas (saved in browser)
+## Credits
 
-### For Kids (Age 5+)
+- **Sloka reference:** [Bhajan Mala](https://www.bhajanmala.com/nodes/125)
+- **Audio & timestamps:** user-provided recording, manually calibrated
+- Made with devotion for a young learner.
 
-1. 👆 **Tap** the big play button
-2. 📖 **Listen** to the audio  
-3. 🔁 **Repeat** - it plays automatically
-4. ✅ **Earn** green checkmarks as you complete
-5. 🎯 **Practice** daily!
-
-## 🎵 Audio Setup
-
-This app uses a **single 37-minute audio file** (`public/audio/full_slokas.m4a`, AAC extracted from the original MP4 with the same timeline) served alongside the app, with accurate timestamp-based navigation. The audio contains 152 sloka segments across 3 sections:
-
-- **Section 1**: Slokas 1-21 (~4 minutes)
-- **Section 2**: Slokas 1-108 (~21 minutes) - Main Vishnu Sahasranamam
-- **Section 3**: Slokas 8-27+ (~4 minutes)
-
-Timestamps were manually calibrated using 32 user-provided calibration points for accuracy. See [docs/timestamp-calibration.md](docs/timestamp-calibration.md) for details.
-
-## 🚢 Deployment
-
-This app is already deployed at: **https://sharanainapurapu.github.io/vsn/**
-
-The deployment uses:
-- **GitHub Pages** for hosting
-- **Self-hosted audio** in `public/audio/full_slokas.m4a` (~34MB, served from GitHub Pages)
-- **Automatic deployment** via GitHub Actions on push to `main`
-
-### To Deploy Your Own Version
-
-1. Fork this repository
-2. Update `vite.config.js` with your repo name:
-   ```js
-   base: '/your-repo-name/'
-   ```
-3. Enable GitHub Pages in Settings → Pages → Source: gh-pages branch
-4. Push changes - auto-deploys via GitHub Actions
-
-## 🛠️ Tech Stack
-
-- **React 18** - UI framework
-- **Vite 4** - Build tool and dev server
-- **Tailwind CSS 3** - Utility-first styling
-- **Lucide React** - Beautiful icons
-- **HTML5 Audio API** - Timestamp-based seeking
-- **GitHub Pages** - Free hosting
-
-## 🤝 Contributing
-
-Suggestions and improvements are welcome! Feel free to:
-
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
-
-## 📋 Future Enhancements
-
-- [ ] Add actual Sanskrit text for all 152 slokas
-- [ ] Include word-by-word meaning tooltips
-- [ ] Add achievement badges for motivation
-- [ ] Offline PWA support
-- [ ] Export progress as PDF report
-- [ ] Add more language options
-
-## 📄 License
-
-This project is created for educational purposes. The Vishnu Sahasranamam text is in the public domain.
-
-## 🙏 Credits
-
-- **Original Audio**: User-provided 37-minute MP4 video
-- **Timestamps**: Manually calibrated with 32 calibration points
-- **Sloka Reference**: [Bhajan Mala](https://www.bhajanmala.com/nodes/125)
-- **Created with ❤️** for a 5-year-old learning Vishnu Sahasranamam
-
-## 💬 Support
-
-If you find this helpful for teaching your children, please ⭐ star this repository!
-
-**Repository**: https://github.com/sharanainapurapu/vsn
-**Live App**: https://sharanainapurapu.github.io/vsn/
+**Repository:** https://github.com/sharanainapurapu/vsn
+**Live App:** https://sharanainapurapu.github.io/vsn/

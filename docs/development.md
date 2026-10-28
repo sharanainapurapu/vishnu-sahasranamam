@@ -268,13 +268,15 @@ vsn/
 │   └── archive/                    # Older guides and reports
 ├── public/                         # Static assets (copied to dist/)
 │   ├── audio/
-│   │   └── full_slokas.m4a         # Full audio (AAC, ~34MB)
+│   │   └── full_slokas.m4a         # Full audio (AAC, ~34 MB)
+│   ├── images/
+│   │   └── swamiji.png             # Header image
 │   └── data/
-│       └── slokas-complete.json    # 152 slokas with timestamps
+│       └── slokas-complete.json    # 152 entries with timestamps + text
 ├── scripts/                        # Python helpers (not part of the build)
 │   ├── README.md
 │   ├── *.py
-│   └── data/                       # Templates, old timestamp outputs, v2 text
+│   └── data/                       # Templates, old timestamp outputs, future-version text
 ├── src/
 │   ├── components/
 │   │   ├── Player.jsx              # Audio player with timestamp seeking
@@ -282,8 +284,10 @@ vsn/
 │   │   ├── RangeSelector.jsx       # Range and repeat settings
 │   │   ├── SlokaGrid.jsx           # Grid view of all slokas
 │   │   └── LanguageSelector.jsx    # Language switcher
-│   ├── utils/slokaLabels.js        # Sloka label helpers
-│   ├── config.js                   # Feature flags
+│   ├── utils/
+│   │   ├── slokaLabels.js          # Sloka label + section grouping helpers
+│   │   └── sectionTheme.js         # Section names + color theme (single source)
+│   ├── config.js                   # Feature flags + v1 release gating
 │   ├── App.jsx                     # Main app component
 │   ├── main.jsx                    # Entry point
 │   └── index.css                   # Global styles with Tailwind

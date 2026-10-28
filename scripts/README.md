@@ -32,7 +32,7 @@ Notes:
 
 | File | Description |
 |---|---|
-| `scripts/data/slokas-sample.json` | Sloka text in Sanskrit, Tamil, Telugu, Kannada, Malayalam and Hindi for all 109 slokas. Kept as the source for the v2 language scripts; not loaded by the app. |
+| `scripts/data/slokas-sample.json` | Sloka text in Sanskrit, Tamil, Telugu, Kannada, Malayalam and Hindi for all 109 slokas. Kept as the source for future-version language scripts; not loaded by the app. |
 | `scripts/data/sloka_timestamps.json` | Historical timestamp output from the equal-duration split. |
 | `scripts/data/sloka_timestamps_final.json` | Historical calibrated timestamps (see [../docs/timestamp-calibration.md](../docs/timestamp-calibration.md)). |
 | `scripts/data/timestamps_template.csv` | Template for entering sloka start times manually. |

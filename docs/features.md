@@ -1,5 +1,8 @@
 # ✨ Features Overview
 
+> **v1 release:** only the first 10 Sahasranamam verses, English only, and 1x speed are enabled. Other content/speeds/languages are shown but disabled until a later version.
+
+
 ## Visual Walkthrough
 
 ### 1. 🎨 Main Interface
@@ -8,11 +11,10 @@
 ╔═══════════════════════════════════════════════════════════════╗
 ║                   📖 Vishnu Sahasranamam                      ║
 ║               Learning App for Kids 🕉️                        ║
-║             Total Slokas: 109 | Source: Bhajan Mala           ║
+║         Learning app for kids · 10 verses (v1)                ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║                                                               ║
-║  [🕉️ Sanskrit] [🇮🇳 Tamil] [🇮🇳 Telugu] [🇮🇳 Kannada]        ║
-║  [🇮🇳 Malayalam] [🇮🇳 Hindi] [🔤 English] ← Select Language   ║
+║  [English] (Sanskrit/Tamil/Telugu/… disabled — coming soon)   ║
 ║                                                               ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║  ┌────────────────────────┐  ┌────────────────────────┐     ║
@@ -21,9 +23,9 @@
 ║  │   │  dhyanam    │      │  │  From Sloka: [ 1  ▼]  │     ║
 ║  │   └─────────────┘      │  │  To Sloka:   [10  ▼]  │     ║
 ║  │                        │  │                        │     ║
-║  │  शुक्लाम्बरधरं विष्णुं   │  │  🔁 Repeat Each:      │     ║
+║  │  शुक्लाम्बरधरं विष्णुं   │  │  🔁 Repeat Range:      │     ║
 ║  │  शशिवर्णं चतुर्भुजम्    │  │  [1x] [3x] [5x]       │     ║
-║  │                        │  │  [10x] [20x]          │     ║
+║  │                        │  │  [10x] [infinite]     │     ║
 ║  │  प्रसन्नवदनं ध्यायेत्    │  │                        │     ║
 ║  │  सर्वविघ्नोपशान्तये     │  │  📚 You will practice: │     ║
 ║  │                        │  │   • Slokas 1 to 10    │     ║
@@ -71,13 +73,12 @@
 ### Smart Audio Playback
 - **Individual Control**: Play, pause, skip forward/back
 - **Auto-Advance**: Automatically moves to next sloka
-- **Volume Control**: Adjust to comfortable level
 - **Visual Progress**: See exactly where you are in the sloka
 
 ### Repeat System
-- **Flexible Options**: 1x, 3x, 5x, 10x, 20x repeats
-- **Per-Sloka Repetition**: Each sloka repeats N times before moving to next
-- **Visual Counter**: Shows "Repeat 2/5" so kids know progress
+- **Flexible Options**: repeat the whole range 1, 3, 5, 10, or infinite times
+- **Whole-Range Repetition**: the full range plays as a block, then repeats
+- **Visual Counter**: shows the current round (e.g. "Round 2 / 5", or "/ infinite")
 - **No Manual Restart**: Automatic, hands-free learning
 
 ### Range-Based Learning
@@ -93,10 +94,10 @@
 - **Persistent**: Data survives browser restarts
 
 ### Grid Navigation
-- **Visual Overview**: See all 109 slokas at once
+- **Visual Overview**: see all enabled verses at once (v1 shows the first 10)
 - **Quick Jump**: Click any sloka to jump directly to it
 - **Color Coding**: 
-  - Purple/Pink = Currently playing
+  - Section accent (saffron) = Currently playing
   - Green = Completed
   - Gray = Not started yet
 - **Section Labels**: Know which part you're in

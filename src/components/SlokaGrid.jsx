@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react'
+import { SECTION_THEME } from '../utils/sectionTheme'
 
 const SlokaGrid = ({ slokas, currentIndex, completedSlokas, onSlokaSelect }) => {
   const total = slokas.length || 1
@@ -43,11 +44,21 @@ const SlokaGrid = ({ slokas, currentIndex, completedSlokas, onSlokaSelect }) => 
         </div>
       </div>
 
-      <div className="mt-5 pt-4 border-t border-paper-line flex flex-wrap gap-x-5 gap-y-1 text-xs text-ink-500">
-        <span>Pūrvapīṭhikā (1–23)</span>
-        <span>Dhyānam (1–6)</span>
-        <span>Sahasranāmam (1–108)</span>
-        <span>Uttarapīṭhikā (1–14)</span>
+      <div className="mt-5 pt-4 border-t border-paper-line flex flex-wrap gap-x-5 gap-y-1.5 text-xs">
+        {[
+          ['section_1', '1–23'],
+          ['section_2', '1–6'],
+          ['section_3', '1–108'],
+          ['section_4', '1–14'],
+        ].map(([sec, range]) => {
+          const t = SECTION_THEME[sec]
+          return (
+            <span key={sec} className="inline-flex items-center gap-1.5" style={{ color: t.text }}>
+              <span className="w-2 h-2 rounded-full" style={{ backgroundColor: t.dot }} />
+              {t.name} ({range})
+            </span>
+          )
+        })}
       </div>
     </div>
   )

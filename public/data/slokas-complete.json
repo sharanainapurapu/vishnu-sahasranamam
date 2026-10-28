@@ -631,9 +631,9 @@
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 560.0,
-        "endTime": 600.0,
-        "duration": 40.0
+        "startTime": 499.0,
+        "endTime": 513.0,
+        "duration": 14.0
       }
     },
     {
@@ -651,9 +651,9 @@
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 600.0,
-        "endTime": 610.91,
-        "duration": 10.91
+        "startTime": 514.0,
+        "endTime": 525.0,
+        "duration": 11
       }
     },
     {
@@ -671,9 +671,9 @@
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 610.91,
-        "endTime": 621.82,
-        "duration": 10.91
+        "startTime": 525,
+        "endTime": 536.25,
+        "duration": 11.25
       }
     },
     {
@@ -691,9 +691,9 @@
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 621.82,
-        "endTime": 632.73,
-        "duration": 10.91
+        "startTime": 537,
+        "endTime": 547,
+        "duration": 10
       }
     },
     {
@@ -711,9 +711,9 @@
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 632.73,
-        "endTime": 643.64,
-        "duration": 10.91
+        "startTime": 547.5,
+        "endTime": 557.75,
+        "duration": 10.25
       }
     },
     {
@@ -731,9 +731,9 @@
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 643.64,
-        "endTime": 654.55,
-        "duration": 10.91
+        "startTime": 558,
+        "endTime": 568.5,
+        "duration": 10.5
       }
     },
     {
@@ -751,9 +751,9 @@
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 654.55,
-        "endTime": 665.45,
-        "duration": 10.9
+        "startTime": 569,
+        "endTime": 579.25,
+        "duration": 10.25
       }
     },
     {
@@ -771,9 +771,9 @@
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 665.45,
-        "endTime": 676.36,
-        "duration": 10.91
+        "startTime": 580,
+        "endTime": 591.50,
+        "duration": 11.50
       }
     },
     {
@@ -791,9 +791,9 @@
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 676.36,
-        "endTime": 687.27,
-        "duration": 10.91
+        "startTime": 592,
+        "endTime": 602.50,
+        "duration": 10.50
       }
     },
     {
@@ -811,9 +811,9 @@
       },
       "audio": {
         "file": "full_slokas.mp4",
-        "startTime": 687.27,
-        "endTime": 698.18,
-        "duration": 10.91
+        "startTime": 603.25,
+        "endTime": 612.25,
+        "duration": 9
       }
     },
     {

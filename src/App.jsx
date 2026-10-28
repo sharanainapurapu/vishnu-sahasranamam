@@ -15,7 +15,7 @@ function App() {
   const [rangeMode, setRangeMode] = useState(false)
   const [rangeStart, setRangeStart] = useState(1)
   const [rangeEnd, setRangeEnd] = useState(10)
-  const [repeatCount, setRepeatCount] = useState(1)
+  const [repeatCount, setRepeatCount] = useState(Infinity)
   const [completedSlokas, setCompletedSlokas] = useState([])
   const [metadata, setMetadata] = useState(null)
   const [autoPlay, setAutoPlay] = useState(false)

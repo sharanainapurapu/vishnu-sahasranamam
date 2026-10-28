@@ -3,10 +3,10 @@
 The app plays `full_slokas.m4a`, served from `public/audio/` (same origin as the app).
 
 **File Details:**
-- Size: ~34MB
+- Size: ~34 MB
 - Duration: 36.7 minutes (2200 seconds)
 - Format: M4A (AAC, 128 kbps, 44.1 kHz stereo), audio stream copied unchanged from the original MP4
-- Contains: 152 sloka segments across 3 sections
+- Contains: 152 sloka segments across 4 sections (plus an intro)
 
 The audio timeline is identical to the original MP4, so the timestamps in
 [`scripts/data/sloka_timestamps_final.json`](../scripts/data/sloka_timestamps_final.json) and [`public/data/slokas-complete.json`](../public/data/slokas-complete.json) apply as-is.

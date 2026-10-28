@@ -1,16 +1,6 @@
 import { useLayoutEffect, useMemo, useRef, useState } from 'react'
 
-const SECTION_LABELS = {
-  intro: 'Introduction',
-  section_1: 'Pūrvapīṭhikā',
-  section_2: 'Dhyānam',
-  section_3: 'Sahasranāmam',
-  section_4: 'Uttarapīṭhikā',
-  dhyanam: 'Dhyānam',
-  main: 'Sahasranāmam',
-  phalasruti: 'Phalaśruti',
-  outro: 'Conclusion',
-}
+import { getSectionTheme } from '../utils/sectionTheme'
 
 // Alignment rules for the verse:
 //  - Each authored line (split on "\n") ALWAYS stays on exactly one line.
@@ -22,7 +12,8 @@ const MIN_FONT = 11 // px — floor so it stays legible on very narrow screens
 
 const SlokaDisplay = ({ sloka, language }) => {
   const slokaText = sloka?.text?.[language] || sloka?.text?.sanskrit || ''
-  const sectionLabel = SECTION_LABELS[sloka?.section] || sloka?.section
+  const theme = getSectionTheme(sloka?.section)
+  const sectionLabel = theme.name || sloka?.section
 
   const lines = useMemo(
     () => (slokaText.length ? slokaText.split('\n') : ['']),
@@ -58,9 +49,12 @@ const SlokaDisplay = ({ sloka, language }) => {
   }, [lines, language])
 
   return (
-    <div className="bg-paper-card border border-paper-line rounded-2xl p-5 sm:p-8 md:p-10">
-      <div className="w-7 h-0.5 bg-saff-500 mb-3" />
-      <div className="text-xs font-semibold tracking-widest uppercase text-saff-700">
+    <div
+      className="rounded-2xl p-5 sm:p-8 md:p-10 border transition-colors"
+      style={{ backgroundColor: theme.soft, borderColor: theme.dot }}
+    >
+      <div className="w-7 h-0.5 mb-3" style={{ backgroundColor: theme.dot }} />
+      <div className="text-xs font-semibold tracking-widest uppercase" style={{ color: theme.text }}>
         {sectionLabel}
       </div>
 

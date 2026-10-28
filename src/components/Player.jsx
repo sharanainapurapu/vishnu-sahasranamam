@@ -4,6 +4,9 @@ import { getSlokaLabel } from '../utils/slokaLabels'
 
 // Full audio track (AAC extracted from the original MP4, same timeline)
 const AUDIO_URL = `${import.meta.env.BASE_URL}audio/full_slokas.m4a`
+// Lock-screen / notification artwork (Media Session)
+const MEDIA_ARTWORK = `${import.meta.env.BASE_URL}images/swamiji.png`
+const MEDIA_ALBUM = 'Vishnu Sahasranamam'
 
 // Playback speed choices (kept small and simple for kids)
 const SPEED_OPTIONS = [0.5, 0.75, 1, 2]
@@ -43,6 +46,7 @@ const Player = ({
   const advanceTimerRef = useRef(null)   // pending advance timeout
   const isPlayingRef = useRef(false)     // mirror of isPlaying (user intent)
   const speedRef = useRef(1)
+  const controlsRef = useRef({})         // latest play/pause/next/prev for Media Session
 
   latestRef.current = {
     sloka,
@@ -260,6 +264,60 @@ const Player = ({
     }
   }, [audioElement])
 
+  // Keep latest control fns available to the Media Session handlers (avoid stale closures)
+  const mediaControls = {
+    play: () => { if (audioElement) startPlayback(audioElement) },
+    pause: () => { if (audioElement) stopPlayback(audioElement) },
+    next: () => handleNext(),
+    prev: () => handlePrevious(),
+  }
+  controlsRef.current = mediaControls
+
+  // Media Session: lock-screen / notification metadata + transport controls.
+  useEffect(() => {
+    if (!('mediaSession' in navigator) || !sloka) return
+    try {
+      const title = rangeMode
+        ? `${getSlokaLabel(sloka)} · Range`
+        : getSlokaLabel(sloka)
+      // eslint-disable-next-line no-undef
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title,
+        artist: MEDIA_ALBUM,
+        album: MEDIA_ALBUM,
+        artwork: [
+          { src: MEDIA_ARTWORK, sizes: '512x512', type: 'image/png' },
+          { src: MEDIA_ARTWORK, sizes: '256x256', type: 'image/png' },
+          { src: MEDIA_ARTWORK, sizes: '96x96', type: 'image/png' },
+        ],
+      })
+    } catch (e) {
+      // MediaMetadata unsupported; ignore
+    }
+  }, [sloka?.id, rangeMode])
+
+  // Register transport-control handlers once the audio element exists.
+  useEffect(() => {
+    if (!('mediaSession' in navigator)) return
+    const ms = navigator.mediaSession
+    const set = (action, fn) => {
+      try { ms.setActionHandler(action, fn) } catch (e) { /* unsupported action */ }
+    }
+    set('play', () => controlsRef.current.play && controlsRef.current.play())
+    set('pause', () => controlsRef.current.pause && controlsRef.current.pause())
+    set('nexttrack', () => controlsRef.current.next && controlsRef.current.next())
+    set('previoustrack', () => controlsRef.current.prev && controlsRef.current.prev())
+    return () => {
+      ;['play', 'pause', 'nexttrack', 'previoustrack'].forEach((a) => set(a, null))
+    }
+  }, [audioElement])
+
+  // Reflect play/pause state on the OS media UI.
+  useEffect(() => {
+    if (!('mediaSession' in navigator)) return
+    try { navigator.mediaSession.playbackState = isPlaying ? 'playing' : 'paused' } catch (e) {}
+  }, [isPlaying])
+
   const togglePlay = () => {
     if (!audioElement) return
     if (isPlaying) {
@@ -336,9 +394,9 @@ const Player = ({
             </span>
           )}
         </div>
-        {repeatCount > 1 && (
+        {(repeatCount > 1 || !Number.isFinite(repeatCount)) && (
           <div className="mt-1 text-xs font-semibold text-saff-700">
-            Round {currentRepeat} / {repeatCount}
+            Round {currentRepeat} / {Number.isFinite(repeatCount) ? repeatCount : '∞'}
           </div>
         )}
       </div>
