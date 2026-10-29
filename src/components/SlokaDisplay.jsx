@@ -20,6 +20,7 @@ const SlokaDisplay = ({ item, language }) => {
   const containerRef = useRef(null)
   const measureRef = useRef(null)
   const [fontSize, setFontSize] = useState(MAX_FONT)
+  const [scale, setScale] = useState(1)
 
   useLayoutEffect(() => {
     const container = containerRef.current
@@ -28,10 +29,19 @@ const SlokaDisplay = ({ item, language }) => {
     const fit = () => {
       const available = container.clientWidth
       if (!available) return
-      const widest = measure.scrollWidth
+      const widest = measure.scrollWidth // widest line at MAX_FONT
       if (!widest) return
-      const scaled = Math.floor(MAX_FONT * (available / widest) * 0.98)
-      setFontSize(Math.max(MIN_FONT, Math.min(MAX_FONT, scaled)))
+      const target = available * 0.98
+      // Ideal font to fit by size alone.
+      const ideal = MAX_FONT * (target / widest)
+      const size = Math.max(MIN_FONT, Math.min(MAX_FONT, Math.floor(ideal)))
+      // If even the MIN_FONT floor is too wide (very narrow screens), squeeze
+      // the block horizontally the rest of the way so the line shape is kept
+      // and nothing clips.
+      const widthAtSize = widest * (size / MAX_FONT)
+      const extra = widthAtSize > target ? target / widthAtSize : 1
+      setFontSize(size)
+      setScale(Math.max(0.5, Math.min(1, extra)))
     }
     fit()
     const ro = new ResizeObserver(fit)
@@ -56,15 +66,19 @@ const SlokaDisplay = ({ item, language }) => {
         </div>
       </div>
 
-      <div ref={containerRef} className="mt-5">
-        <div
-          ref={measureRef}
-          aria-hidden="true"
-          className={`font-serif sloka-text-${language}`}
-          style={{ position: 'absolute', visibility: 'hidden', whiteSpace: 'nowrap', fontSize: `${MAX_FONT}px`, pointerEvents: 'none' }}
-        >
-          {/* Widest actual verse line (number markers excluded from sizing). */}
-          {lines.filter((l) => !l.startsWith('§')).reduce((a, b) => (b.length > a.length ? b : a), '')}
+      <div ref={containerRef} className="mt-5 relative">
+        {/* Zero-size clipped wrapper so the off-screen measuring node can never
+            widen the page (fixes mobile horizontal scroll) while still being
+            measurable via scrollWidth. */}
+        <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }} aria-hidden="true">
+          <div
+            ref={measureRef}
+            className={`font-serif sloka-text-${language}`}
+            style={{ whiteSpace: 'nowrap', fontSize: `${MAX_FONT}px`, pointerEvents: 'none' }}
+          >
+            {/* Widest actual verse line (number markers excluded from sizing). */}
+            {lines.filter((l) => !l.startsWith('§')).reduce((a, b) => (b.length > a.length ? b : a), '')}
+          </div>
         </div>
 
         {shown ? (
@@ -73,7 +87,14 @@ const SlokaDisplay = ({ item, language }) => {
           <div className="grid-scroll max-h-[45vh] overflow-y-auto">
             <div
               className={`text-center font-serif text-ink-900 sloka-text-${language}`}
-              style={{ fontSize: `${fontSize}px`, lineHeight: 1.75 }}
+              style={{
+                fontSize: `${fontSize}px`,
+                lineHeight: 1.75,
+                // On very narrow screens, squeeze horizontally so long lines
+                // never clip while keeping each line on one row.
+                transform: scale < 1 ? `scaleX(${scale})` : undefined,
+                transformOrigin: 'center',
+              }}
             >
               {lines.map((line, i) => {
                 // A "§N" marker line renders as a small sloka-number chip, not

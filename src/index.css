@@ -13,6 +13,13 @@ body {
   color: #1c1b19;
   background: #faf8f4;
   min-height: 100vh;
+  /* Guard against stray horizontal scroll on small screens. Intentional
+     horizontal scrollers (the language bar) manage their own overflow. */
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 /* Subtle devotional scrollbar + smoother sloka grid scroll area */
